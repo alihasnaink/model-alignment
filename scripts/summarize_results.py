@@ -107,8 +107,9 @@ def examples(eval_dir: Path, generations: Path, per_kind: int = 2) -> str:
         if not candidates:
             continue
         pairs_path = max(candidates, key=lambda path: len(path.name))
-        pairs = {json.loads(l)["id"]: json.loads(l) for l in pairs_path.read_text().splitlines() if l.strip()}
-        verdicts = [json.loads(l) for l in judged.read_text().splitlines() if l.strip()]
+        # split("\n"), not splitlines(): JSON strings may contain raw U+2028 / U+0085.
+        pairs = {json.loads(l)["id"]: json.loads(l) for l in pairs_path.read_text(encoding="utf-8").split("\n") if l.strip()}
+        verdicts = [json.loads(l) for l in judged.read_text(encoding="utf-8").split("\n") if l.strip()]
         parts.append(f"### {judged.stem}\n")
         for outcome in ("win", "loss", "tie"):
             for v in [v for v in verdicts if v["candidate_outcome"] == outcome][:per_kind]:

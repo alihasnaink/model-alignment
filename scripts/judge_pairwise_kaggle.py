@@ -147,7 +147,8 @@ BACKENDS = {"kaggle": kaggle_backend, "mock": mock_backend}
 def read_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
-    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    # "\n" only - splitlines() would also split on U+2028/U+0085 inside JSON strings.
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").split("\n") if line.strip()]
 
 
 def write_jsonl_atomic(path: Path, rows: list[dict]) -> None:

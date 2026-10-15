@@ -276,3 +276,20 @@ def test_initial_reward_accuracy_is_zero_with_strict_comparison():
         logps = dpo_logps(model, batch)
         r_w, r_l = dpo_rewards(*logps, *logps, 0.1)
     assert not (r_w > r_l).any()
+
+
+def test_jsonl_with_unicode_line_separators_round_trips(tmp_path):
+    # UltraFeedback text contains U+2028; json.dumps(ensure_ascii=False) leaves it raw and str.splitlines() splits on it.
+    import importlib.util
+    from pathlib import Path
+
+    from alignment.training import load_json_records, write_jsonl
+
+    rows = [{"prompt": "line sep", "chosen": "nel\x85here", "rejected": "ff\x0cvt\x0bfs\x1cps "}, {"prompt": "ok"}]
+    path = tmp_path / "data.jsonl"
+    write_jsonl(path, rows)
+    assert load_json_records(path) == rows
+    spec = importlib.util.spec_from_file_location("judge", Path(__file__).resolve().parents[1] / "scripts/judge_pairwise_kaggle.py")
+    judge = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(judge)
+    assert judge.read_jsonl(path) == rows

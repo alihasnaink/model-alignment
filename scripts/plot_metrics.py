@@ -33,7 +33,7 @@ plt.rcParams.update({
 def read_metrics(path: Path) -> list[dict]:
     if not path.exists():
         return []
-    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").split("\n") if line.strip()]
 
 
 def series(rows: list[dict], key: str, x: str = "step") -> tuple[list, list]:

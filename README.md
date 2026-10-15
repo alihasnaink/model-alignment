@@ -38,8 +38,19 @@ tests/                       public adapter smoke tests + edge-case + end-to-end
    - If a run dies, attach its output as an input, set `RESUME_FROM` to its `.../model-alignment/outputs` path, and commit again. Finished stages are skipped.
 3. **Judge notebook.** Create a new Kaggle notebook *as a utility benchmark*, paste in `kaggle_judge.ipynb`, add the
    training notebook's output as an input, and run it. It writes judgments, summaries, and `judge_bundle.zip`.
-4. Download `submission_bundle.zip` (training notebook) and `judge_bundle.zip` (judge notebook). Unzip both into
-   `outputs/` in this repository and commit. `.gitignore` keeps weights and raw data copies out.
+4. Download `report_bundle.zip` (training notebook) and `judge_bundle.zip` (judge notebook). Unzip both into this
+   repository (they contain an `outputs/` folder) and commit. `.gitignore` keeps weights and raw data copies out.
+
+**Output size.** `OUTPUT_MODE = "lean"` (the default) deletes each Qwen checkpoint's weights as soon as every generation
+that needs them is written. It keeps `config.json`, `checkpoint_info.json`, and a `PRUNED.txt` note, and drops the raw
+training splits at the end. Without this, the saved version would hold about 12 GB of weights. The training notebook
+writes two zips:
+- `report_bundle.zip`: metrics, run configs, summaries, plots, `report/results.md`, logs, data metadata, generations,
+  pair files, and the LoRA adapter.
+- `benchmark_inputs.zip`: only `generations/`, `eval/*_pairs.jsonl`, and the eval sets, which is all the judge notebook needs.
+
+Set `OUTPUT_MODE = "full"` only if you need the trained SFT/DPO weights afterwards. Lean mode does not change what is
+trained or saved during the run; weights are removed only after their last use.
 
 Local tests (CPU, offline):
 

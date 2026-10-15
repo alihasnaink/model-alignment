@@ -35,7 +35,9 @@ def load_json_records(path: str | Path) -> list[dict[str, Any]]:
         if not isinstance(result, list):
             raise ValueError("JSON dataset must be a list of objects")
         return result
-    return [json.loads(line) for line in text.splitlines() if line.strip()]
+    # Split on "\n" only: str.splitlines() also breaks on U+2028, U+0085, etc., which json.dumps(ensure_ascii=False)
+    # leaves unescaped inside strings (UltraFeedback contains them), cutting a record in half.
+    return [json.loads(line) for line in text.split("\n") if line.strip()]
 
 
 def write_jsonl(path: str | Path, rows: Iterable[dict[str, Any]]) -> None:
