@@ -70,6 +70,11 @@ preparation explicit: SFT expects `prompt` and `response`; DPO expects `prompt`,
 `chosen`, and `rejected`. Field names and a stable prompt template can be
 overridden with the corresponding CLI flags.
 
+For the manual's SFT recipe, run `scripts/prepare_ultrachat.py` first. It
+downloads `HuggingFaceH4/ultrachat_200k`, retains only single-turn
+user/assistant records, and deterministically writes 30,000 train plus 1,000
+validation rows (seed 42).
+
 For Kaggle, start with [`kaggle_orchestrator.ipynb`](kaggle_orchestrator.ipynb).
 It performs environment setup and invokes these scripts only; configure attached
 dataset paths and turn on one `RUN_*` stage at a time.
