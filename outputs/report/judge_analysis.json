@@ -1,0 +1,955 @@
+{
+  "hh_dpo_vs_sft": {
+    "rubric": "safety",
+    "candidate": "hh_dpo",
+    "baseline": "sft",
+    "overall": {
+      "n": 300,
+      "wins": 111,
+      "ties": 85,
+      "losses": 104,
+      "win_rate_excl_ties": 0.516,
+      "win_rate_ties_half": 0.512,
+      "wilson95_excl_ties": [
+        0.45,
+        0.582
+      ],
+      "sign_test_p": 0.6825
+    },
+    "position_balanced": {
+      "candidate_as_A": {
+        "n": 132,
+        "win_rate": 0.629
+      },
+      "candidate_as_B": {
+        "n": 168,
+        "win_rate": 0.424
+      },
+      "position_balanced_win_rate": 0.526
+    },
+    "by_truncation": {
+      "only_candidate_hit_cap": {
+        "n": 4,
+        "wins": 3,
+        "ties": 0,
+        "losses": 1,
+        "win_rate_excl_ties": 0.75,
+        "win_rate_ties_half": 0.75,
+        "wilson95_excl_ties": [
+          0.301,
+          0.954
+        ],
+        "sign_test_p": 0.625
+      },
+      "only_baseline_hit_cap": {
+        "n": 6,
+        "wins": 4,
+        "ties": 0,
+        "losses": 2,
+        "win_rate_excl_ties": 0.667,
+        "win_rate_ties_half": 0.667,
+        "wilson95_excl_ties": [
+          0.3,
+          0.903
+        ],
+        "sign_test_p": 0.6875
+      },
+      "neither_hit_cap": {
+        "n": 290,
+        "wins": 104,
+        "ties": 85,
+        "losses": 101,
+        "win_rate_excl_ties": 0.507,
+        "win_rate_ties_half": 0.505,
+        "wilson95_excl_ties": [
+          0.439,
+          0.575
+        ],
+        "sign_test_p": 0.889
+      }
+    },
+    "output_similarity": {
+      "mean_shared_prefix_share": 0.105,
+      "first_50_chars_identical": 0.397,
+      "mean_sequence_similarity": 0.227
+    },
+    "excluding_identical_outputs": {
+      "n": 297,
+      "wins": 111,
+      "ties": 82,
+      "losses": 104,
+      "win_rate_excl_ties": 0.516,
+      "win_rate_ties_half": 0.512,
+      "wilson95_excl_ties": [
+        0.45,
+        0.582
+      ],
+      "sign_test_p": 0.6825
+    },
+    "identical_output_pairs": {
+      "count": 3,
+      "verdicts": {
+        "tie": 3
+      }
+    },
+    "by_category": {
+      "benign_helpfulness": {
+        "n": 30,
+        "wins": 13,
+        "ties": 4,
+        "losses": 13,
+        "win_rate_excl_ties": 0.5,
+        "win_rate_ties_half": 0.5,
+        "wilson95_excl_ties": [
+          0.321,
+          0.679
+        ],
+        "sign_test_p": 1.0
+      },
+      "calibration_and_uncertainty": {
+        "n": 30,
+        "wins": 12,
+        "ties": 13,
+        "losses": 5,
+        "win_rate_excl_ties": 0.706,
+        "win_rate_ties_half": 0.617,
+        "wilson95_excl_ties": [
+          0.469,
+          0.867
+        ],
+        "sign_test_p": 0.1435
+      },
+      "cyber_abuse": {
+        "n": 30,
+        "wins": 5,
+        "ties": 13,
+        "losses": 12,
+        "win_rate_excl_ties": 0.294,
+        "win_rate_ties_half": 0.383,
+        "wilson95_excl_ties": [
+          0.133,
+          0.531
+        ],
+        "sign_test_p": 0.1435
+      },
+      "harmful_instructions": {
+        "n": 30,
+        "wins": 8,
+        "ties": 13,
+        "losses": 9,
+        "win_rate_excl_ties": 0.471,
+        "win_rate_ties_half": 0.483,
+        "wilson95_excl_ties": [
+          0.262,
+          0.69
+        ],
+        "sign_test_p": 1.0
+      },
+      "hate_or_harassment": {
+        "n": 30,
+        "wins": 13,
+        "ties": 9,
+        "losses": 8,
+        "win_rate_excl_ties": 0.619,
+        "win_rate_ties_half": 0.583,
+        "wilson95_excl_ties": [
+          0.409,
+          0.792
+        ],
+        "sign_test_p": 0.3833
+      },
+      "legal_financial_safety": {
+        "n": 30,
+        "wins": 13,
+        "ties": 6,
+        "losses": 11,
+        "win_rate_excl_ties": 0.542,
+        "win_rate_ties_half": 0.533,
+        "wilson95_excl_ties": [
+          0.351,
+          0.721
+        ],
+        "sign_test_p": 0.8388
+      },
+      "medical_safety": {
+        "n": 30,
+        "wins": 7,
+        "ties": 2,
+        "losses": 21,
+        "win_rate_excl_ties": 0.25,
+        "win_rate_ties_half": 0.267,
+        "wilson95_excl_ties": [
+          0.127,
+          0.434
+        ],
+        "sign_test_p": 0.0125
+      },
+      "privacy_and_doxxing": {
+        "n": 30,
+        "wins": 11,
+        "ties": 13,
+        "losses": 6,
+        "win_rate_excl_ties": 0.647,
+        "win_rate_ties_half": 0.583,
+        "wilson95_excl_ties": [
+          0.413,
+          0.827
+        ],
+        "sign_test_p": 0.3323
+      },
+      "safe_transformation": {
+        "n": 30,
+        "wins": 12,
+        "ties": 6,
+        "losses": 12,
+        "win_rate_excl_ties": 0.5,
+        "win_rate_ties_half": 0.5,
+        "wilson95_excl_ties": [
+          0.314,
+          0.686
+        ],
+        "sign_test_p": 1.0
+      },
+      "self_harm_support": {
+        "n": 30,
+        "wins": 17,
+        "ties": 6,
+        "losses": 7,
+        "win_rate_excl_ties": 0.708,
+        "win_rate_ties_half": 0.667,
+        "wilson95_excl_ties": [
+          0.508,
+          0.851
+        ],
+        "sign_test_p": 0.0639
+      }
+    },
+    "judge_reliability": {
+      "decided_verdicts": 215,
+      "share_picking_A": 0.6,
+      "position_bias_p": 0.0041,
+      "share_longer_response_won": 0.572,
+      "length_bias_p": 0.0405
+    },
+    "generations": {
+      "hh_dpo": {
+        "mean_words": 114.1,
+        "median_words": 107,
+        "hit_token_cap": 4,
+        "empty": 0,
+        "refusal_rate": 0.197,
+        "degenerate_repetition(>30% repeated 4-grams)": 4
+      },
+      "sft": {
+        "mean_words": 129.8,
+        "median_words": 117,
+        "hit_token_cap": 6,
+        "empty": 0,
+        "refusal_rate": 0.187,
+        "degenerate_repetition(>30% repeated 4-grams)": 4
+      }
+    }
+  },
+  "ultrafeedback_dpo_vs_sft": {
+    "rubric": "general",
+    "candidate": "ultrafeedback_dpo",
+    "baseline": "sft",
+    "overall": {
+      "n": 300,
+      "wins": 100,
+      "ties": 85,
+      "losses": 115,
+      "win_rate_excl_ties": 0.465,
+      "win_rate_ties_half": 0.475,
+      "wilson95_excl_ties": [
+        0.4,
+        0.532
+      ],
+      "sign_test_p": 0.3397
+    },
+    "position_balanced": {
+      "candidate_as_A": {
+        "n": 132,
+        "win_rate": 0.578
+      },
+      "candidate_as_B": {
+        "n": 168,
+        "win_rate": 0.384
+      },
+      "position_balanced_win_rate": 0.481
+    },
+    "by_truncation": {
+      "only_candidate_hit_cap": {
+        "n": 17,
+        "wins": 1,
+        "ties": 3,
+        "losses": 13,
+        "win_rate_excl_ties": 0.071,
+        "win_rate_ties_half": 0.147,
+        "wilson95_excl_ties": [
+          0.013,
+          0.315
+        ],
+        "sign_test_p": 0.0018
+      },
+      "only_baseline_hit_cap": {
+        "n": 4,
+        "wins": 3,
+        "ties": 1,
+        "losses": 0,
+        "win_rate_excl_ties": 1.0,
+        "win_rate_ties_half": 0.875,
+        "wilson95_excl_ties": [
+          0.438,
+          1.0
+        ],
+        "sign_test_p": 0.25
+      },
+      "neither_hit_cap": {
+        "n": 269,
+        "wins": 93,
+        "ties": 76,
+        "losses": 100,
+        "win_rate_excl_ties": 0.482,
+        "win_rate_ties_half": 0.487,
+        "wilson95_excl_ties": [
+          0.412,
+          0.552
+        ],
+        "sign_test_p": 0.6659
+      }
+    },
+    "output_similarity": {
+      "mean_shared_prefix_share": 0.087,
+      "first_50_chars_identical": 0.367,
+      "mean_sequence_similarity": 0.223
+    },
+    "excluding_identical_outputs": {
+      "n": 289,
+      "wins": 100,
+      "ties": 74,
+      "losses": 115,
+      "win_rate_excl_ties": 0.465,
+      "win_rate_ties_half": 0.474,
+      "wilson95_excl_ties": [
+        0.4,
+        0.532
+      ],
+      "sign_test_p": 0.3397
+    },
+    "identical_output_pairs": {
+      "count": 11,
+      "verdicts": {
+        "tie": 11
+      }
+    },
+    "by_category": {
+      "helpful_base": {
+        "n": 51,
+        "wins": 10,
+        "ties": 24,
+        "losses": 17,
+        "win_rate_excl_ties": 0.37,
+        "win_rate_ties_half": 0.431,
+        "wilson95_excl_ties": [
+          0.215,
+          0.558
+        ],
+        "sign_test_p": 0.2478
+      },
+      "koala": {
+        "n": 60,
+        "wins": 20,
+        "ties": 10,
+        "losses": 30,
+        "win_rate_excl_ties": 0.4,
+        "win_rate_ties_half": 0.417,
+        "wilson95_excl_ties": [
+          0.276,
+          0.538
+        ],
+        "sign_test_p": 0.2026
+      },
+      "oasst": {
+        "n": 54,
+        "wins": 17,
+        "ties": 16,
+        "losses": 21,
+        "win_rate_excl_ties": 0.447,
+        "win_rate_ties_half": 0.463,
+        "wilson95_excl_ties": [
+          0.301,
+          0.603
+        ],
+        "sign_test_p": 0.6271
+      },
+      "selfinstruct": {
+        "n": 95,
+        "wins": 39,
+        "ties": 28,
+        "losses": 28,
+        "win_rate_excl_ties": 0.582,
+        "win_rate_ties_half": 0.558,
+        "wilson95_excl_ties": [
+          0.463,
+          0.693
+        ],
+        "sign_test_p": 0.2215
+      },
+      "vicuna": {
+        "n": 40,
+        "wins": 14,
+        "ties": 7,
+        "losses": 19,
+        "win_rate_excl_ties": 0.424,
+        "win_rate_ties_half": 0.438,
+        "wilson95_excl_ties": [
+          0.272,
+          0.592
+        ],
+        "sign_test_p": 0.4869
+      }
+    },
+    "judge_reliability": {
+      "decided_verdicts": 215,
+      "share_picking_A": 0.6,
+      "position_bias_p": 0.0041,
+      "share_longer_response_won": 0.414,
+      "length_bias_p": 0.0139
+    },
+    "generations": {
+      "ultrafeedback_dpo": {
+        "mean_words": 198.3,
+        "median_words": 199,
+        "hit_token_cap": 27,
+        "empty": 0,
+        "refusal_rate": 0.013,
+        "degenerate_repetition(>30% repeated 4-grams)": 9
+      },
+      "sft": {
+        "mean_words": 136.2,
+        "median_words": 119,
+        "hit_token_cap": 14,
+        "empty": 0,
+        "refusal_rate": 0.04,
+        "degenerate_repetition(>30% repeated 4-grams)": 9
+      }
+    }
+  },
+  "persona_lora_vs_base_style": {
+    "rubric": "persona_style",
+    "candidate": "lora_dpo",
+    "baseline": "base_instruct",
+    "overall": {
+      "n": 28,
+      "wins": 12,
+      "ties": 6,
+      "losses": 10,
+      "win_rate_excl_ties": 0.545,
+      "win_rate_ties_half": 0.536,
+      "wilson95_excl_ties": [
+        0.347,
+        0.731
+      ],
+      "sign_test_p": 0.8318
+    },
+    "position_balanced": {
+      "candidate_as_A": {
+        "n": 9,
+        "win_rate": 0.571
+      },
+      "candidate_as_B": {
+        "n": 19,
+        "win_rate": 0.533
+      },
+      "position_balanced_win_rate": 0.552
+    },
+    "by_truncation": {
+      "only_candidate_hit_cap": {
+        "n": 0,
+        "wins": 0,
+        "ties": 0,
+        "losses": 0,
+        "win_rate_excl_ties": null,
+        "win_rate_ties_half": null,
+        "wilson95_excl_ties": null,
+        "sign_test_p": 1.0
+      },
+      "only_baseline_hit_cap": {
+        "n": 1,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0,
+        "win_rate_excl_ties": null,
+        "win_rate_ties_half": 0.5,
+        "wilson95_excl_ties": null,
+        "sign_test_p": 1.0
+      },
+      "neither_hit_cap": {
+        "n": 26,
+        "wins": 11,
+        "ties": 5,
+        "losses": 10,
+        "win_rate_excl_ties": 0.524,
+        "win_rate_ties_half": 0.519,
+        "wilson95_excl_ties": [
+          0.324,
+          0.717
+        ],
+        "sign_test_p": 1.0
+      }
+    },
+    "output_similarity": {
+      "mean_shared_prefix_share": 0.002,
+      "first_50_chars_identical": 0.0,
+      "mean_sequence_similarity": 0.048
+    },
+    "excluding_identical_outputs": {
+      "n": 28,
+      "wins": 12,
+      "ties": 6,
+      "losses": 10,
+      "win_rate_excl_ties": 0.545,
+      "win_rate_ties_half": 0.536,
+      "wilson95_excl_ties": [
+        0.347,
+        0.731
+      ],
+      "sign_test_p": 0.8318
+    },
+    "identical_output_pairs": {
+      "count": 0,
+      "verdicts": {}
+    },
+    "by_category": {
+      "coding": {
+        "n": 7,
+        "wins": 6,
+        "ties": 1,
+        "losses": 0,
+        "win_rate_excl_ties": 1.0,
+        "win_rate_ties_half": 0.929,
+        "wilson95_excl_ties": [
+          0.61,
+          1.0
+        ],
+        "sign_test_p": 0.0312
+      },
+      "cooking": {
+        "n": 8,
+        "wins": 4,
+        "ties": 2,
+        "losses": 2,
+        "win_rate_excl_ties": 0.667,
+        "win_rate_ties_half": 0.625,
+        "wilson95_excl_ties": [
+          0.3,
+          0.903
+        ],
+        "sign_test_p": 0.6875
+      },
+      "general_help": {
+        "n": 7,
+        "wins": 0,
+        "ties": 0,
+        "losses": 7,
+        "win_rate_excl_ties": 0.0,
+        "win_rate_ties_half": 0.0,
+        "wilson95_excl_ties": [
+          0.0,
+          0.354
+        ],
+        "sign_test_p": 0.0156
+      },
+      "safety_sensitive": {
+        "n": 6,
+        "wins": 2,
+        "ties": 3,
+        "losses": 1,
+        "win_rate_excl_ties": 0.667,
+        "win_rate_ties_half": 0.583,
+        "wilson95_excl_ties": [
+          0.208,
+          0.939
+        ],
+        "sign_test_p": 1.0
+      }
+    },
+    "judge_reliability": {
+      "decided_verdicts": 22,
+      "share_picking_A": 0.5,
+      "position_bias_p": 1.0,
+      "share_longer_response_won": 0.5,
+      "length_bias_p": 1.0
+    },
+    "generations": {
+      "lora_dpo": {
+        "mean_words": 88.2,
+        "median_words": 79,
+        "hit_token_cap": 1,
+        "empty": 0,
+        "refusal_rate": 0.0,
+        "degenerate_repetition(>30% repeated 4-grams)": 1
+      },
+      "base_instruct": {
+        "mean_words": 160.9,
+        "median_words": 172,
+        "hit_token_cap": 2,
+        "empty": 0,
+        "refusal_rate": 0.071,
+        "degenerate_repetition(>30% repeated 4-grams)": 0
+      }
+    }
+  },
+  "persona_lora_vs_base_helpfulness": {
+    "rubric": "general",
+    "candidate": "lora_dpo",
+    "baseline": "base_instruct",
+    "overall": {
+      "n": 28,
+      "wins": 9,
+      "ties": 1,
+      "losses": 18,
+      "win_rate_excl_ties": 0.333,
+      "win_rate_ties_half": 0.339,
+      "wilson95_excl_ties": [
+        0.186,
+        0.522
+      ],
+      "sign_test_p": 0.1221
+    },
+    "position_balanced": {
+      "candidate_as_A": {
+        "n": 9,
+        "win_rate": 0.556
+      },
+      "candidate_as_B": {
+        "n": 19,
+        "win_rate": 0.222
+      },
+      "position_balanced_win_rate": 0.389
+    },
+    "by_truncation": {
+      "only_candidate_hit_cap": {
+        "n": 0,
+        "wins": 0,
+        "ties": 0,
+        "losses": 0,
+        "win_rate_excl_ties": null,
+        "win_rate_ties_half": null,
+        "wilson95_excl_ties": null,
+        "sign_test_p": 1.0
+      },
+      "only_baseline_hit_cap": {
+        "n": 1,
+        "wins": 0,
+        "ties": 1,
+        "losses": 0,
+        "win_rate_excl_ties": null,
+        "win_rate_ties_half": 0.5,
+        "wilson95_excl_ties": null,
+        "sign_test_p": 1.0
+      },
+      "neither_hit_cap": {
+        "n": 26,
+        "wins": 9,
+        "ties": 0,
+        "losses": 17,
+        "win_rate_excl_ties": 0.346,
+        "win_rate_ties_half": 0.346,
+        "wilson95_excl_ties": [
+          0.194,
+          0.538
+        ],
+        "sign_test_p": 0.1686
+      }
+    },
+    "output_similarity": {
+      "mean_shared_prefix_share": 0.002,
+      "first_50_chars_identical": 0.0,
+      "mean_sequence_similarity": 0.048
+    },
+    "excluding_identical_outputs": {
+      "n": 28,
+      "wins": 9,
+      "ties": 1,
+      "losses": 18,
+      "win_rate_excl_ties": 0.333,
+      "win_rate_ties_half": 0.339,
+      "wilson95_excl_ties": [
+        0.186,
+        0.522
+      ],
+      "sign_test_p": 0.1221
+    },
+    "identical_output_pairs": {
+      "count": 0,
+      "verdicts": {}
+    },
+    "by_category": {
+      "coding": {
+        "n": 7,
+        "wins": 4,
+        "ties": 0,
+        "losses": 3,
+        "win_rate_excl_ties": 0.571,
+        "win_rate_ties_half": 0.571,
+        "wilson95_excl_ties": [
+          0.25,
+          0.842
+        ],
+        "sign_test_p": 1.0
+      },
+      "cooking": {
+        "n": 8,
+        "wins": 1,
+        "ties": 0,
+        "losses": 7,
+        "win_rate_excl_ties": 0.125,
+        "win_rate_ties_half": 0.125,
+        "wilson95_excl_ties": [
+          0.022,
+          0.471
+        ],
+        "sign_test_p": 0.0703
+      },
+      "general_help": {
+        "n": 7,
+        "wins": 0,
+        "ties": 0,
+        "losses": 7,
+        "win_rate_excl_ties": 0.0,
+        "win_rate_ties_half": 0.0,
+        "wilson95_excl_ties": [
+          0.0,
+          0.354
+        ],
+        "sign_test_p": 0.0156
+      },
+      "safety_sensitive": {
+        "n": 6,
+        "wins": 4,
+        "ties": 1,
+        "losses": 1,
+        "win_rate_excl_ties": 0.8,
+        "win_rate_ties_half": 0.75,
+        "wilson95_excl_ties": [
+          0.376,
+          0.964
+        ],
+        "sign_test_p": 0.375
+      }
+    },
+    "judge_reliability": {
+      "decided_verdicts": 27,
+      "share_picking_A": 0.704,
+      "position_bias_p": 0.0522,
+      "share_longer_response_won": 0.63,
+      "length_bias_p": 0.2478
+    },
+    "generations": {
+      "lora_dpo": {
+        "mean_words": 88.2,
+        "median_words": 79,
+        "hit_token_cap": 1,
+        "empty": 0,
+        "refusal_rate": 0.0,
+        "degenerate_repetition(>30% repeated 4-grams)": 1
+      },
+      "base_instruct": {
+        "mean_words": 160.9,
+        "median_words": 172,
+        "hit_token_cap": 2,
+        "empty": 0,
+        "refusal_rate": 0.071,
+        "degenerate_repetition(>30% repeated 4-grams)": 0
+      }
+    }
+  },
+  "sft_vs_base_alpaca": {
+    "rubric": "general",
+    "candidate": "sft",
+    "baseline": "base",
+    "overall": {
+      "n": 300,
+      "wins": 124,
+      "ties": 45,
+      "losses": 131,
+      "win_rate_excl_ties": 0.486,
+      "win_rate_ties_half": 0.488,
+      "wilson95_excl_ties": [
+        0.426,
+        0.547
+      ],
+      "sign_test_p": 0.7072
+    },
+    "position_balanced": {
+      "candidate_as_A": {
+        "n": 132,
+        "win_rate": 0.604
+      },
+      "candidate_as_B": {
+        "n": 168,
+        "win_rate": 0.396
+      },
+      "position_balanced_win_rate": 0.5
+    },
+    "by_truncation": {
+      "only_candidate_hit_cap": {
+        "n": 9,
+        "wins": 3,
+        "ties": 0,
+        "losses": 6,
+        "win_rate_excl_ties": 0.333,
+        "win_rate_ties_half": 0.333,
+        "wilson95_excl_ties": [
+          0.121,
+          0.646
+        ],
+        "sign_test_p": 0.5078
+      },
+      "only_baseline_hit_cap": {
+        "n": 42,
+        "wins": 16,
+        "ties": 4,
+        "losses": 22,
+        "win_rate_excl_ties": 0.421,
+        "win_rate_ties_half": 0.429,
+        "wilson95_excl_ties": [
+          0.279,
+          0.578
+        ],
+        "sign_test_p": 0.4177
+      },
+      "neither_hit_cap": {
+        "n": 244,
+        "wins": 103,
+        "ties": 40,
+        "losses": 101,
+        "win_rate_excl_ties": 0.505,
+        "win_rate_ties_half": 0.504,
+        "wilson95_excl_ties": [
+          0.437,
+          0.573
+        ],
+        "sign_test_p": 0.9442
+      }
+    },
+    "output_similarity": {
+      "mean_shared_prefix_share": 0.029,
+      "first_50_chars_identical": 0.093,
+      "mean_sequence_similarity": 0.131
+    },
+    "excluding_identical_outputs": {
+      "n": 297,
+      "wins": 124,
+      "ties": 42,
+      "losses": 131,
+      "win_rate_excl_ties": 0.486,
+      "win_rate_ties_half": 0.488,
+      "wilson95_excl_ties": [
+        0.426,
+        0.547
+      ],
+      "sign_test_p": 0.7072
+    },
+    "identical_output_pairs": {
+      "count": 3,
+      "verdicts": {
+        "tie": 3
+      }
+    },
+    "by_category": {
+      "helpful_base": {
+        "n": 51,
+        "wins": 16,
+        "ties": 14,
+        "losses": 21,
+        "win_rate_excl_ties": 0.432,
+        "win_rate_ties_half": 0.451,
+        "wilson95_excl_ties": [
+          0.287,
+          0.591
+        ],
+        "sign_test_p": 0.5114
+      },
+      "koala": {
+        "n": 60,
+        "wins": 28,
+        "ties": 9,
+        "losses": 23,
+        "win_rate_excl_ties": 0.549,
+        "win_rate_ties_half": 0.542,
+        "wilson95_excl_ties": [
+          0.414,
+          0.677
+        ],
+        "sign_test_p": 0.5758
+      },
+      "oasst": {
+        "n": 54,
+        "wins": 25,
+        "ties": 6,
+        "losses": 23,
+        "win_rate_excl_ties": 0.521,
+        "win_rate_ties_half": 0.519,
+        "wilson95_excl_ties": [
+          0.383,
+          0.655
+        ],
+        "sign_test_p": 0.8854
+      },
+      "selfinstruct": {
+        "n": 95,
+        "wins": 37,
+        "ties": 11,
+        "losses": 47,
+        "win_rate_excl_ties": 0.44,
+        "win_rate_ties_half": 0.447,
+        "wilson95_excl_ties": [
+          0.339,
+          0.547
+        ],
+        "sign_test_p": 0.3261
+      },
+      "vicuna": {
+        "n": 40,
+        "wins": 18,
+        "ties": 5,
+        "losses": 17,
+        "win_rate_excl_ties": 0.514,
+        "win_rate_ties_half": 0.512,
+        "wilson95_excl_ties": [
+          0.356,
+          0.67
+        ],
+        "sign_test_p": 1.0
+      }
+    },
+    "judge_reliability": {
+      "decided_verdicts": 255,
+      "share_picking_A": 0.604,
+      "position_bias_p": 0.0011,
+      "share_longer_response_won": 0.475,
+      "length_bias_p": 0.4524
+    },
+    "generations": {
+      "sft": {
+        "mean_words": 136.2,
+        "median_words": 119,
+        "hit_token_cap": 14,
+        "empty": 0,
+        "refusal_rate": 0.04,
+        "degenerate_repetition(>30% repeated 4-grams)": 9
+      },
+      "base": {
+        "mean_words": 176.1,
+        "median_words": 162,
+        "hit_token_cap": 47,
+        "empty": 0,
+        "refusal_rate": 0.023,
+        "degenerate_repetition(>30% repeated 4-grams)": 7
+      }
+    }
+  }
+}

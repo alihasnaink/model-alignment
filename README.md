@@ -23,6 +23,7 @@ scripts/judge_pairwise_kaggle.py Task 7  batched, resumable judge (kaggle_benchm
 scripts/run_judging.py       judges every pair file with the right rubric
 scripts/plot_metrics.py      Task 8   training plots + judge result chart
 scripts/summarize_results.py Task 8   config / results / examples tables -> outputs/report/results.md
+scripts/analyze_judgments.py Task 8   significance, position/length bias, truncation, per-category -> outputs/report/judge_analysis.md
 eval_sets/                   fixed eval sets: AlpacaEval 300/seed 42, HH eval 300, persona style set
 kaggle_orchestrator.ipynb    run-all training + generation notebook (T4 x2)
 kaggle_continue_uf_dpo.ipynb continuation: UltraFeedback DPO + remaining generations from a previous run's checkpoints
@@ -108,6 +109,7 @@ generations/              <model>_<evalset>.json + .meta.json (decoding settings
 eval/                     *_pairs.jsonl, *_judged.jsonl, *_judged_failures.jsonl, *_judged_summary.json
 plots/                    sft.png, hh_dpo.png, ultrafeedback_dpo.png, persona_lora.png, judge_results.png
 report/results.md         auto-generated tables for the report
+report/judge_analysis.md  judge statistics: CIs, sign tests, position bias, truncation, per category
 logs/run1_orchestrator/   full stdout of every stage of run 1
 logs/run2_continue_uf_dpo/ full stdout of run 2
 ```

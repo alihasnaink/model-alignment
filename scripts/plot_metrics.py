@@ -98,9 +98,9 @@ def plot_dpo(run_dir: Path, out: Path, label: str) -> Path | None:
     plot_train_val(axes[2], rows, "train_reward_margin", "val_reward_margin", "Reward margin (r_w − r_l)",
                    "mean margin", 0.1, best)
     fig.suptitle(f"{label} DPO from SFT best (β=0.1)", fontweight="bold")
-    fig.text(0.01, 0.01, "Step 0 = policy identical to reference (accuracy exactly 0 by the strict comparison). "
-             "Dashed line in the loss panel: log 2. Best checkpoint = highest validation reward accuracy.",
-             fontsize=7, color=MUTED)
+    fig.text(0.01, 0.01, "Step 0 = policy initialized from the reference. With an fp16 reference vs fp32 policy, step-0 rewards are "
+             "rounding noise (margin ~0), so step-0 accuracy is ~0.5 rather than exactly 0. Dashed line: log 2. "
+             "Best checkpoint = highest validation reward accuracy.", fontsize=7, color=MUTED)
     return save(fig, out / f"{run_dir.name}.png")
 
 
