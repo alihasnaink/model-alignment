@@ -39,6 +39,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--max_grad_norm", type=float, default=1.0)
     p.add_argument("--eval_every", type=int, default=250)
     p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--progress_interval", type=float, default=30.0, help="seconds between progress-bar refreshes")
     p.add_argument("--fp16", action=argparse.BooleanOptionalAction, default=True)
     return p
 
@@ -53,7 +54,7 @@ def main() -> None:
     tokenizer = AutoTokenizer.from_pretrained(args.model, use_fast=True)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
-    model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=torch.float32).to(device)
+    model = AutoModelForCausalLM.from_pretrained(args.model, dtype=torch.float32).to(device)
     model.config.use_cache = False
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
     steps_per_epoch = (len(train) + args.batch_size - 1) // args.batch_size
@@ -65,13 +66,13 @@ def main() -> None:
     step = 0
     print(f"Train examples: {len(train)} | micro-batches/epoch: {steps_per_epoch} | optimizer steps (total): {total_steps}", flush=True)
     optimizer.zero_grad(set_to_none=True)
-    # Overall progress bar counts optimizer steps across all epochs.
-    overall = tqdm(total=total_steps, desc="optimizer steps", position=0, dynamic_ncols=True)
+    # One bar over optimizer steps. Output from a notebook subprocess is not a TTY, so every refresh
+    # becomes a new line; mininterval keeps that to roughly one line per progress_interval seconds.
+    overall = tqdm(total=total_steps, desc="optimizer steps", dynamic_ncols=False, ncols=110,
+                   mininterval=args.progress_interval, miniters=1)
     for epoch in range(args.epochs):
-        loop = tqdm(batches(train, args.batch_size, True), total=steps_per_epoch,
-                    desc=f"epoch {epoch + 1}/{args.epochs}", position=1, leave=False, dynamic_ncols=True)
         window_losses: list[float] = []
-        for micro_step, rows in enumerate(loop, start=1):
+        for micro_step, rows in enumerate(batches(train, args.batch_size, True), start=1):
             prompts = [args.prompt_template.format(prompt=row[args.prompt_field]) for row in rows]
             responses = [str(row[args.response_field]) for row in rows]
             batch = build_sft_batch(tokenizer, prompts, responses, args.max_length)
@@ -93,16 +94,15 @@ def main() -> None:
             lr = scheduler.get_last_lr()[0]
             write_metric(metrics, {"step": step, "epoch": epoch, "train_loss": float(train_loss), "lr": lr})
             overall.update(1)
-            overall.set_postfix(loss=f"{train_loss:.4f}", lr=f"{lr:.2e}", best_val=("n/a" if best == float("inf") else f"{best:.4f}"))
+            overall.set_postfix(epoch=f"{epoch + 1}/{args.epochs}", loss=f"{train_loss:.4f}", lr=f"{lr:.2e}",
+                                best_val=("n/a" if best == float("inf") else f"{best:.4f}"))
             if step % args.eval_every == 0 and validation:
-                loop.set_description(f"epoch {epoch + 1}/{args.epochs} (validating)")
+                tqdm.write(f"[step {step}] validating...")
                 val_loss = sft_validation(model, tokenizer, validation, args, device)
-                loop.set_description(f"epoch {epoch + 1}/{args.epochs}")
                 write_metric(metrics, {"step": step, "epoch": epoch, "val_loss": val_loss})
                 if val_loss < best:
                     best = val_loss; save_checkpoint(model, tokenizer, out / "best")
                 tqdm.write(f"[step {step}] val_loss={val_loss:.4f} (best={best:.4f})")
-        loop.close()
     overall.close()
     if validation:
         val_loss = sft_validation(model, tokenizer, validation, args, device)
