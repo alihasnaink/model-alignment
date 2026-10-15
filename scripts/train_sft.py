@@ -12,6 +12,7 @@ import argparse
 from pathlib import Path
 
 import torch
+from tqdm.auto import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, get_cosine_schedule_with_warmup
 
 from alignment.core import _response_logprobs_from_batch, build_sft_batch
@@ -62,9 +63,15 @@ def main() -> None:
     out, metrics = Path(args.output_dir), Path(args.output_dir) / "metrics.jsonl"
     best = float("inf")
     step = 0
+    print(f"Train examples: {len(train)} | micro-batches/epoch: {steps_per_epoch} | optimizer steps (total): {total_steps}", flush=True)
     optimizer.zero_grad(set_to_none=True)
+    # Overall progress bar counts optimizer steps across all epochs.
+    overall = tqdm(total=total_steps, desc="optimizer steps", position=0, dynamic_ncols=True)
     for epoch in range(args.epochs):
-        for micro_step, rows in enumerate(batches(train, args.batch_size, True), start=1):
+        loop = tqdm(batches(train, args.batch_size, True), total=steps_per_epoch,
+                    desc=f"epoch {epoch + 1}/{args.epochs}", position=1, leave=False, dynamic_ncols=True)
+        window_losses: list[float] = []
+        for micro_step, rows in enumerate(loop, start=1):
             prompts = [args.prompt_template.format(prompt=row[args.prompt_field]) for row in rows]
             responses = [str(row[args.response_field]) for row in rows]
             batch = build_sft_batch(tokenizer, prompts, responses, args.max_length)
@@ -73,23 +80,38 @@ def main() -> None:
                 token_count = batch["labels"][:, 1:].ne(-100).sum().clamp_min(1).to(device)
                 loss = -logps.sum() / token_count / args.gradient_accumulation
             scaler.scale(loss).backward()
+            window_losses.append(loss.item() * args.gradient_accumulation)
             if micro_step % args.gradient_accumulation != 0 and micro_step != steps_per_epoch:
                 continue
             scaler.unscale_(optimizer)
             torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
             scaler.step(optimizer); scaler.update(); scheduler.step(); optimizer.zero_grad(set_to_none=True)
             step += 1
-            write_metric(metrics, {"step": step, "epoch": epoch, "train_loss": float(loss.item() * args.gradient_accumulation), "lr": scheduler.get_last_lr()[0]})
+            # Average over the whole accumulation window (less noisy than the last micro-batch alone).
+            train_loss = sum(window_losses) / len(window_losses)
+            window_losses.clear()
+            lr = scheduler.get_last_lr()[0]
+            write_metric(metrics, {"step": step, "epoch": epoch, "train_loss": float(train_loss), "lr": lr})
+            overall.update(1)
+            overall.set_postfix(loss=f"{train_loss:.4f}", lr=f"{lr:.2e}", best_val=("n/a" if best == float("inf") else f"{best:.4f}"))
             if step % args.eval_every == 0 and validation:
+                loop.set_description(f"epoch {epoch + 1}/{args.epochs} (validating)")
                 val_loss = sft_validation(model, tokenizer, validation, args, device)
+                loop.set_description(f"epoch {epoch + 1}/{args.epochs}")
                 write_metric(metrics, {"step": step, "epoch": epoch, "val_loss": val_loss})
                 if val_loss < best:
                     best = val_loss; save_checkpoint(model, tokenizer, out / "best")
+                tqdm.write(f"[step {step}] val_loss={val_loss:.4f} (best={best:.4f})")
+        loop.close()
+    overall.close()
     if validation:
         val_loss = sft_validation(model, tokenizer, validation, args, device)
         write_metric(metrics, {"step": step, "epoch": args.epochs, "val_loss": val_loss})
-        if val_loss < best: save_checkpoint(model, tokenizer, out / "best")
+        if val_loss < best:
+            best = val_loss; save_checkpoint(model, tokenizer, out / "best")
+        print(f"[final] val_loss={val_loss:.4f} (best={best:.4f})", flush=True)
     save_checkpoint(model, tokenizer, out / "final")
+    print(f"Done. Checkpoints in {out}", flush=True)
 
 
 if __name__ == "__main__":
