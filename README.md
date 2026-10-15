@@ -41,6 +41,39 @@ You will add your own training and evaluation code on top of this starter. At mi
 
 Read `docs/assignment_manual.pdf` for the full requirements and suggested workflow.
 
+## Implemented Training Entry Points
+
+The notebook is intentionally only an orchestrator: use the scripts below for
+long-running work so checkpoints and metrics remain durable under
+`/kaggle/working`.
+
+```bash
+# Full-parameter, response-masked SFT (JSON/JSONL rows: prompt, response)
+python scripts/train_sft.py --train TRAIN.jsonl --validation VALID.jsonl \
+  --output_dir /kaggle/working/sft
+
+# Full-parameter DPO (rows: prompt, chosen, rejected). The frozen reference
+# automatically uses cuda:1 when two GPUs are visible.
+python scripts/train_dpo.py --sft_checkpoint /kaggle/working/sft/best \
+  --train HH_TRAIN.jsonl --validation HH_VALID.jsonl --output_dir /kaggle/working/hh_dpo
+
+# The one allowed TRL + LoRA experiment
+python scripts/train_persona_lora.py --output_dir /kaggle/working/persona_lora
+```
+
+`scripts/generate.py` writes the required durable generation JSON format.
+`scripts/build_pairwise.py` turns matching SFT/DPO output files into a seeded,
+blinded JSONL comparison file; use its `mapping` only after a judge returns A/B.
+
+The train files are intentionally generic JSON or JSONL to keep notebook data
+preparation explicit: SFT expects `prompt` and `response`; DPO expects `prompt`,
+`chosen`, and `rejected`. Field names and a stable prompt template can be
+overridden with the corresponding CLI flags.
+
+For Kaggle, start with [`kaggle_orchestrator.ipynb`](kaggle_orchestrator.ipynb).
+It performs environment setup and invokes these scripts only; configure attached
+dataset paths and turn on one `RUN_*` stage at a time.
+
 ## Submission Adapter And Public Tests
 
 Keep the six function signatures in `submission_adapter.py` unchanged. Implement
