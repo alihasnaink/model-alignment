@@ -21,14 +21,21 @@ def _ids(tokenizer: Any, text: str) -> list[int]:
     return [int(token) for token in encoded]
 
 
+def _eos_token_id(tokenizer: Any) -> int | None:
+    eos_id = getattr(tokenizer, "eos_token_id", None)
+    if isinstance(eos_id, (list, tuple)):
+        # Some configs list several stop tokens; the first is the canonical EOS.
+        eos_id = eos_id[0] if eos_id else None
+    return None if eos_id is None else int(eos_id)
+
+
 def _pad_token_id(tokenizer: Any) -> int:
     pad_id = getattr(tokenizer, "pad_token_id", None)
     if pad_id is None:
         # Qwen tokenizers commonly use EOS as padding. Attention/labels still mask it.
-        pad_id = getattr(tokenizer, "eos_token_id", None)
-    if pad_id is None:
-        raise ValueError("tokenizer must define pad_token_id or eos_token_id")
-    return int(pad_id)
+        pad_id = _eos_token_id(tokenizer)
+    # Padding positions are masked out of attention and labels, so any valid id works.
+    return 0 if pad_id is None else int(pad_id)
 
 
 def build_sft_batch(
@@ -50,13 +57,13 @@ def build_sft_batch(
     if max_length < 1:
         raise ValueError("max_length must be positive")
 
-    eos_id = getattr(tokenizer, "eos_token_id", None)
+    eos_id = _eos_token_id(tokenizer)
     rows: list[tuple[list[int], list[int]]] = []
     for prompt, response in zip(prompts, responses):
         prompt_ids = _ids(tokenizer, prompt)
         response_ids = _ids(tokenizer, response)
         if eos_id is not None:
-            response_ids.append(int(eos_id))
+            response_ids.append(eos_id)
 
         # Append EOS *before* truncation, as required by the assignment.
         input_ids = (prompt_ids + response_ids)[:max_length]

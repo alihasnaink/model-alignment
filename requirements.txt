@@ -8,6 +8,5 @@ sentencepiece
 safetensors
 matplotlib
 peft>=0.11.0
-bitsandbytes>=0.43.0
-trl>=0.11.0
+trl==0.29.1  # tested version; 1.x needs Triton kernels and changed DPOConfig
 pytest>=8

@@ -1,2 +1,13 @@
 __pycache__/
 *.py[cod]
+.pytest_cache/
+
+# Kaggle run artifacts: commit metrics/configs/generations/judgments/plots, never weights or raw data copies.
+outputs_smoke/
+outputs/**/best/
+outputs/**/final/
+outputs/**/trainer/
+outputs/data/**/*.jsonl
+outputs/logs/
+*.safetensors
+*.zip
