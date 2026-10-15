@@ -1,13 +1,12 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+*.egg-info/
 
-# Kaggle run artifacts: commit metrics/configs/generations/judgments/plots, never weights or raw data copies.
-outputs_smoke/
-outputs/**/best/
-outputs/**/final/
-outputs/**/trainer/
-outputs/data/**/*.jsonl
-outputs/logs/
+# Run artifacts: commit metrics, configs, checkpoint_info, logs, generations, judgments, plots, and reports.
+# Never commit model weights, raw training-split copies, or zip bundles.
 *.safetensors
+outputs/data/**/*.jsonl
+outputs_smoke/
+outputs_staging/
 *.zip

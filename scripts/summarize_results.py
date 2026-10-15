@@ -36,7 +36,8 @@ def config_rows(outputs: Path) -> list[dict]:
         lora = name == "persona_lora"
         rows.append({
             "run": label,
-            "init / reference": cfg.get("model") if not lora else f"{cfg.get('model')} / adapter-disabled base",
+            "init / reference": (f"{cfg.get('model')} / adapter-disabled base" if lora
+                                 else cfg.get("model") or "SFT best / frozen SFT best"),
             "trainable": (f"LoRA r={cfg['lora_rank']} α={cfg['lora_alpha']} drop={cfg['lora_dropout']} "
                           f"({', '.join(cfg.get('target_modules', []))})") if lora else "full fine-tuning",
             "optimizer": cfg.get("optimizer", "AdamW"),

@@ -1,0 +1,35 @@
+{
+  "track": "ultrafeedback",
+  "source_dataset": "HuggingFaceH4/ultrafeedback_binarized",
+  "source_splits": {
+    "train": "train_prefs",
+    "validation": "test_prefs"
+  },
+  "filters": [
+    "single-turn only",
+    "non-empty and chosen != rejected",
+    "deduplicated",
+    "formatted prompt <= 256 tokens (Qwen/Qwen2.5-0.5B)"
+  ],
+  "train_size": 15000,
+  "validation_size": 1000,
+  "seed": 42,
+  "filter_stats": {
+    "train": {
+      "source_rows": 61135,
+      "dropped_multi_turn_or_malformed": 7387,
+      "dropped_empty_or_identical": 404,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 9883,
+      "usable_rows": 43461
+    },
+    "validation": {
+      "source_rows": 2000,
+      "dropped_multi_turn_or_malformed": 272,
+      "dropped_empty_or_identical": 13,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 281,
+      "usable_rows": 1434
+    }
+  }
+}

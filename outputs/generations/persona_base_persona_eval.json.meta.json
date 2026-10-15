@@ -1,0 +1,28 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "adapter": null,
+  "inputs": "/kaggle/working/model-alignment/eval_sets/persona_style_eval.json",
+  "output": "/kaggle/working/model-alignment/outputs/generations/persona_base_persona_eval.json",
+  "prompt_field": "instruction",
+  "id_field": "id",
+  "prompt_format": "chat",
+  "prompt_template": "### Instruction:\n{prompt}\n\n### Response:\n",
+  "generator": "smollm2-360m-instruct",
+  "dataset": "persona_style_eval",
+  "batch_size": 16,
+  "max_new_tokens": 512,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0,
+  "dtype": "float32",
+  "limit": null,
+  "resume": true,
+  "print_examples": 0,
+  "decoding": "greedy (do_sample=False)",
+  "temperature": null,
+  "top_p": null,
+  "torch_dtype": "torch.float32",
+  "post_processing": "decode new tokens, skip special tokens, cut at '### Instruction:'/'### Response:' markers, strip",
+  "eos_token_ids": [
+    2
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "final_eval": {
+    "eval_loss": 0.01046593114733696,
+    "eval_runtime": 1.2429,
+    "eval_samples_per_second": 16.091,
+    "eval_steps_per_second": 4.023
+  },
+  "global_step": 75
+}

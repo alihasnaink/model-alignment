@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "adapter": null,
+  "inputs": "/kaggle/working/model-alignment/eval_sets/hh_rlhf_eval_300_seed42.json",
+  "output": "/kaggle/working/model-alignment/outputs/generations/base_hh_eval.json",
+  "prompt_field": "instruction",
+  "id_field": "id",
+  "prompt_format": "template",
+  "prompt_template": "### Instruction:\n{prompt}\n\n### Response:\n",
+  "generator": "qwen2.5-0.5b-base",
+  "dataset": "hh_rlhf_style_eval",
+  "batch_size": 16,
+  "max_new_tokens": 512,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0,
+  "dtype": "float32",
+  "limit": null,
+  "resume": true,
+  "print_examples": 0,
+  "decoding": "greedy (do_sample=False)",
+  "temperature": null,
+  "top_p": null,
+  "torch_dtype": "torch.float32",
+  "post_processing": "decode new tokens, skip special tokens, cut at '### Instruction:'/'### Response:' markers, strip",
+  "eos_token_ids": [
+    151643
+  ]
+}

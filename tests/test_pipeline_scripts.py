@@ -141,7 +141,7 @@ def test_judge_resume_retry_and_failure_logging(tmp_path, monkeypatch):
     pairs_path.write_text("\n".join(json.dumps(p) for p in pairs) + "\n")
     calls = {"n": 0}
 
-    def flaky(_):
+    def flaky(*_):
         def call(prompt):
             calls["n"] += 1
             if "a" * 3 in prompt:  # the batch with p3 never parses

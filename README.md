@@ -25,7 +25,8 @@ scripts/plot_metrics.py      Task 8   training plots + judge result chart
 scripts/summarize_results.py Task 8   config / results / examples tables -> outputs/report/results.md
 eval_sets/                   fixed eval sets: AlpacaEval 300/seed 42, HH eval 300, persona style set
 kaggle_orchestrator.ipynb    run-all training + generation notebook (T4 x2)
-kaggle_judge.ipynb           judging notebook (Kaggle utility benchmark)
+kaggle_continue_uf_dpo.ipynb continuation: UltraFeedback DPO + remaining generations from a previous run's checkpoints
+kaggle_judge.ipynb           Task 7 judging notebook (Kaggle benchmark notebook, model proxy)
 tests/                       public adapter smoke tests + edge-case + end-to-end script tests
 ```
 
@@ -36,10 +37,19 @@ tests/                       public adapter smoke tests + edge-case + end-to-end
    - Optional but recommended: set `SMOKE_TEST = True` and click **Run All**. This takes about 15–25 minutes and runs every stage on tiny data.
    - Set `SMOKE_TEST = False`, then **Save Version → Save & Run All (Commit)**. This takes about 7–8 hours, which is within Kaggle's 12-hour limit.
    - If a run dies, attach its output as an input, set `RESUME_FROM` to its `.../model-alignment/outputs` path, and commit again. Finished stages are skipped.
-3. **Judge notebook.** Create a new Kaggle notebook *as a utility benchmark*, paste in `kaggle_judge.ipynb`, add the
-   training notebook's output as an input, and run it. It writes judgments, summaries, and `judge_bundle.zip`.
-4. Download `report_bundle.zip` (training notebook) and `judge_bundle.zip` (judge notebook). Unzip both into this
-   repository (they contain an `outputs/` folder) and commit. `.gitignore` keeps weights and raw data copies out.
+3. **Judge notebook (Task 7).** Create a Kaggle *benchmark* notebook (model-proxy access; no GPU), import
+   `kaggle_judge.ipynb`, optionally attach the `benchmark-inputs` dataset (generations + `outputs/eval/*_pairs.jsonl`),
+   and **Run All**. Without an input it uses the pair files committed in `outputs/eval/`. The notebook:
+   - checks proxy access and picks `google/gemini-3.6-flash`, falling back to Kaggle's default judge if it is
+     unavailable (the model used is recorded in every summary);
+   - uses temperature 0 if the model accepts it;
+   - runs a 3-pair-per-file pilot in `eval_pilot/`, then judges all pairs and resumes from existing judgments;
+   - writes `outputs/eval/*_judged*.json*`, plots, `report/results.md`, and `judge_bundle.zip`.
+
+   Unzip `judge_bundle.zip` into this repository and commit it.
+4. For a fresh full run, download `report_bundle.zip` (training notebook) and `judge_bundle.zip` (judge notebook).
+   Unzip both into this repository (they contain an `outputs/` folder) and commit. `.gitignore` keeps weights and raw
+   data copies out.
 
 **Output size.** `OUTPUT_MODE = "lean"` (the default) deletes each Qwen checkpoint's weights as soon as every generation
 that needs them is written. It keeps `config.json`, `checkpoint_info.json`, and a `PRUNED.txt` note, and drops the raw
@@ -73,7 +83,9 @@ skipped. It builds a tiny random Qwen2 model offline and runs every script end t
   Log-probabilities are summed over response tokens only.
 - **DPO**: β = 0.1, constant LR 1e-6, AdamW, 1 pair per step × 32 accumulation. The policy runs fp32 + fp16 autocast + GradScaler,
   and the reference is fp16 on `cuda:1` under `no_grad`. Chosen and rejected rows go through one stacked forward pass.
-  Reward accuracy uses strict `r_w > r_l`, so step 0 is exactly 0. The best checkpoint has the highest validation reward accuracy.
+  Reward accuracy uses strict `r_w > r_l`. In exact arithmetic step 0 gives 0, but here the fp16 reference and the fp32
+  policy differ by rounding, so the measured step-0 values are noise (HH: accuracy 0.528, margin 0.0006). The best
+  checkpoint has the highest validation reward accuracy.
 - **Data filters**: single-turn only, non-empty, chosen ≠ rejected, deduplicated, formatted prompt ≤ 256 tokens.
   Filter counts are in `outputs/data/*/..._metadata.json`.
 - **Decoding**: greedy, `repetition_penalty=1.1`, `max_new_tokens=512`, fp32 weights. Generations are cut at a
@@ -84,13 +96,18 @@ skipped. It builds a tiny random Qwen2 model offline and runs every script end t
 
 ## Output layout (`outputs/`)
 
+The submitted results come from two Kaggle runs. `outputs/RUNS.md` says which run produced what and why there were two.
+
 ```text
-data/                     split files + metadata (filters, counts, seeds); eval_sets/ copy
-sft/  hh_dpo/  ultrafeedback_dpo/   metrics.jsonl, run_config.json, summary.json, best/, final/
+RUNS.md                   provenance of the two Kaggle runs
+kaggle_runs/              executed notebooks of both runs + run 1 kernel log
+data/                     split metadata (filters, counts, seeds); eval_sets/ copy (raw splits not committed)
+sft/  hh_dpo/  ultrafeedback_dpo/   metrics.jsonl, run_config.json, summary.json, best/ + final/ (checkpoint_info, config; no weights)
 persona_lora/             metrics.jsonl (TRL log history), run_config.json, eval_split.json, final/ (LoRA adapter)
 generations/              <model>_<evalset>.json + .meta.json (decoding settings)
 eval/                     *_pairs.jsonl, *_judged.jsonl, *_judged_failures.jsonl, *_judged_summary.json
 plots/                    sft.png, hh_dpo.png, ultrafeedback_dpo.png, persona_lora.png, judge_results.png
 report/results.md         auto-generated tables for the report
-logs/                     full stdout of every stage
+logs/run1_orchestrator/   full stdout of every stage of run 1
+logs/run2_continue_uf_dpo/ full stdout of run 2
 ```

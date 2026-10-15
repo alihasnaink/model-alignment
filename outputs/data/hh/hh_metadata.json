@@ -1,0 +1,26 @@
+{
+  "track": "hh",
+  "source_dataset": "Anthropic/hh-rlhf",
+  "source_splits": {
+    "train": "train"
+  },
+  "filters": [
+    "single-turn only",
+    "non-empty and chosen != rejected",
+    "deduplicated",
+    "formatted prompt <= 256 tokens (Qwen/Qwen2.5-0.5B)"
+  ],
+  "train_size": 15000,
+  "validation_size": 1000,
+  "seed": 42,
+  "filter_stats": {
+    "train": {
+      "source_rows": 160800,
+      "dropped_multi_turn_or_malformed": 111474,
+      "dropped_empty_or_identical": 85,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 203,
+      "usable_rows": 49038
+    }
+  }
+}

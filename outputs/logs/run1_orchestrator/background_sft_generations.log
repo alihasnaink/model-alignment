@@ -1,0 +1,48 @@
+
+$ python scripts/generate.py --model /kaggle/working/model-alignment/outputs/sft/best --inputs /kaggle/working/model-alignment/eval_sets/alpaca_eval_300_seed42.json --output /kaggle/working/model-alignment/outputs/generations/sft_alpaca_eval.json --generator qwen2.5-0.5b-sft --dataset alpaca_eval --batch_size 16 --max_new_tokens 512 --repetition_penalty 1.1 --no_repeat_ngram_size 0
+qwen2.5-0.5b-sft on alpaca_eval: 300 prompts, 0 already done, 300 to generate
+The tokenizer you are loading from '/kaggle/working/model-alignment/outputs/sft/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+  16/300 generated
+  32/300 generated
+  48/300 generated
+  64/300 generated
+  80/300 generated
+  96/300 generated
+  112/300 generated
+  128/300 generated
+  144/300 generated
+  160/300 generated
+  176/300 generated
+  192/300 generated
+  208/300 generated
+  224/300 generated
+  240/300 generated
+  256/300 generated
+  272/300 generated
+  288/300 generated
+  300/300 generated
+   exit 0 after 6.6 min
+
+$ python scripts/generate.py --model /kaggle/working/model-alignment/outputs/sft/best --inputs /kaggle/working/model-alignment/eval_sets/hh_rlhf_eval_300_seed42.json --output /kaggle/working/model-alignment/outputs/generations/sft_hh_eval.json --generator qwen2.5-0.5b-sft --dataset hh_rlhf_style_eval --batch_size 16 --max_new_tokens 512 --repetition_penalty 1.1 --no_repeat_ngram_size 0
+qwen2.5-0.5b-sft on hh_rlhf_style_eval: 300 prompts, 0 already done, 300 to generate
+The tokenizer you are loading from '/kaggle/working/model-alignment/outputs/sft/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+  16/300 generated
+  32/300 generated
+  48/300 generated
+  64/300 generated
+  80/300 generated
+  96/300 generated
+  112/300 generated
+  128/300 generated
+  144/300 generated
+  160/300 generated
+  176/300 generated
+  192/300 generated
+  208/300 generated
+  224/300 generated
+  240/300 generated
+  256/300 generated
+  272/300 generated
+  288/300 generated
+  300/300 generated
+   exit 0 after 4.6 min

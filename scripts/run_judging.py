@@ -36,6 +36,8 @@ def main() -> None:
     p.add_argument("--sleep_seconds", type=float, default=5.0)
     p.add_argument("--max_retries", type=int, default=3)
     p.add_argument("--skip_optional", action="store_true", help="skip the sft_vs_base analysis comparison")
+    p.add_argument("--limit", type=int, default=None, help="judge only the first N pairs per file (pilot run)")
+    p.add_argument("--temperature", default="0", help="judge temperature, or 'none' for the provider default")
     args = p.parse_args()
     for pairs_stem, rubric, output_stem in PLAN:
         pairs = args.eval_dir / f"{pairs_stem}_pairs.jsonl"
@@ -43,11 +45,12 @@ def main() -> None:
             print(f"skip {pairs.name} (missing or optional)")
             continue
         print(f"\n=== {output_stem} [{rubric}] ===", flush=True)
-        judge.main([
+        extra = ["--limit", str(args.limit)] if args.limit else []
+        judge.main(extra + [
             "--pairs_path", str(pairs), "--output_path", str(args.eval_dir / f"{output_stem}_judged.jsonl"),
             "--judge_model", args.judge_model, "--backend", args.backend, "--rubric", rubric,
             "--batch_size", str(args.batch_size), "--sleep_seconds", str(args.sleep_seconds),
-            "--max_retries", str(args.max_retries), "--reuse_judgments",
+            "--max_retries", str(args.max_retries), "--temperature", str(args.temperature), "--reuse_judgments",
         ])
 
 

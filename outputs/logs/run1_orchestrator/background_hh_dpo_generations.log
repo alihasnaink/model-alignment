@@ -1,0 +1,4 @@
+
+$ python scripts/generate.py --model /kaggle/working/model-alignment/outputs/hh_dpo/best --inputs /kaggle/working/model-alignment/eval_sets/hh_rlhf_eval_300_seed42.json --output /kaggle/working/model-alignment/outputs/generations/hh_dpo_hh_eval.json --generator qwen2.5-0.5b-hh-dpo --dataset hh_rlhf_style_eval --batch_size 16 --max_new_tokens 512 --repetition_penalty 1.1 --no_repeat_ngram_size 0
+qwen2.5-0.5b-hh-dpo on hh_rlhf_style_eval: 300 prompts, 0 already done, 300 to generate
+   exit -15 after 0.1 min

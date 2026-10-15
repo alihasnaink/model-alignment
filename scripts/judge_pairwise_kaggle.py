@@ -102,9 +102,16 @@ def parse_verdicts(text: str, count: int) -> dict[int, dict]:
 
 
 # ---------------------------------------------------------------- judge backends
-def kaggle_backend(model_name: str) -> Callable[[str], str]:
+def kaggle_backend(model_name: str, temperature: float | None = 0.0) -> Callable[[str], str]:
     import kaggle_benchmarks as kbench
 
+    # Run as a script, kaggle_benchmarks auto-attaches a console UI that prints every full chat transcript
+    # (~1,000 judge prompts -> tens of MB of notebook output). Detach it; requests and replies are unchanged.
+    if getattr(kbench.config, "ui_handler", None) is not None:
+        from kaggle_benchmarks import events
+
+        events.manager.unbind(kbench.config.ui_handler)
+        kbench.config.ui_handler = None
     if not kbench.kaggle.is_configured():
         raise RuntimeError("kaggle_benchmarks has no model-proxy credentials. Run this in a Kaggle notebook "
                            "configured as a utility benchmark (see README).")
@@ -114,17 +121,21 @@ def kaggle_backend(model_name: str) -> Callable[[str], str]:
             llm = kbench.kaggle.load_model(model_name)
         except Exception as error:  # pragma: no cover - depends on Kaggle environment
             raise RuntimeError(f"judge model {model_name!r} unavailable; available: {sorted(kbench.llms)}") from error
-    print(f"Judge model: {getattr(llm, 'name', model_name)}", flush=True)
+    if temperature is not None:
+        # Proxy models drop `temperature` unless support_temperature is set; enable it for deterministic judging.
+        llm.support_temperature = True
+    print(f"Judge model: {getattr(llm, 'name', model_name)} | temperature: "
+          f"{'provider default' if temperature is None else temperature}", flush=True)
 
     def call(prompt: str) -> str:
         # A fresh orphan chat per request so earlier batches never leak into the context.
         with kbench.chats.new(name="pairwise-judge", orphan=True):
-            return str(llm.prompt(prompt, temperature=0))
+            return str(llm.prompt(prompt, temperature=temperature or 0))
 
     return call
 
 
-def mock_backend(_: str) -> Callable[[str], str]:
+def mock_backend(_: str, temperature: float | None = 0.0) -> Callable[[str], str]:
     """Offline stand-in for tests and smoke runs: prefers the longer response."""
 
     def call(prompt: str) -> str:
@@ -200,6 +211,7 @@ def summarize(records: list[dict], pairs: list[dict], args, total_attempts: int,
     baseline = pairs[0].get("baseline") if pairs else None
     return {
         "pairs_path": str(args.pairs_path), "judge_model": args.judge_model, "backend": args.backend, "rubric": args.rubric,
+        "judge_temperature": "provider default" if args.temperature is None else args.temperature,
         "candidate": candidate, "baseline": baseline, "batch_size": args.batch_size, "sleep_seconds": args.sleep_seconds,
         "max_retries": args.max_retries, "requests_this_run": total_requests, "retries_this_run": total_attempts - total_requests,
         "overall": stats(records), "by_category": {key: stats(rows) for key, rows in sorted(by_category.items())},
@@ -222,7 +234,9 @@ def main(argv: list[str] | None = None) -> dict:
     p.add_argument("--max_retries", type=int, default=3, help="attempts per batch")
     p.add_argument("--reuse_judgments", action="store_true", help="skip pairs that already have a valid verdict")
     p.add_argument("--limit", type=int, default=None)
+    p.add_argument("--temperature", default="0", help="judge sampling temperature, or 'none' for the provider default")
     args = p.parse_args(argv)
+    args.temperature = None if str(args.temperature).lower() == "none" else float(args.temperature)
     stem = args.output_path.with_suffix("")
     args.failures_path = args.failures_path or Path(f"{stem}_failures.jsonl")
     args.summary_path = args.summary_path or Path(f"{stem}_summary.json")
@@ -240,7 +254,7 @@ def main(argv: list[str] | None = None) -> dict:
         write_jsonl_atomic(args.output_path, ordered)
         write_jsonl_atomic(args.failures_path, failures)
 
-    call = BACKENDS[args.backend](args.judge_model) if pending else None
+    call = BACKENDS[args.backend](args.judge_model, args.temperature) if pending else None
     sleep = args.sleep_seconds if args.backend != "mock" else 0.0
     total_attempts = total_requests = 0
     first_request = True

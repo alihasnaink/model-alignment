@@ -1,0 +1,1 @@
+Weights and tokenizer not kept in the repo (weights stay in the Kaggle run output; tokenizer = unchanged Qwen/Qwen2.5-0.5B). Kept: config, generation config, checkpoint_info.json.

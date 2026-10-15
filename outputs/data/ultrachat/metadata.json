@@ -1,0 +1,8 @@
+{
+  "source_dataset": "HuggingFaceH4/ultrachat_200k",
+  "source_split": "train_sft",
+  "selection": "first user message + following assistant reply of each conversation",
+  "train_size": 30000,
+  "validation_size": 1000,
+  "seed": 42
+}

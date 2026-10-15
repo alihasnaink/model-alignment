@@ -1,0 +1,121 @@
+
+Generating train split:   0%|          | 0/160800 [00:00<?, ? examples/s]
+Generating train split:   5%|▍         | 7672/160800 [00:00<00:02, 68392.13 examples/s]
+Generating train split:  10%|▉         | 15358/160800 [00:00<00:02, 71715.00 examples/s]
+Generating train split:  19%|█▉        | 30676/160800 [00:00<00:01, 80854.54 examples/s]
+Generating train split:  31%|███       | 49138/160800 [00:00<00:01, 85558.62 examples/s]
+Generating train split:  39%|███▉      | 62408/160800 [00:00<00:01, 83751.79 examples/s]
+Generating train split:  47%|████▋     | 75820/160800 [00:00<00:01, 83976.02 examples/s]
+Generating train split:  55%|█████▌    | 89143/160800 [00:01<00:00, 74908.46 examples/s]
+Generating train split:  61%|██████    | 97521/160800 [00:01<00:01, 59390.35 examples/s]
+Generating train split:  66%|██████▌   | 105939/160800 [00:01<00:01, 50020.03 examples/s]
+Generating train split:  71%|███████   | 113512/160800 [00:01<00:00, 49969.20 examples/s]
+Generating train split:  77%|███████▋  | 123909/160800 [00:01<00:00, 53323.28 examples/s]
+Generating train split:  84%|████████▎ | 134358/160800 [00:02<00:00, 56326.14 examples/s]
+Generating train split:  90%|████████▉ | 144714/160800 [00:02<00:00, 58608.68 examples/s]
+Generating train split:  96%|█████████▋| 155034/160800 [00:02<00:00, 60433.62 examples/s]
+Generating train split: 100%|██████████| 160800/160800 [00:02<00:00, 63821.26 examples/s]
+
+Generating test split:   0%|          | 0/8552 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 8552/8552 [00:00<00:00, 67434.75 examples/s]
+Generating test split: 100%|██████████| 8552/8552 [00:00<00:00, 67263.90 examples/s]
+{
+  "track": "hh",
+  "source_dataset": "Anthropic/hh-rlhf",
+  "source_splits": {
+    "train": "train"
+  },
+  "filters": [
+    "single-turn only",
+    "non-empty and chosen != rejected",
+    "deduplicated",
+    "formatted prompt <= 256 tokens (Qwen/Qwen2.5-0.5B)"
+  ],
+  "train_size": 15000,
+  "validation_size": 1000,
+  "seed": 42,
+  "filter_stats": {
+    "train": {
+      "source_rows": 160800,
+      "dropped_multi_turn_or_malformed": 111474,
+      "dropped_empty_or_identical": 85,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 203,
+      "usable_rows": 49038
+    }
+  }
+}
+
+Generating train_prefs split:   0%|          | 0/61135 [00:00<?, ? examples/s]
+Generating train_prefs split:   2%|▏         | 1000/61135 [00:00<00:33, 1821.23 examples/s]
+Generating train_prefs split:  15%|█▍        | 9000/61135 [00:00<00:03, 17232.14 examples/s]
+Generating train_prefs split:  29%|██▉       | 18000/61135 [00:00<00:01, 31514.34 examples/s]
+Generating train_prefs split:  44%|████▍     | 27000/61135 [00:00<00:00, 42566.73 examples/s]
+Generating train_prefs split:  59%|█████▉    | 36000/61135 [00:01<00:00, 50309.51 examples/s]
+Generating train_prefs split:  72%|███████▏  | 44000/61135 [00:01<00:00, 56171.20 examples/s]
+Generating train_prefs split:  85%|████████▌ | 52000/61135 [00:01<00:00, 59933.87 examples/s]
+Generating train_prefs split: 100%|█████████▉| 61000/61135 [00:01<00:00, 65631.34 examples/s]
+Generating train_prefs split: 100%|██████████| 61135/61135 [00:01<00:00, 43607.31 examples/s]
+
+Generating train_sft split:   0%|          | 0/61135 [00:00<?, ? examples/s]
+Generating train_sft split:  13%|█▎        | 8000/61135 [00:00<00:00, 71185.67 examples/s]
+Generating train_sft split:  26%|██▌       | 16000/61135 [00:00<00:00, 70138.30 examples/s]
+Generating train_sft split:  39%|███▉      | 24000/61135 [00:00<00:00, 70011.93 examples/s]
+Generating train_sft split:  52%|█████▏    | 32000/61135 [00:00<00:00, 69847.45 examples/s]
+Generating train_sft split:  67%|██████▋   | 41000/61135 [00:00<00:00, 70450.45 examples/s]
+Generating train_sft split:  82%|████████▏ | 50000/61135 [00:00<00:00, 70867.89 examples/s]
+Generating train_sft split:  97%|█████████▋| 59000/61135 [00:00<00:00, 70956.23 examples/s]
+Generating train_sft split: 100%|██████████| 61135/61135 [00:00<00:00, 71235.75 examples/s]
+
+Generating test_prefs split:   0%|          | 0/2000 [00:00<?, ? examples/s]
+Generating test_prefs split: 100%|██████████| 2000/2000 [00:00<00:00, 60954.42 examples/s]
+
+Generating test_sft split:   0%|          | 0/1000 [00:00<?, ? examples/s]
+Generating test_sft split: 100%|██████████| 1000/1000 [00:00<00:00, 53739.37 examples/s]
+
+Generating train_gen split:   0%|          | 0/61135 [00:00<?, ? examples/s]
+Generating train_gen split:  16%|█▋        | 10000/61135 [00:00<00:00, 89009.65 examples/s]
+Generating train_gen split:  34%|███▍      | 21000/61135 [00:00<00:00, 96874.18 examples/s]
+Generating train_gen split:  51%|█████     | 31000/61135 [00:00<00:00, 90319.23 examples/s]
+Generating train_gen split:  67%|██████▋   | 41000/61135 [00:00<00:00, 89166.70 examples/s]
+Generating train_gen split:  82%|████████▏ | 50000/61135 [00:00<00:00, 85960.24 examples/s]
+Generating train_gen split: 100%|█████████▉| 61000/61135 [00:00<00:00, 89128.02 examples/s]
+Generating train_gen split: 100%|██████████| 61135/61135 [00:00<00:00, 88310.28 examples/s]
+
+Generating test_gen split:   0%|          | 0/1000 [00:00<?, ? examples/s]
+Generating test_gen split: 100%|██████████| 1000/1000 [00:00<00:00, 62087.25 examples/s]
+{
+  "track": "ultrafeedback",
+  "source_dataset": "HuggingFaceH4/ultrafeedback_binarized",
+  "source_splits": {
+    "train": "train_prefs",
+    "validation": "test_prefs"
+  },
+  "filters": [
+    "single-turn only",
+    "non-empty and chosen != rejected",
+    "deduplicated",
+    "formatted prompt <= 256 tokens (Qwen/Qwen2.5-0.5B)"
+  ],
+  "train_size": 15000,
+  "validation_size": 1000,
+  "seed": 42,
+  "filter_stats": {
+    "train": {
+      "source_rows": 61135,
+      "dropped_multi_turn_or_malformed": 7387,
+      "dropped_empty_or_identical": 404,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 9883,
+      "usable_rows": 43461
+    },
+    "validation": {
+      "source_rows": 2000,
+      "dropped_multi_turn_or_malformed": 272,
+      "dropped_empty_or_identical": 13,
+      "dropped_duplicate": 0,
+      "dropped_long_prompt": 281,
+      "usable_rows": 1434
+    }
+  }
+}

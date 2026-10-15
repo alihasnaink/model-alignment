@@ -1,0 +1,1138 @@
+Train examples: 30000 | micro-batches/epoch: 15000 | optimizer steps (total): 938
+[step 0] val_loss=1.4192 (best=inf @ None)
+
+optimizer steps:   0%|                                                                | 0/938 [00:00<?, ?it/s]
+optimizer steps:   0%|   | 1/938 [00:04<1:17:10,  4.94s/it, best_val=n/a, epoch=1/1, loss=1.4706, lr=7.14e-07]
+optimizer steps:   0%|   | 2/938 [00:09<1:14:40,  4.79s/it, best_val=n/a, epoch=1/1, loss=1.5061, lr=1.43e-06]
+optimizer steps:   0%|   | 3/938 [00:14<1:15:01,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.3209, lr=2.14e-06]
+optimizer steps:   0%|   | 4/938 [00:19<1:15:55,  4.88s/it, best_val=n/a, epoch=1/1, loss=1.2840, lr=2.86e-06]
+optimizer steps:   1%|   | 5/938 [00:23<1:14:21,  4.78s/it, best_val=n/a, epoch=1/1, loss=1.3920, lr=3.57e-06]
+optimizer steps:   1%|   | 6/938 [00:28<1:14:30,  4.80s/it, best_val=n/a, epoch=1/1, loss=1.2542, lr=4.29e-06]
+optimizer steps:   1%|   | 7/938 [00:33<1:14:38,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.2542, lr=4.29e-06]
+optimizer steps:   1%|   | 7/938 [00:33<1:14:38,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.3330, lr=5.00e-06]
+optimizer steps:   1%|   | 8/938 [00:38<1:14:33,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.3863, lr=5.71e-06]
+optimizer steps:   1%|   | 9/938 [00:43<1:14:28,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.1698, lr=6.43e-06]
+optimizer steps:   1%|  | 10/938 [00:48<1:14:23,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.1615, lr=7.14e-06]
+optimizer steps:   1%|  | 11/938 [00:53<1:14:19,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.2925, lr=7.86e-06]
+optimizer steps:   1%|  | 12/938 [00:58<1:14:14,  4.81s/it, best_val=n/a, epoch=1/1, loss=1.4460, lr=8.57e-06]
+optimizer steps:   1%|  | 13/938 [01:03<1:15:47,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.4460, lr=8.57e-06]
+optimizer steps:   1%|  | 13/938 [01:03<1:15:47,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.4026, lr=9.29e-06]
+optimizer steps:   1%|  | 14/938 [01:08<1:15:42,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.3536, lr=1.00e-05]
+optimizer steps:   2%|  | 15/938 [01:14<1:15:37,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.3203, lr=1.07e-05]
+optimizer steps:   2%|  | 16/938 [01:19<1:15:32,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.6767, lr=1.14e-05]
+optimizer steps:   2%|  | 17/938 [01:24<1:15:27,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.2696, lr=1.21e-05]
+optimizer steps:   2%|  | 18/938 [01:29<1:15:22,  4.92s/it, best_val=n/a, epoch=1/1, loss=1.2532, lr=1.29e-05]
+optimizer steps:   2%|  | 19/938 [01:34<1:16:14,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.2532, lr=1.29e-05]
+optimizer steps:   2%|  | 19/938 [01:34<1:16:14,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.1483, lr=1.36e-05]
+optimizer steps:   2%|  | 20/938 [01:39<1:16:09,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.3295, lr=1.43e-05]
+optimizer steps:   2%|  | 21/938 [01:44<1:16:04,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.3496, lr=1.50e-05]
+optimizer steps:   2%|  | 22/938 [01:48<1:15:59,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.4255, lr=1.57e-05]
+optimizer steps:   2%|  | 23/938 [01:53<1:15:54,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.0472, lr=1.64e-05]
+optimizer steps:   3%|  | 24/938 [01:59<1:15:49,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.2958, lr=1.71e-05]
+optimizer steps:   3%|  | 25/938 [02:03<1:15:44,  4.98s/it, best_val=n/a, epoch=1/1, loss=1.3988, lr=1.79e-05]
+optimizer steps:   3%|  | 26/938 [02:08<1:15:46,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.3988, lr=1.79e-05]
+optimizer steps:   3%|  | 26/938 [02:08<1:15:46,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.3703, lr=1.86e-05]
+optimizer steps:   3%|  | 27/938 [02:13<1:15:41,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.4285, lr=1.93e-05]
+optimizer steps:   3%|  | 28/938 [02:19<1:15:36,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.2294, lr=2.00e-05]
+optimizer steps:   3%|  | 29/938 [02:24<1:15:31,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.4162, lr=2.00e-05]
+optimizer steps:   3%|  | 30/938 [02:29<1:15:26,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.4727, lr=2.00e-05]
+optimizer steps:   3%|  | 31/938 [02:34<1:15:21,  4.99s/it, best_val=n/a, epoch=1/1, loss=1.3208, lr=2.00e-05]
+optimizer steps:   3%|  | 32/938 [02:39<1:15:42,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.3208, lr=2.00e-05]
+optimizer steps:   3%|  | 32/938 [02:39<1:15:42,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.4007, lr=2.00e-05]
+optimizer steps:   4%|  | 33/938 [02:44<1:15:37,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.4878, lr=2.00e-05]
+optimizer steps:   4%|  | 34/938 [02:49<1:15:32,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.3913, lr=2.00e-05]
+optimizer steps:   4%|  | 35/938 [02:55<1:15:27,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.3755, lr=2.00e-05]
+optimizer steps:   4%|  | 36/938 [03:00<1:15:22,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.3616, lr=2.00e-05]
+optimizer steps:   4%|  | 37/938 [03:05<1:15:17,  5.01s/it, best_val=n/a, epoch=1/1, loss=1.3092, lr=2.00e-05]
+optimizer steps:   4%|  | 38/938 [03:09<1:15:34,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.3092, lr=2.00e-05]
+optimizer steps:   4%|  | 38/938 [03:09<1:15:34,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.3200, lr=2.00e-05]
+optimizer steps:   4%|  | 39/938 [03:14<1:15:29,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.3017, lr=2.00e-05]
+optimizer steps:   4%|  | 40/938 [03:19<1:15:24,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.3424, lr=2.00e-05]
+optimizer steps:   4%|  | 41/938 [03:24<1:15:19,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.4760, lr=2.00e-05]
+optimizer steps:   4%|  | 42/938 [03:30<1:15:14,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.3452, lr=2.00e-05]
+optimizer steps:   5%|  | 43/938 [03:35<1:15:09,  5.04s/it, best_val=n/a, epoch=1/1, loss=1.5364, lr=2.00e-05]
+optimizer steps:   5%|  | 44/938 [03:40<1:15:35,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.5364, lr=2.00e-05]
+optimizer steps:   5%|  | 44/938 [03:40<1:15:35,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.3885, lr=2.00e-05]
+optimizer steps:   5%|  | 45/938 [03:45<1:15:30,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.2312, lr=2.00e-05]
+optimizer steps:   5%|  | 46/938 [03:50<1:15:25,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.3605, lr=2.00e-05]
+optimizer steps:   5%|  | 47/938 [03:55<1:15:20,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.3281, lr=2.00e-05]
+optimizer steps:   5%|  | 48/938 [04:01<1:15:15,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.2562, lr=2.00e-05]
+optimizer steps:   5%|  | 49/938 [04:06<1:15:10,  5.07s/it, best_val=n/a, epoch=1/1, loss=1.2763, lr=2.00e-05]
+optimizer steps:   5%|  | 50/938 [04:11<1:15:35,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.2763, lr=2.00e-05]
+optimizer steps:   5%|  | 50/938 [04:11<1:15:35,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4232, lr=2.00e-05]
+optimizer steps:   5%|  | 51/938 [04:17<1:15:30,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4210, lr=2.00e-05]
+optimizer steps:   6%|  | 52/938 [04:22<1:15:25,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.5036, lr=2.00e-05]
+optimizer steps:   6%|  | 53/938 [04:27<1:15:19,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.2824, lr=2.00e-05]
+optimizer steps:   6%|  | 54/938 [04:32<1:15:14,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.5261, lr=2.00e-05]
+optimizer steps:   6%|  | 55/938 [04:37<1:15:09,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4552, lr=2.00e-05]
+optimizer steps:   6%|  | 56/938 [04:42<1:15:05,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4552, lr=2.00e-05]
+optimizer steps:   6%|  | 56/938 [04:42<1:15:05,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3350, lr=2.00e-05]
+optimizer steps:   6%|  | 57/938 [04:47<1:15:00,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3829, lr=1.99e-05]
+optimizer steps:   6%|  | 58/938 [04:52<1:14:55,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3436, lr=1.99e-05]
+optimizer steps:   6%|▏ | 59/938 [04:57<1:14:50,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3866, lr=1.99e-05]
+optimizer steps:   6%|▏ | 60/938 [05:03<1:14:45,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.5280, lr=1.99e-05]
+optimizer steps:   7%|▏ | 61/938 [05:08<1:14:40,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4355, lr=1.99e-05]
+optimizer steps:   7%|▏ | 62/938 [05:13<1:15:03,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.4355, lr=1.99e-05]
+optimizer steps:   7%|▏ | 62/938 [05:13<1:15:03,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.0009, lr=1.99e-05]
+optimizer steps:   7%|▏ | 63/938 [05:19<1:14:58,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3450, lr=1.99e-05]
+optimizer steps:   7%|▏ | 64/938 [05:24<1:14:52,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.2179, lr=1.99e-05]
+optimizer steps:   7%|▏ | 65/938 [05:29<1:14:47,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3062, lr=1.99e-05]
+optimizer steps:   7%|▏ | 66/938 [05:34<1:14:42,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.2066, lr=1.99e-05]
+optimizer steps:   7%|▏ | 67/938 [05:39<1:14:37,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.5333, lr=1.99e-05]
+optimizer steps:   7%|▏ | 68/938 [05:44<1:14:27,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.5333, lr=1.99e-05]
+optimizer steps:   7%|▏ | 68/938 [05:44<1:14:27,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3368, lr=1.99e-05]
+optimizer steps:   7%|▏ | 69/938 [05:49<1:14:22,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3757, lr=1.99e-05]
+optimizer steps:   7%|▏ | 70/938 [05:55<1:14:17,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3539, lr=1.99e-05]
+optimizer steps:   8%|▏ | 71/938 [06:00<1:14:12,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3476, lr=1.99e-05]
+optimizer steps:   8%|▏ | 72/938 [06:05<1:14:07,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.4949, lr=1.99e-05]
+optimizer steps:   8%|▏ | 73/938 [06:10<1:14:01,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.4614, lr=1.99e-05]
+optimizer steps:   8%|▏ | 74/938 [06:15<1:14:13,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.4614, lr=1.99e-05]
+optimizer steps:   8%|▏ | 74/938 [06:15<1:14:13,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.4547, lr=1.99e-05]
+optimizer steps:   8%|▏ | 75/938 [06:20<1:14:08,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.4620, lr=1.99e-05]
+optimizer steps:   8%|▏ | 76/938 [06:25<1:14:03,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.4382, lr=1.99e-05]
+optimizer steps:   8%|▏ | 77/938 [06:30<1:13:58,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.5018, lr=1.99e-05]
+optimizer steps:   8%|▏ | 78/938 [06:35<1:13:53,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.3039, lr=1.99e-05]
+optimizer steps:   8%|▏ | 79/938 [06:41<1:13:48,  5.15s/it, best_val=n/a, epoch=1/1, loss=1.3356, lr=1.98e-05]
+optimizer steps:   9%|▏ | 80/938 [06:46<1:13:27,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3356, lr=1.98e-05]
+optimizer steps:   9%|▏ | 80/938 [06:46<1:13:27,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3954, lr=1.98e-05]
+optimizer steps:   9%|▏ | 81/938 [06:51<1:13:21,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.1843, lr=1.98e-05]
+optimizer steps:   9%|▏ | 82/938 [06:56<1:13:16,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.2981, lr=1.98e-05]
+optimizer steps:   9%|▏ | 83/938 [07:01<1:13:11,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3112, lr=1.98e-05]
+optimizer steps:   9%|▏ | 84/938 [07:06<1:13:06,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3163, lr=1.98e-05]
+optimizer steps:   9%|▏ | 85/938 [07:11<1:13:01,  5.14s/it, best_val=n/a, epoch=1/1, loss=1.3845, lr=1.98e-05]
+optimizer steps:   9%|▏ | 86/938 [07:16<1:12:34,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3845, lr=1.98e-05]
+optimizer steps:   9%|▏ | 86/938 [07:16<1:12:34,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3727, lr=1.98e-05]
+optimizer steps:   9%|▏ | 87/938 [07:21<1:12:29,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4872, lr=1.98e-05]
+optimizer steps:   9%|▏ | 88/938 [07:26<1:12:24,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.4334, lr=1.98e-05]
+optimizer steps:   9%|▏ | 89/938 [07:31<1:12:19,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3501, lr=1.98e-05]
+optimizer steps:  10%|▏ | 90/938 [07:37<1:12:14,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3754, lr=1.98e-05]
+optimizer steps:  10%|▏ | 91/938 [07:42<1:12:09,  5.11s/it, best_val=n/a, epoch=1/1, loss=1.3068, lr=1.98e-05]
+optimizer steps:  10%|▏ | 92/938 [07:47<1:12:20,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.3068, lr=1.98e-05]
+optimizer steps:  10%|▏ | 92/938 [07:47<1:12:20,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.3394, lr=1.98e-05]
+optimizer steps:  10%|▏ | 93/938 [07:52<1:12:15,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.2721, lr=1.97e-05]
+optimizer steps:  10%|▏ | 94/938 [07:57<1:12:10,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.4655, lr=1.97e-05]
+optimizer steps:  10%|▏ | 95/938 [08:03<1:12:05,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.3603, lr=1.97e-05]
+optimizer steps:  10%|▏ | 96/938 [08:08<1:12:00,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.3988, lr=1.97e-05]
+optimizer steps:  10%|▏ | 97/938 [08:13<1:11:55,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.4168, lr=1.97e-05]
+optimizer steps:  10%|▏ | 98/938 [08:18<1:11:49,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.4168, lr=1.97e-05]
+optimizer steps:  10%|▏ | 98/938 [08:18<1:11:49,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.3982, lr=1.97e-05]
+optimizer steps:  11%|▏ | 99/938 [08:23<1:11:44,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.2854, lr=1.97e-05]
+optimizer steps:  11%| | 100/938 [08:28<1:11:38,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.4466, lr=1.97e-05]
+                                                                                                              
+[step 100] val_loss=1.4519 (best=1.4519 @ 100)
+
+optimizer steps:  11%| | 100/938 [09:20<1:11:38,  5.13s/it, best_val=n/a, epoch=1/1, loss=1.4466, lr=1.97e-05]
+optimizer steps:  11%| | 101/938 [09:25<1:53:45,  8.15s/it, best_val=n/a, epoch=1/1, loss=1.4466, lr=1.97e-05]
+optimizer steps:  11%| | 101/938 [09:25<1:53:45,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.4321, lr=1.97e-
+optimizer steps:  11%| | 102/938 [09:30<1:53:37,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.2967, lr=1.97e-
+optimizer steps:  11%| | 103/938 [09:35<1:53:29,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.4205, lr=1.97e-
+optimizer steps:  11%| | 104/938 [09:40<1:53:20,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.4263, lr=1.97e-
+optimizer steps:  11%| | 105/938 [09:45<1:53:12,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.3479, lr=1.96e-
+optimizer steps:  11%| | 106/938 [09:50<1:53:04,  8.15s/it, best_val=1.4519, epoch=1/1, loss=1.5441, lr=1.96e-
+optimizer steps:  11%| | 107/938 [09:55<1:38:35,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.5441, lr=1.96e-
+optimizer steps:  11%| | 107/938 [09:55<1:38:35,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.4245, lr=1.96e-
+optimizer steps:  12%| | 108/938 [10:00<1:38:28,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.2902, lr=1.96e-
+optimizer steps:  12%| | 109/938 [10:05<1:38:21,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.1696, lr=1.96e-
+optimizer steps:  12%| | 110/938 [10:10<1:38:13,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.1585, lr=1.96e-
+optimizer steps:  12%| | 111/938 [10:15<1:38:06,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.3434, lr=1.96e-
+optimizer steps:  12%| | 112/938 [10:20<1:37:59,  7.12s/it, best_val=1.4519, epoch=1/1, loss=1.5046, lr=1.96e-
+optimizer steps:  12%| | 113/938 [10:26<1:28:51,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.5046, lr=1.96e-
+optimizer steps:  12%| | 113/938 [10:26<1:28:51,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.3590, lr=1.96e-
+optimizer steps:  12%| | 114/938 [10:31<1:28:44,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.3178, lr=1.96e-
+optimizer steps:  12%| | 115/938 [10:36<1:28:38,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.4902, lr=1.96e-
+optimizer steps:  12%| | 116/938 [10:41<1:28:31,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.3851, lr=1.95e-
+optimizer steps:  12%| | 117/938 [10:46<1:28:25,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.2988, lr=1.95e-
+optimizer steps:  13%|▏| 118/938 [10:51<1:28:18,  6.46s/it, best_val=1.4519, epoch=1/1, loss=1.3324, lr=1.95e-
+optimizer steps:  13%|▏| 119/938 [10:56<1:22:02,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.3324, lr=1.95e-
+optimizer steps:  13%|▏| 119/938 [10:56<1:22:02,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.5205, lr=1.95e-
+optimizer steps:  13%|▏| 120/938 [11:01<1:21:56,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.2490, lr=1.95e-
+optimizer steps:  13%|▏| 121/938 [11:07<1:21:50,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.4546, lr=1.95e-
+optimizer steps:  13%|▏| 122/938 [11:12<1:21:44,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.2575, lr=1.95e-
+optimizer steps:  13%|▏| 123/938 [11:17<1:21:38,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.4208, lr=1.95e-
+optimizer steps:  13%|▏| 124/938 [11:22<1:21:32,  6.01s/it, best_val=1.4519, epoch=1/1, loss=1.4704, lr=1.95e-
+optimizer steps:  13%|▏| 125/938 [11:28<1:18:22,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.4704, lr=1.95e-
+optimizer steps:  13%|▏| 125/938 [11:28<1:18:22,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.2542, lr=1.94e-
+optimizer steps:  13%|▏| 126/938 [11:32<1:18:16,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.3100, lr=1.94e-
+optimizer steps:  14%|▏| 127/938 [11:37<1:18:10,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.3587, lr=1.94e-
+optimizer steps:  14%|▏| 128/938 [11:42<1:18:04,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.2946, lr=1.94e-
+optimizer steps:  14%|▏| 129/938 [11:47<1:17:58,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.5329, lr=1.94e-
+optimizer steps:  14%|▏| 130/938 [11:53<1:17:53,  5.78s/it, best_val=1.4519, epoch=1/1, loss=1.4411, lr=1.94e-
+optimizer steps:  14%|▏| 131/938 [11:58<1:14:35,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.4411, lr=1.94e-
+optimizer steps:  14%|▏| 131/938 [11:58<1:14:35,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.4474, lr=1.94e-
+optimizer steps:  14%|▏| 132/938 [12:03<1:14:30,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.3187, lr=1.94e-
+optimizer steps:  14%|▏| 133/938 [12:08<1:14:24,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.3025, lr=1.94e-
+optimizer steps:  14%|▏| 134/938 [12:13<1:14:19,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.4414, lr=1.93e-
+optimizer steps:  14%|▏| 135/938 [12:18<1:14:13,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.2913, lr=1.93e-
+optimizer steps:  14%|▏| 136/938 [12:23<1:14:07,  5.55s/it, best_val=1.4519, epoch=1/1, loss=1.1266, lr=1.93e-
+optimizer steps:  15%|▏| 137/938 [12:29<1:12:34,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.1266, lr=1.93e-
+optimizer steps:  15%|▏| 137/938 [12:29<1:12:34,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.3667, lr=1.93e-
+optimizer steps:  15%|▏| 138/938 [12:34<1:12:29,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.1900, lr=1.93e-
+optimizer steps:  15%|▏| 139/938 [12:39<1:12:23,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.2769, lr=1.93e-
+optimizer steps:  15%|▏| 140/938 [12:44<1:12:18,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.4395, lr=1.93e-
+optimizer steps:  15%|▏| 141/938 [12:49<1:12:13,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.3977, lr=1.92e-
+optimizer steps:  15%|▏| 142/938 [12:54<1:12:07,  5.44s/it, best_val=1.4519, epoch=1/1, loss=1.4063, lr=1.92e-
+optimizer steps:  15%|▏| 143/938 [12:59<1:10:38,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.4063, lr=1.92e-
+optimizer steps:  15%|▏| 143/938 [12:59<1:10:38,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.3617, lr=1.92e-
+optimizer steps:  15%|▏| 144/938 [13:04<1:10:33,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.3826, lr=1.92e-
+optimizer steps:  15%|▏| 145/938 [13:09<1:10:28,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.1809, lr=1.92e-
+optimizer steps:  16%|▏| 146/938 [13:14<1:10:22,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.3722, lr=1.92e-
+optimizer steps:  16%|▏| 147/938 [13:20<1:10:17,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.4432, lr=1.92e-
+optimizer steps:  16%|▏| 148/938 [13:25<1:10:12,  5.33s/it, best_val=1.4519, epoch=1/1, loss=1.2718, lr=1.92e-
+optimizer steps:  16%|▏| 149/938 [13:30<1:09:19,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.2718, lr=1.92e-
+optimizer steps:  16%|▏| 149/938 [13:30<1:09:19,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.3754, lr=1.91e-
+optimizer steps:  16%|▏| 150/938 [13:35<1:09:14,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.6002, lr=1.91e-
+optimizer steps:  16%|▏| 151/938 [13:41<1:09:09,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.3656, lr=1.91e-
+optimizer steps:  16%|▏| 152/938 [13:46<1:09:03,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.4284, lr=1.91e-
+optimizer steps:  16%|▏| 153/938 [13:51<1:08:58,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.2934, lr=1.91e-
+optimizer steps:  16%|▏| 154/938 [13:56<1:08:53,  5.27s/it, best_val=1.4519, epoch=1/1, loss=1.2522, lr=1.91e-
+optimizer steps:  17%|▏| 155/938 [14:01<1:08:37,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.2522, lr=1.91e-
+optimizer steps:  17%|▏| 155/938 [14:01<1:08:37,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.5091, lr=1.91e-
+optimizer steps:  17%|▏| 156/938 [14:07<1:08:31,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.4327, lr=1.90e-
+optimizer steps:  17%|▏| 157/938 [14:12<1:08:26,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.2563, lr=1.90e-
+optimizer steps:  17%|▏| 158/938 [14:17<1:08:21,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.2923, lr=1.90e-
+optimizer steps:  17%|▏| 159/938 [14:22<1:08:16,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.3785, lr=1.90e-
+optimizer steps:  17%|▏| 160/938 [14:27<1:08:10,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.2038, lr=1.90e-
+optimizer steps:  17%|▏| 161/938 [14:32<1:07:39,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.2038, lr=1.90e-
+optimizer steps:  17%|▏| 161/938 [14:32<1:07:39,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.2921, lr=1.90e-
+optimizer steps:  17%|▏| 162/938 [14:38<1:07:34,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.4776, lr=1.89e-
+optimizer steps:  17%|▏| 163/938 [14:43<1:07:28,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.2635, lr=1.89e-
+optimizer steps:  17%|▏| 164/938 [14:49<1:07:23,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.4531, lr=1.89e-
+optimizer steps:  18%|▏| 165/938 [14:54<1:07:18,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.4221, lr=1.89e-
+optimizer steps:  18%|▏| 166/938 [15:00<1:07:13,  5.22s/it, best_val=1.4519, epoch=1/1, loss=1.4332, lr=1.89e-
+optimizer steps:  18%|▏| 167/938 [15:05<1:08:04,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.4332, lr=1.89e-
+optimizer steps:  18%|▏| 167/938 [15:05<1:08:04,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.5323, lr=1.89e-
+optimizer steps:  18%|▏| 168/938 [15:10<1:07:59,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.3246, lr=1.89e-
+optimizer steps:  18%|▏| 169/938 [15:16<1:07:53,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.3565, lr=1.88e-
+optimizer steps:  18%|▏| 170/938 [15:21<1:07:48,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.2008, lr=1.88e-
+optimizer steps:  18%|▏| 171/938 [15:26<1:07:43,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.2148, lr=1.88e-
+optimizer steps:  18%|▏| 172/938 [15:31<1:07:37,  5.30s/it, best_val=1.4519, epoch=1/1, loss=1.3588, lr=1.88e-
+optimizer steps:  18%|▏| 173/938 [15:36<1:07:05,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.3588, lr=1.88e-
+optimizer steps:  18%|▏| 173/938 [15:36<1:07:05,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.2612, lr=1.88e-
+optimizer steps:  19%|▏| 174/938 [15:41<1:06:59,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.3882, lr=1.88e-
+optimizer steps:  19%|▏| 175/938 [15:47<1:06:54,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.5728, lr=1.87e-
+optimizer steps:  19%|▏| 176/938 [15:51<1:06:49,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.4600, lr=1.87e-
+optimizer steps:  19%|▏| 177/938 [15:57<1:06:43,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.3785, lr=1.87e-
+optimizer steps:  19%|▏| 178/938 [16:02<1:06:38,  5.26s/it, best_val=1.4519, epoch=1/1, loss=1.1945, lr=1.87e-
+optimizer steps:  19%|▏| 179/938 [16:07<1:05:51,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.1945, lr=1.87e-
+optimizer steps:  19%|▏| 179/938 [16:07<1:05:51,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.1416, lr=1.87e-
+optimizer steps:  19%|▏| 180/938 [16:12<1:05:46,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.4963, lr=1.87e-
+optimizer steps:  19%|▏| 181/938 [16:17<1:05:41,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.3477, lr=1.86e-
+optimizer steps:  19%|▏| 182/938 [16:22<1:05:35,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.4769, lr=1.86e-
+optimizer steps:  20%|▏| 183/938 [16:27<1:05:30,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.2969, lr=1.86e-
+optimizer steps:  20%|▏| 184/938 [16:33<1:05:25,  5.21s/it, best_val=1.4519, epoch=1/1, loss=1.3242, lr=1.86e-
+optimizer steps:  20%|▏| 185/938 [16:38<1:05:06,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3242, lr=1.86e-
+optimizer steps:  20%|▏| 185/938 [16:38<1:05:06,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3546, lr=1.86e-
+optimizer steps:  20%|▏| 186/938 [16:43<1:05:01,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.4055, lr=1.85e-
+optimizer steps:  20%|▏| 187/938 [16:48<1:04:56,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3685, lr=1.85e-
+optimizer steps:  20%|▏| 188/938 [16:53<1:04:51,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.2584, lr=1.85e-
+optimizer steps:  20%|▏| 189/938 [16:58<1:04:45,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3375, lr=1.85e-
+optimizer steps:  20%|▏| 190/938 [17:03<1:04:40,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.4354, lr=1.85e-
+optimizer steps:  20%|▏| 191/938 [17:08<1:04:20,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4354, lr=1.85e-
+optimizer steps:  20%|▏| 191/938 [17:08<1:04:20,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4161, lr=1.85e-
+optimizer steps:  20%|▏| 192/938 [17:13<1:04:15,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4513, lr=1.84e-
+optimizer steps:  21%|▏| 193/938 [17:19<1:04:10,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.3979, lr=1.84e-
+optimizer steps:  21%|▏| 194/938 [17:24<1:04:04,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2641, lr=1.84e-
+optimizer steps:  21%|▏| 195/938 [17:29<1:03:59,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2551, lr=1.84e-
+optimizer steps:  21%|▏| 196/938 [17:34<1:03:54,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4596, lr=1.84e-
+optimizer steps:  21%|▏| 197/938 [17:39<1:03:23,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.4596, lr=1.84e-
+optimizer steps:  21%|▏| 197/938 [17:39<1:03:23,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.4520, lr=1.83e-
+optimizer steps:  21%|▏| 198/938 [17:44<1:03:18,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.2444, lr=1.83e-
+optimizer steps:  21%|▏| 199/938 [17:49<1:03:13,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.3462, lr=1.83e-
+optimizer steps:  21%|▏| 200/938 [17:54<1:03:08,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.4884, lr=1.83e-
+                                                                                                              
+[step 200] val_loss=1.4544 (best=1.4519 @ 100)
+
+optimizer steps:  21%|▏| 200/938 [18:43<1:03:08,  5.13s/it, best_val=1.4519, epoch=1/1, loss=1.4884, lr=1.83e-
+optimizer steps:  21%|▏| 201/938 [18:48<1:36:24,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.4884, lr=1.83e-
+optimizer steps:  21%|▏| 201/938 [18:48<1:36:24,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.2601, lr=1.83e-
+optimizer steps:  22%|▏| 202/938 [18:53<1:36:16,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.3625, lr=1.82e-
+optimizer steps:  22%|▏| 203/938 [18:58<1:36:09,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.2613, lr=1.82e-
+optimizer steps:  22%|▏| 204/938 [19:03<1:36:01,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.3013, lr=1.82e-
+optimizer steps:  22%|▏| 205/938 [19:08<1:35:53,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.2666, lr=1.82e-
+optimizer steps:  22%|▏| 206/938 [19:13<1:35:45,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.2572, lr=1.82e-
+optimizer steps:  22%|▏| 207/938 [19:18<1:35:37,  7.85s/it, best_val=1.4519, epoch=1/1, loss=1.3568, lr=1.82e-
+optimizer steps:  22%|▏| 208/938 [19:23<1:22:57,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.3568, lr=1.82e-
+optimizer steps:  22%|▏| 208/938 [19:23<1:22:57,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.2318, lr=1.81e-
+optimizer steps:  22%|▏| 209/938 [19:28<1:22:50,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.4636, lr=1.81e-
+optimizer steps:  22%|▏| 210/938 [19:32<1:22:43,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.3563, lr=1.81e-
+optimizer steps:  22%|▏| 211/938 [19:37<1:22:36,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.4315, lr=1.81e-
+optimizer steps:  23%|▏| 212/938 [19:43<1:22:30,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.3862, lr=1.80e-
+optimizer steps:  23%|▏| 213/938 [19:48<1:22:23,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.3556, lr=1.80e-
+optimizer steps:  23%|▏| 214/938 [19:53<1:22:16,  6.82s/it, best_val=1.4519, epoch=1/1, loss=1.3548, lr=1.80e-
+optimizer steps:  23%|▏| 215/938 [19:58<1:14:50,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.3548, lr=1.80e-
+optimizer steps:  23%|▏| 215/938 [19:58<1:14:50,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.2187, lr=1.80e-
+optimizer steps:  23%|▏| 216/938 [20:03<1:14:43,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.3941, lr=1.80e-
+optimizer steps:  23%|▏| 217/938 [20:08<1:14:37,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.2204, lr=1.79e-
+optimizer steps:  23%|▏| 218/938 [20:13<1:14:31,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.3847, lr=1.79e-
+optimizer steps:  23%|▏| 219/938 [20:18<1:14:25,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.4392, lr=1.79e-
+optimizer steps:  23%|▏| 220/938 [20:23<1:14:19,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.3779, lr=1.79e-
+optimizer steps:  24%|▏| 221/938 [20:28<1:14:12,  6.21s/it, best_val=1.4519, epoch=1/1, loss=1.5220, lr=1.79e-
+optimizer steps:  24%|▏| 222/938 [20:33<1:09:14,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.5220, lr=1.79e-
+optimizer steps:  24%|▏| 222/938 [20:33<1:09:14,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.3962, lr=1.78e-
+optimizer steps:  24%|▏| 223/938 [20:38<1:09:09,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.3583, lr=1.78e-
+optimizer steps:  24%|▏| 224/938 [20:43<1:09:03,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.4625, lr=1.78e-
+optimizer steps:  24%|▏| 225/938 [20:49<1:08:57,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.5066, lr=1.78e-
+optimizer steps:  24%|▏| 226/938 [20:54<1:08:51,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.3849, lr=1.78e-
+optimizer steps:  24%|▏| 227/938 [20:59<1:08:45,  5.80s/it, best_val=1.4519, epoch=1/1, loss=1.3783, lr=1.77e-
+optimizer steps:  24%|▏| 228/938 [21:04<1:06:51,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.3783, lr=1.77e-
+optimizer steps:  24%|▏| 228/938 [21:04<1:06:51,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.3592, lr=1.77e-
+optimizer steps:  24%|▏| 229/938 [21:09<1:06:45,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.4020, lr=1.77e-
+optimizer steps:  25%|▏| 230/938 [21:15<1:06:40,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.4982, lr=1.77e-
+optimizer steps:  25%|▏| 231/938 [21:20<1:06:34,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.2871, lr=1.76e-
+optimizer steps:  25%|▏| 232/938 [21:25<1:06:28,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.3610, lr=1.76e-
+optimizer steps:  25%|▏| 233/938 [21:30<1:06:23,  5.65s/it, best_val=1.4519, epoch=1/1, loss=1.0272, lr=1.76e-
+optimizer steps:  25%|▏| 234/938 [21:35<1:04:47,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.0272, lr=1.76e-
+optimizer steps:  25%|▏| 234/938 [21:35<1:04:47,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.4600, lr=1.76e-
+optimizer steps:  25%|▎| 235/938 [21:41<1:04:41,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.3100, lr=1.76e-
+optimizer steps:  25%|▎| 236/938 [21:46<1:04:36,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.3614, lr=1.75e-
+optimizer steps:  25%|▎| 237/938 [21:51<1:04:30,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.3343, lr=1.75e-
+optimizer steps:  25%|▎| 238/938 [21:57<1:04:25,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.4817, lr=1.75e-
+optimizer steps:  25%|▎| 239/938 [22:02<1:04:19,  5.52s/it, best_val=1.4519, epoch=1/1, loss=1.5641, lr=1.75e-
+optimizer steps:  26%|▎| 240/938 [22:07<1:03:33,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.5641, lr=1.75e-
+optimizer steps:  26%|▎| 240/938 [22:07<1:03:33,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.2287, lr=1.74e-
+optimizer steps:  26%|▎| 241/938 [22:12<1:03:28,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.2851, lr=1.74e-
+optimizer steps:  26%|▎| 242/938 [22:18<1:03:22,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.4158, lr=1.74e-
+optimizer steps:  26%|▎| 243/938 [22:23<1:03:17,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.4141, lr=1.74e-
+optimizer steps:  26%|▎| 244/938 [22:29<1:03:11,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.3478, lr=1.73e-
+optimizer steps:  26%|▎| 245/938 [22:34<1:03:06,  5.46s/it, best_val=1.4519, epoch=1/1, loss=1.4323, lr=1.73e-
+optimizer steps:  26%|▎| 246/938 [22:39<1:02:10,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.4323, lr=1.73e-
+optimizer steps:  26%|▎| 246/938 [22:39<1:02:10,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.3318, lr=1.73e-
+optimizer steps:  26%|▎| 247/938 [22:44<1:02:05,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.5125, lr=1.73e-
+optimizer steps:  26%|▎| 248/938 [22:49<1:02:00,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.5269, lr=1.73e-
+optimizer steps:  27%|▎| 249/938 [22:54<1:01:54,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.3087, lr=1.72e-
+optimizer steps:  27%|▎| 250/938 [23:00<1:01:49,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.3340, lr=1.72e-
+optimizer steps:  27%|▎| 251/938 [23:05<1:01:43,  5.39s/it, best_val=1.4519, epoch=1/1, loss=1.3185, lr=1.72e-
+optimizer steps:  27%|▎| 252/938 [23:10<1:01:06,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.3185, lr=1.72e-
+optimizer steps:  27%|▎| 252/938 [23:10<1:01:06,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.4632, lr=1.72e-
+optimizer steps:  27%|▎| 253/938 [23:15<1:01:01,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.3932, lr=1.71e-
+optimizer steps:  27%|▎| 254/938 [23:20<1:00:55,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.2947, lr=1.71e-
+optimizer steps:  27%|▎| 255/938 [23:26<1:00:50,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.5525, lr=1.71e-
+optimizer steps:  27%|▎| 256/938 [23:31<1:00:45,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.3818, lr=1.71e-
+optimizer steps:  27%|▎| 257/938 [23:36<1:00:39,  5.34s/it, best_val=1.4519, epoch=1/1, loss=1.3987, lr=1.70e-
+optimizer steps:  28%|▎| 258/938 [23:41<1:00:08,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.3987, lr=1.70e-
+optimizer steps:  28%|▎| 258/938 [23:41<1:00:08,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.3583, lr=1.70e-
+optimizer steps:  28%|▎| 259/938 [23:47<1:00:02,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.2889, lr=1.70e-
+optimizer steps:  28%|▎| 260/938 [23:52<59:57,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.3249, lr=1.70e-05
+optimizer steps:  28%|▎| 261/938 [23:57<59:52,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.3914, lr=1.69e-05
+optimizer steps:  28%|▎| 262/938 [24:02<59:46,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.3450, lr=1.69e-05
+optimizer steps:  28%|▎| 263/938 [24:07<59:41,  5.31s/it, best_val=1.4519, epoch=1/1, loss=1.1861, lr=1.69e-05
+optimizer steps:  28%|▎| 264/938 [24:12<58:59,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.1861, lr=1.69e-05
+optimizer steps:  28%|▎| 264/938 [24:12<58:59,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.3237, lr=1.69e-05
+optimizer steps:  28%|▎| 265/938 [24:17<58:54,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.5105, lr=1.68e-05
+optimizer steps:  28%|▎| 266/938 [24:22<58:49,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.3829, lr=1.68e-05
+optimizer steps:  28%|▎| 267/938 [24:27<58:44,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.4155, lr=1.68e-05
+optimizer steps:  29%|▎| 268/938 [24:32<58:38,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.3415, lr=1.68e-05
+optimizer steps:  29%|▎| 269/938 [24:37<58:33,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.4772, lr=1.67e-05
+optimizer steps:  29%|▎| 270/938 [24:42<58:28,  5.25s/it, best_val=1.4519, epoch=1/1, loss=1.1809, lr=1.67e-05
+optimizer steps:  29%|▎| 271/938 [24:47<57:30,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.1809, lr=1.67e-05
+optimizer steps:  29%|▎| 271/938 [24:47<57:30,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2130, lr=1.67e-05
+optimizer steps:  29%|▎| 272/938 [24:52<57:25,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.3128, lr=1.67e-05
+optimizer steps:  29%|▎| 273/938 [24:57<57:19,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4737, lr=1.66e-05
+optimizer steps:  29%|▎| 274/938 [25:03<57:14,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4226, lr=1.66e-05
+optimizer steps:  29%|▎| 275/938 [25:08<57:09,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2354, lr=1.66e-05
+optimizer steps:  29%|▎| 276/938 [25:13<57:04,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.5511, lr=1.66e-05
+optimizer steps:  30%|▎| 277/938 [25:19<57:07,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.5511, lr=1.66e-05
+optimizer steps:  30%|▎| 277/938 [25:19<57:07,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.4161, lr=1.65e-05
+optimizer steps:  30%|▎| 278/938 [25:23<57:02,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3364, lr=1.65e-05
+optimizer steps:  30%|▎| 279/938 [25:28<56:56,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3012, lr=1.65e-05
+optimizer steps:  30%|▎| 280/938 [25:34<56:51,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.6535, lr=1.64e-05
+optimizer steps:  30%|▎| 281/938 [25:39<56:46,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.2910, lr=1.64e-05
+optimizer steps:  30%|▎| 282/938 [25:44<56:41,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3166, lr=1.64e-05
+optimizer steps:  30%|▎| 283/938 [25:50<56:35,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3166, lr=1.64e-05
+optimizer steps:  30%|▎| 283/938 [25:50<56:35,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3959, lr=1.64e-05
+optimizer steps:  30%|▎| 284/938 [25:55<56:30,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3533, lr=1.63e-05
+optimizer steps:  30%|▎| 285/938 [26:00<56:25,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.4004, lr=1.63e-05
+optimizer steps:  30%|▎| 286/938 [26:05<56:20,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.4248, lr=1.63e-05
+optimizer steps:  31%|▎| 287/938 [26:10<56:15,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.2564, lr=1.63e-05
+optimizer steps:  31%|▎| 288/938 [26:15<56:09,  5.18s/it, best_val=1.4519, epoch=1/1, loss=1.3309, lr=1.62e-05
+optimizer steps:  31%|▎| 289/938 [26:20<55:56,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.3309, lr=1.62e-05
+optimizer steps:  31%|▎| 289/938 [26:20<55:56,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2235, lr=1.62e-05
+optimizer steps:  31%|▎| 290/938 [26:26<55:51,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.3324, lr=1.62e-05
+optimizer steps:  31%|▎| 291/938 [26:31<55:45,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.3738, lr=1.62e-05
+optimizer steps:  31%|▎| 292/938 [26:36<55:40,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4420, lr=1.61e-05
+optimizer steps:  31%|▎| 293/938 [26:41<55:35,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.4440, lr=1.61e-05
+optimizer steps:  31%|▎| 294/938 [26:47<55:30,  5.17s/it, best_val=1.4519, epoch=1/1, loss=1.2946, lr=1.61e-05
+optimizer steps:  31%|▎| 295/938 [26:52<55:38,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.2946, lr=1.61e-05
+optimizer steps:  31%|▎| 295/938 [26:52<55:38,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.4070, lr=1.60e-05
+optimizer steps:  32%|▎| 296/938 [26:57<55:33,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3016, lr=1.60e-05
+optimizer steps:  32%|▎| 297/938 [27:02<55:28,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.4219, lr=1.60e-05
+optimizer steps:  32%|▎| 298/938 [27:07<55:22,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.4935, lr=1.60e-05
+optimizer steps:  32%|▎| 299/938 [27:12<55:17,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.5154, lr=1.59e-05
+optimizer steps:  32%|▎| 300/938 [27:17<55:12,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3224, lr=1.59e-05
+                                                                                                              
+[step 300] val_loss=1.4482 (best=1.4482 @ 300)
+
+optimizer steps:  32%|▎| 300/938 [28:09<55:12,  5.19s/it, best_val=1.4519, epoch=1/1, loss=1.3224, lr=1.59e-05
+optimizer steps:  32%|▎| 301/938 [28:15<1:22:21,  7.76s/it, best_val=1.4519, epoch=1/1, loss=1.3224, lr=1.59e-
+optimizer steps:  32%|▎| 301/938 [28:15<1:22:21,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.3723, lr=1.59e-
+optimizer steps:  32%|▎| 302/938 [28:20<1:22:13,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.4363, lr=1.58e-
+optimizer steps:  32%|▎| 303/938 [28:26<1:22:06,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.5313, lr=1.58e-
+optimizer steps:  32%|▎| 304/938 [28:31<1:21:58,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.4483, lr=1.58e-
+optimizer steps:  33%|▎| 305/938 [28:36<1:21:50,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.2958, lr=1.58e-
+optimizer steps:  33%|▎| 306/938 [28:41<1:21:42,  7.76s/it, best_val=1.4482, epoch=1/1, loss=1.3852, lr=1.57e-
+optimizer steps:  33%|▎| 307/938 [28:46<1:13:40,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.3852, lr=1.57e-
+optimizer steps:  33%|▎| 307/938 [28:46<1:13:40,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.3924, lr=1.57e-
+optimizer steps:  33%|▎| 308/938 [28:51<1:13:33,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.4090, lr=1.57e-
+optimizer steps:  33%|▎| 309/938 [28:56<1:13:26,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.3364, lr=1.57e-
+optimizer steps:  33%|▎| 310/938 [29:01<1:13:19,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.2766, lr=1.56e-
+optimizer steps:  33%|▎| 311/938 [29:06<1:13:12,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.3492, lr=1.56e-
+optimizer steps:  33%|▎| 312/938 [29:12<1:13:05,  7.01s/it, best_val=1.4482, epoch=1/1, loss=1.5474, lr=1.56e-
+optimizer steps:  33%|▎| 313/938 [29:17<1:06:59,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.5474, lr=1.56e-
+optimizer steps:  33%|▎| 313/938 [29:17<1:06:59,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.4739, lr=1.55e-
+optimizer steps:  33%|▎| 314/938 [29:22<1:06:53,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.2331, lr=1.55e-
+optimizer steps:  34%|▎| 315/938 [29:27<1:06:46,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.2862, lr=1.55e-
+optimizer steps:  34%|▎| 316/938 [29:33<1:06:40,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.1667, lr=1.55e-
+optimizer steps:  34%|▎| 317/938 [29:38<1:06:33,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.4418, lr=1.54e-
+optimizer steps:  34%|▎| 318/938 [29:43<1:06:27,  6.43s/it, best_val=1.4482, epoch=1/1, loss=1.1600, lr=1.54e-
+optimizer steps:  34%|▎| 319/938 [29:48<1:02:38,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.1600, lr=1.54e-
+optimizer steps:  34%|▎| 319/938 [29:48<1:02:38,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.5654, lr=1.54e-
+optimizer steps:  34%|▎| 320/938 [29:53<1:02:32,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.3876, lr=1.53e-
+optimizer steps:  34%|▎| 321/938 [29:58<1:02:26,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.4360, lr=1.53e-
+optimizer steps:  34%|▎| 322/938 [30:03<1:02:19,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.3065, lr=1.53e-
+optimizer steps:  34%|▎| 323/938 [30:09<1:02:13,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.5561, lr=1.52e-
+optimizer steps:  35%|▎| 324/938 [30:14<1:02:07,  6.07s/it, best_val=1.4482, epoch=1/1, loss=1.2073, lr=1.52e-
+optimizer steps:  35%|▎| 325/938 [30:19<59:16,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.2073, lr=1.52e-05
+optimizer steps:  35%|▎| 325/938 [30:19<59:16,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.5151, lr=1.52e-05
+optimizer steps:  35%|▎| 326/938 [30:24<59:10,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.3288, lr=1.52e-05
+optimizer steps:  35%|▎| 327/938 [30:30<59:04,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.3349, lr=1.51e-05
+optimizer steps:  35%|▎| 328/938 [30:35<58:58,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.4953, lr=1.51e-05
+optimizer steps:  35%|▎| 329/938 [30:40<58:53,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.4040, lr=1.51e-05
+optimizer steps:  35%|▎| 330/938 [30:45<58:47,  5.80s/it, best_val=1.4482, epoch=1/1, loss=1.4974, lr=1.50e-05
+optimizer steps:  35%|▎| 331/938 [30:50<56:54,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.4974, lr=1.50e-05
+optimizer steps:  35%|▎| 331/938 [30:50<56:54,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.4160, lr=1.50e-05
+optimizer steps:  35%|▎| 332/938 [30:55<56:49,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.4666, lr=1.50e-05
+optimizer steps:  36%|▎| 333/938 [31:01<56:43,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.4807, lr=1.50e-05
+optimizer steps:  36%|▎| 334/938 [31:06<56:37,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.3725, lr=1.49e-05
+optimizer steps:  36%|▎| 335/938 [31:11<56:32,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.3742, lr=1.49e-05
+optimizer steps:  36%|▎| 336/938 [31:16<56:26,  5.63s/it, best_val=1.4482, epoch=1/1, loss=1.3685, lr=1.49e-05
+optimizer steps:  36%|▎| 337/938 [31:22<55:08,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.3685, lr=1.49e-05
+optimizer steps:  36%|▎| 337/938 [31:22<55:08,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.3746, lr=1.48e-05
+optimizer steps:  36%|▎| 338/938 [31:27<55:02,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.4381, lr=1.48e-05
+optimizer steps:  36%|▎| 339/938 [31:32<54:57,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.3626, lr=1.48e-05
+optimizer steps:  36%|▎| 340/938 [31:37<54:51,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.3758, lr=1.47e-05
+optimizer steps:  36%|▎| 341/938 [31:42<54:46,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.3124, lr=1.47e-05
+optimizer steps:  36%|▎| 342/938 [31:47<54:40,  5.50s/it, best_val=1.4482, epoch=1/1, loss=1.5306, lr=1.47e-05
+optimizer steps:  37%|▎| 343/938 [31:52<53:14,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.5306, lr=1.47e-05
+optimizer steps:  37%|▎| 343/938 [31:52<53:14,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.3246, lr=1.46e-05
+optimizer steps:  37%|▎| 344/938 [31:57<53:09,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.4571, lr=1.46e-05
+optimizer steps:  37%|▎| 345/938 [32:02<53:03,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.3583, lr=1.46e-05
+optimizer steps:  37%|▎| 346/938 [32:07<52:58,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.4812, lr=1.46e-05
+optimizer steps:  37%|▎| 347/938 [32:12<52:53,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.4266, lr=1.45e-05
+optimizer steps:  37%|▎| 348/938 [32:17<52:47,  5.37s/it, best_val=1.4482, epoch=1/1, loss=1.2483, lr=1.45e-05
+optimizer steps:  37%|▎| 349/938 [32:23<51:50,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.2483, lr=1.45e-05
+optimizer steps:  37%|▎| 349/938 [32:23<51:50,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.3759, lr=1.45e-05
+optimizer steps:  37%|▎| 350/938 [32:28<51:45,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.4575, lr=1.44e-05
+optimizer steps:  37%|▎| 351/938 [32:33<51:39,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.3086, lr=1.44e-05
+optimizer steps:  38%|▍| 352/938 [32:38<51:34,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.4431, lr=1.44e-05
+optimizer steps:  38%|▍| 353/938 [32:43<51:29,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.4663, lr=1.43e-05
+optimizer steps:  38%|▍| 354/938 [32:49<51:24,  5.28s/it, best_val=1.4482, epoch=1/1, loss=1.3798, lr=1.43e-05
+optimizer steps:  38%|▍| 355/938 [32:54<50:58,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.3798, lr=1.43e-05
+optimizer steps:  38%|▍| 355/938 [32:54<50:58,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.1752, lr=1.43e-05
+optimizer steps:  38%|▍| 356/938 [32:59<50:53,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.3648, lr=1.42e-05
+optimizer steps:  38%|▍| 357/938 [33:04<50:48,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.4415, lr=1.42e-05
+optimizer steps:  38%|▍| 358/938 [33:09<50:42,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.5417, lr=1.42e-05
+optimizer steps:  38%|▍| 359/938 [33:14<50:37,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.3156, lr=1.42e-05
+optimizer steps:  38%|▍| 360/938 [33:19<50:32,  5.25s/it, best_val=1.4482, epoch=1/1, loss=1.3977, lr=1.41e-05
+optimizer steps:  38%|▍| 361/938 [33:25<50:24,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.3977, lr=1.41e-05
+optimizer steps:  38%|▍| 361/938 [33:25<50:24,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.4384, lr=1.41e-05
+optimizer steps:  39%|▍| 362/938 [33:30<50:18,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.3160, lr=1.41e-05
+optimizer steps:  39%|▍| 363/938 [33:35<50:13,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.4323, lr=1.40e-05
+optimizer steps:  39%|▍| 364/938 [33:40<50:08,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.3334, lr=1.40e-05
+optimizer steps:  39%|▍| 365/938 [33:45<50:03,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.2825, lr=1.40e-05
+optimizer steps:  39%|▍| 366/938 [33:51<49:57,  5.24s/it, best_val=1.4482, epoch=1/1, loss=1.3626, lr=1.39e-05
+optimizer steps:  39%|▍| 367/938 [33:56<49:42,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.3626, lr=1.39e-05
+optimizer steps:  39%|▍| 367/938 [33:56<49:42,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.3252, lr=1.39e-05
+optimizer steps:  39%|▍| 368/938 [34:01<49:37,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.3683, lr=1.39e-05
+optimizer steps:  39%|▍| 369/938 [34:06<49:32,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.2922, lr=1.38e-05
+optimizer steps:  39%|▍| 370/938 [34:12<49:27,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.4168, lr=1.38e-05
+optimizer steps:  40%|▍| 371/938 [34:17<49:21,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.2599, lr=1.38e-05
+optimizer steps:  40%|▍| 372/938 [34:22<49:16,  5.22s/it, best_val=1.4482, epoch=1/1, loss=1.4046, lr=1.37e-05
+optimizer steps:  40%|▍| 373/938 [34:27<49:04,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.4046, lr=1.37e-05
+optimizer steps:  40%|▍| 373/938 [34:27<49:04,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.2887, lr=1.37e-05
+optimizer steps:  40%|▍| 374/938 [34:32<48:59,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.4304, lr=1.37e-05
+optimizer steps:  40%|▍| 375/938 [34:37<48:54,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.0139, lr=1.36e-05
+optimizer steps:  40%|▍| 376/938 [34:42<48:49,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.2942, lr=1.36e-05
+optimizer steps:  40%|▍| 377/938 [34:47<48:44,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.4125, lr=1.36e-05
+optimizer steps:  40%|▍| 378/938 [34:53<48:38,  5.21s/it, best_val=1.4482, epoch=1/1, loss=1.1723, lr=1.35e-05
+optimizer steps:  40%|▍| 379/938 [34:58<48:16,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.1723, lr=1.35e-05
+optimizer steps:  40%|▍| 379/938 [34:58<48:16,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.2683, lr=1.35e-05
+optimizer steps:  41%|▍| 380/938 [35:03<48:11,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.4664, lr=1.35e-05
+optimizer steps:  41%|▍| 381/938 [35:08<48:06,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.1898, lr=1.34e-05
+optimizer steps:  41%|▍| 382/938 [35:13<48:01,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.2283, lr=1.34e-05
+optimizer steps:  41%|▍| 383/938 [35:18<47:56,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.3949, lr=1.34e-05
+optimizer steps:  41%|▍| 384/938 [35:23<47:50,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.4495, lr=1.34e-05
+optimizer steps:  41%|▍| 385/938 [35:28<47:45,  5.18s/it, best_val=1.4482, epoch=1/1, loss=1.2476, lr=1.33e-05
+optimizer steps:  41%|▍| 386/938 [35:33<47:07,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.2476, lr=1.33e-05
+optimizer steps:  41%|▍| 386/938 [35:33<47:07,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.4068, lr=1.33e-05
+optimizer steps:  41%|▍| 387/938 [35:38<47:02,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.2453, lr=1.33e-05
+optimizer steps:  41%|▍| 388/938 [35:43<46:56,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.2298, lr=1.32e-05
+optimizer steps:  41%|▍| 389/938 [35:48<46:51,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.3802, lr=1.32e-05
+optimizer steps:  42%|▍| 390/938 [35:53<46:46,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.3091, lr=1.32e-05
+optimizer steps:  42%|▍| 391/938 [35:58<46:41,  5.12s/it, best_val=1.4482, epoch=1/1, loss=1.4014, lr=1.31e-05
+optimizer steps:  42%|▍| 392/938 [36:04<46:46,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.4014, lr=1.31e-05
+optimizer steps:  42%|▍| 392/938 [36:04<46:46,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.3577, lr=1.31e-05
+optimizer steps:  42%|▍| 393/938 [36:09<46:41,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.3760, lr=1.31e-05
+optimizer steps:  42%|▍| 394/938 [36:14<46:36,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.1762, lr=1.30e-05
+optimizer steps:  42%|▍| 395/938 [36:19<46:31,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.4553, lr=1.30e-05
+optimizer steps:  42%|▍| 396/938 [36:24<46:26,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.3313, lr=1.30e-05
+optimizer steps:  42%|▍| 397/938 [36:30<46:21,  5.14s/it, best_val=1.4482, epoch=1/1, loss=1.2927, lr=1.29e-05
+optimizer steps:  42%|▍| 398/938 [36:35<46:22,  5.15s/it, best_val=1.4482, epoch=1/1, loss=1.2927, lr=1.29e-05
+optimizer steps:  42%|▍| 398/938 [36:35<46:22,  5.15s/it, best_val=1.4482, epoch=1/1, loss=1.2746, lr=1.29e-05
+optimizer steps:  43%|▍| 399/938 [36:40<46:17,  5.15s/it, best_val=1.4482, epoch=1/1, loss=1.3954, lr=1.29e-05
+optimizer steps:  43%|▍| 400/938 [36:45<46:12,  5.15s/it, best_val=1.4482, epoch=1/1, loss=1.3173, lr=1.28e-05
+                                                                                                              
+[step 400] val_loss=1.4390 (best=1.4390 @ 400)
+
+optimizer steps:  43%|▍| 400/938 [37:38<46:12,  5.15s/it, best_val=1.4482, epoch=1/1, loss=1.3173, lr=1.28e-05
+optimizer steps:  43%|▍| 401/938 [37:42<1:12:57,  8.15s/it, best_val=1.4482, epoch=1/1, loss=1.3173, lr=1.28e-
+optimizer steps:  43%|▍| 401/938 [37:42<1:12:57,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.2949, lr=1.28e-
+optimizer steps:  43%|▍| 402/938 [37:48<1:12:49,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.5041, lr=1.28e-
+optimizer steps:  43%|▍| 403/938 [37:53<1:12:41,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.3235, lr=1.27e-
+optimizer steps:  43%|▍| 404/938 [37:58<1:12:33,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.3685, lr=1.27e-
+optimizer steps:  43%|▍| 405/938 [38:03<1:12:25,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.3851, lr=1.27e-
+optimizer steps:  43%|▍| 406/938 [38:08<1:12:17,  8.15s/it, best_val=1.4390, epoch=1/1, loss=1.3252, lr=1.26e-
+optimizer steps:  43%|▍| 407/938 [38:13<1:03:11,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.3252, lr=1.26e-
+optimizer steps:  43%|▍| 407/938 [38:13<1:03:11,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.3754, lr=1.26e-
+optimizer steps:  43%|▍| 408/938 [38:18<1:03:04,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.3476, lr=1.26e-
+optimizer steps:  44%|▍| 409/938 [38:23<1:02:57,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.3893, lr=1.25e-
+optimizer steps:  44%|▍| 410/938 [38:28<1:02:49,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.2201, lr=1.25e-
+optimizer steps:  44%|▍| 411/938 [38:33<1:02:42,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.3312, lr=1.25e-
+optimizer steps:  44%|▍| 412/938 [38:38<1:02:35,  7.14s/it, best_val=1.4390, epoch=1/1, loss=1.2978, lr=1.24e-
+optimizer steps:  44%|▍| 413/938 [38:43<56:32,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.2978, lr=1.24e-05
+optimizer steps:  44%|▍| 413/938 [38:43<56:32,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.3074, lr=1.24e-05
+optimizer steps:  44%|▍| 414/938 [38:48<56:25,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.1327, lr=1.24e-05
+optimizer steps:  44%|▍| 415/938 [38:53<56:19,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.3495, lr=1.23e-05
+optimizer steps:  44%|▍| 416/938 [38:59<56:12,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.1936, lr=1.23e-05
+optimizer steps:  44%|▍| 417/938 [39:04<56:06,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.1541, lr=1.23e-05
+optimizer steps:  45%|▍| 418/938 [39:10<56:00,  6.46s/it, best_val=1.4390, epoch=1/1, loss=1.3306, lr=1.22e-05
+optimizer steps:  45%|▍| 419/938 [39:15<52:31,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.3306, lr=1.22e-05
+optimizer steps:  45%|▍| 419/938 [39:15<52:31,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.2238, lr=1.22e-05
+optimizer steps:  45%|▍| 420/938 [39:19<52:25,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.5806, lr=1.22e-05
+optimizer steps:  45%|▍| 421/938 [39:25<52:19,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.4150, lr=1.21e-05
+optimizer steps:  45%|▍| 422/938 [39:30<52:13,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.0973, lr=1.21e-05
+optimizer steps:  45%|▍| 423/938 [39:35<52:07,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.3623, lr=1.21e-05
+optimizer steps:  45%|▍| 424/938 [39:40<52:01,  6.07s/it, best_val=1.4390, epoch=1/1, loss=1.4123, lr=1.20e-05
+optimizer steps:  45%|▍| 425/938 [39:46<49:31,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.4123, lr=1.20e-05
+optimizer steps:  45%|▍| 425/938 [39:46<49:31,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.4100, lr=1.20e-05
+optimizer steps:  45%|▍| 426/938 [39:51<49:25,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.1428, lr=1.20e-05
+optimizer steps:  46%|▍| 427/938 [39:56<49:19,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.1508, lr=1.19e-05
+optimizer steps:  46%|▍| 428/938 [40:02<49:13,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.3787, lr=1.19e-05
+optimizer steps:  46%|▍| 429/938 [40:07<49:07,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.5151, lr=1.19e-05
+optimizer steps:  46%|▍| 430/938 [40:12<49:02,  5.79s/it, best_val=1.4390, epoch=1/1, loss=1.4369, lr=1.18e-05
+optimizer steps:  46%|▍| 431/938 [40:18<47:47,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.4369, lr=1.18e-05
+optimizer steps:  46%|▍| 431/938 [40:18<47:47,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.1355, lr=1.18e-05
+optimizer steps:  46%|▍| 432/938 [40:23<47:42,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.3830, lr=1.18e-05
+optimizer steps:  46%|▍| 433/938 [40:28<47:36,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.4879, lr=1.17e-05
+optimizer steps:  46%|▍| 434/938 [40:33<47:30,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.3295, lr=1.17e-05
+optimizer steps:  46%|▍| 435/938 [40:39<47:25,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.3057, lr=1.16e-05
+optimizer steps:  46%|▍| 436/938 [40:43<47:19,  5.66s/it, best_val=1.4390, epoch=1/1, loss=1.4131, lr=1.16e-05
+optimizer steps:  47%|▍| 437/938 [40:49<45:56,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.4131, lr=1.16e-05
+optimizer steps:  47%|▍| 437/938 [40:49<45:56,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.2938, lr=1.16e-05
+optimizer steps:  47%|▍| 438/938 [40:54<45:50,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.3450, lr=1.15e-05
+optimizer steps:  47%|▍| 439/938 [40:59<45:45,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.4236, lr=1.15e-05
+optimizer steps:  47%|▍| 440/938 [41:04<45:39,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.4457, lr=1.15e-05
+optimizer steps:  47%|▍| 441/938 [41:10<45:34,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.3542, lr=1.14e-05
+optimizer steps:  47%|▍| 442/938 [41:15<45:28,  5.50s/it, best_val=1.4390, epoch=1/1, loss=1.2395, lr=1.14e-05
+optimizer steps:  47%|▍| 443/938 [41:20<44:50,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.2395, lr=1.14e-05
+optimizer steps:  47%|▍| 443/938 [41:20<44:50,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.4525, lr=1.14e-05
+optimizer steps:  47%|▍| 444/938 [41:25<44:44,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.3382, lr=1.13e-05
+optimizer steps:  47%|▍| 445/938 [41:31<44:39,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.3762, lr=1.13e-05
+optimizer steps:  48%|▍| 446/938 [41:36<44:33,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.2264, lr=1.13e-05
+optimizer steps:  48%|▍| 447/938 [41:41<44:28,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.3788, lr=1.12e-05
+optimizer steps:  48%|▍| 448/938 [41:47<44:22,  5.43s/it, best_val=1.4390, epoch=1/1, loss=1.4472, lr=1.12e-05
+optimizer steps:  48%|▍| 449/938 [41:52<43:47,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.4472, lr=1.12e-05
+optimizer steps:  48%|▍| 449/938 [41:52<43:47,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.2340, lr=1.12e-05
+optimizer steps:  48%|▍| 450/938 [41:57<43:42,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.2948, lr=1.11e-05
+optimizer steps:  48%|▍| 451/938 [42:02<43:36,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.4023, lr=1.11e-05
+optimizer steps:  48%|▍| 452/938 [42:07<43:31,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.4722, lr=1.11e-05
+optimizer steps:  48%|▍| 453/938 [42:12<43:26,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.3876, lr=1.10e-05
+optimizer steps:  48%|▍| 454/938 [42:17<43:20,  5.37s/it, best_val=1.4390, epoch=1/1, loss=1.3811, lr=1.10e-05
+optimizer steps:  49%|▍| 455/938 [42:22<42:38,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.3811, lr=1.10e-05
+optimizer steps:  49%|▍| 455/938 [42:22<42:38,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.2997, lr=1.10e-05
+optimizer steps:  49%|▍| 456/938 [42:28<42:33,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.3842, lr=1.09e-05
+optimizer steps:  49%|▍| 457/938 [42:33<42:27,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.4602, lr=1.09e-05
+optimizer steps:  49%|▍| 458/938 [42:38<42:22,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.3405, lr=1.09e-05
+optimizer steps:  49%|▍| 459/938 [42:44<42:17,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.4173, lr=1.08e-05
+optimizer steps:  49%|▍| 460/938 [42:49<42:12,  5.30s/it, best_val=1.4390, epoch=1/1, loss=1.4462, lr=1.08e-05
+optimizer steps:  49%|▍| 461/938 [42:54<42:02,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.4462, lr=1.08e-05
+optimizer steps:  49%|▍| 461/938 [42:54<42:02,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.2458, lr=1.08e-05
+optimizer steps:  49%|▍| 462/938 [42:59<41:57,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.4375, lr=1.07e-05
+optimizer steps:  49%|▍| 463/938 [43:04<41:52,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.2512, lr=1.07e-05
+optimizer steps:  49%|▍| 464/938 [43:09<41:46,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.4546, lr=1.07e-05
+optimizer steps:  50%|▍| 465/938 [43:14<41:41,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.4608, lr=1.06e-05
+optimizer steps:  50%|▍| 466/938 [43:19<41:36,  5.29s/it, best_val=1.4390, epoch=1/1, loss=1.3155, lr=1.06e-05
+optimizer steps:  50%|▍| 467/938 [43:24<40:58,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.3155, lr=1.06e-05
+optimizer steps:  50%|▍| 467/938 [43:24<40:58,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.3173, lr=1.06e-05
+optimizer steps:  50%|▍| 468/938 [43:30<40:53,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.3104, lr=1.05e-05
+optimizer steps:  50%|▌| 469/938 [43:34<40:47,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.2791, lr=1.05e-05
+optimizer steps:  50%|▌| 470/938 [43:40<40:42,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.5007, lr=1.04e-05
+optimizer steps:  50%|▌| 471/938 [43:45<40:37,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.3141, lr=1.04e-05
+optimizer steps:  50%|▌| 472/938 [43:51<40:32,  5.22s/it, best_val=1.4390, epoch=1/1, loss=1.4859, lr=1.04e-05
+optimizer steps:  50%|▌| 473/938 [43:56<40:37,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.4859, lr=1.04e-05
+optimizer steps:  50%|▌| 473/938 [43:56<40:37,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.4966, lr=1.03e-05
+optimizer steps:  51%|▌| 474/938 [44:01<40:31,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.3837, lr=1.03e-05
+optimizer steps:  51%|▌| 475/938 [44:06<40:26,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.2649, lr=1.03e-05
+optimizer steps:  51%|▌| 476/938 [44:11<40:21,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.1394, lr=1.02e-05
+optimizer steps:  51%|▌| 477/938 [44:16<40:16,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.3667, lr=1.02e-05
+optimizer steps:  51%|▌| 478/938 [44:21<40:10,  5.24s/it, best_val=1.4390, epoch=1/1, loss=1.3721, lr=1.02e-05
+optimizer steps:  51%|▌| 479/938 [44:26<39:34,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.3721, lr=1.02e-05
+optimizer steps:  51%|▌| 479/938 [44:26<39:34,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.3407, lr=1.01e-05
+optimizer steps:  51%|▌| 480/938 [44:31<39:29,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.3915, lr=1.01e-05
+optimizer steps:  51%|▌| 481/938 [44:37<39:23,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.2952, lr=1.01e-05
+optimizer steps:  51%|▌| 482/938 [44:42<39:18,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.1460, lr=1.00e-05
+optimizer steps:  51%|▌| 483/938 [44:47<39:13,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.3505, lr=1.00e-05
+optimizer steps:  52%|▌| 484/938 [44:53<39:08,  5.17s/it, best_val=1.4390, epoch=1/1, loss=1.3272, lr=9.97e-06
+optimizer steps:  52%|▌| 485/938 [44:58<39:17,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3272, lr=9.97e-06
+optimizer steps:  52%|▌| 485/938 [44:58<39:17,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3703, lr=9.93e-06
+optimizer steps:  52%|▌| 486/938 [45:03<39:12,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3900, lr=9.90e-06
+optimizer steps:  52%|▌| 487/938 [45:08<39:07,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3523, lr=9.86e-06
+optimizer steps:  52%|▌| 488/938 [45:13<39:02,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.2890, lr=9.83e-06
+optimizer steps:  52%|▌| 489/938 [45:19<38:56,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3660, lr=9.79e-06
+optimizer steps:  52%|▌| 490/938 [45:24<38:51,  5.20s/it, best_val=1.4390, epoch=1/1, loss=1.3449, lr=9.76e-06
+optimizer steps:  52%|▌| 491/938 [45:29<38:36,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.3449, lr=9.76e-06
+optimizer steps:  52%|▌| 491/938 [45:29<38:36,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.3755, lr=9.72e-06
+optimizer steps:  52%|▌| 492/938 [45:34<38:30,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.4655, lr=9.69e-06
+optimizer steps:  53%|▌| 493/938 [45:39<38:25,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.4535, lr=9.65e-06
+optimizer steps:  53%|▌| 494/938 [45:44<38:20,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.2472, lr=9.62e-06
+optimizer steps:  53%|▌| 495/938 [45:49<38:15,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.3537, lr=9.59e-06
+optimizer steps:  53%|▌| 496/938 [45:54<38:10,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.2731, lr=9.55e-06
+optimizer steps:  53%|▌| 497/938 [46:00<38:02,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.2731, lr=9.55e-06
+optimizer steps:  53%|▌| 497/938 [46:00<38:02,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.2768, lr=9.52e-06
+optimizer steps:  53%|▌| 498/938 [46:05<37:57,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.3722, lr=9.48e-06
+optimizer steps:  53%|▌| 499/938 [46:10<37:52,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.3363, lr=9.45e-06
+optimizer steps:  53%|▌| 500/938 [46:15<37:47,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.1576, lr=9.41e-06
+                                                                                                              
+[step 500] val_loss=1.4244 (best=1.4244 @ 500)
+
+optimizer steps:  53%|▌| 500/938 [47:07<37:47,  5.18s/it, best_val=1.4390, epoch=1/1, loss=1.1576, lr=9.41e-06
+optimizer steps:  53%|▌| 501/938 [47:12<58:40,  8.06s/it, best_val=1.4390, epoch=1/1, loss=1.1576, lr=9.41e-06
+optimizer steps:  53%|▌| 501/938 [47:12<58:40,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.4313, lr=9.38e-06
+optimizer steps:  54%|▌| 502/938 [47:17<58:32,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.2824, lr=9.34e-06
+optimizer steps:  54%|▌| 503/938 [47:22<58:24,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.4050, lr=9.31e-06
+optimizer steps:  54%|▌| 504/938 [47:27<58:16,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.4602, lr=9.28e-06
+optimizer steps:  54%|▌| 505/938 [47:32<58:07,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.3932, lr=9.24e-06
+optimizer steps:  54%|▌| 506/938 [47:38<57:59,  8.06s/it, best_val=1.4244, epoch=1/1, loss=1.1538, lr=9.21e-06
+optimizer steps:  54%|▌| 507/938 [47:43<51:04,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.1538, lr=9.21e-06
+optimizer steps:  54%|▌| 507/938 [47:43<51:04,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.2290, lr=9.17e-06
+optimizer steps:  54%|▌| 508/938 [47:48<50:57,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.3065, lr=9.14e-06
+optimizer steps:  54%|▌| 509/938 [47:53<50:50,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.5772, lr=9.10e-06
+optimizer steps:  54%|▌| 510/938 [47:58<50:43,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.4530, lr=9.07e-06
+optimizer steps:  54%|▌| 511/938 [48:04<50:36,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.4097, lr=9.03e-06
+optimizer steps:  55%|▌| 512/938 [48:09<50:29,  7.11s/it, best_val=1.4244, epoch=1/1, loss=1.2744, lr=9.00e-06
+optimizer steps:  55%|▌| 513/938 [48:14<46:07,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.2744, lr=9.00e-06
+optimizer steps:  55%|▌| 513/938 [48:14<46:07,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.3982, lr=8.97e-06
+optimizer steps:  55%|▌| 514/938 [48:19<46:01,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.4331, lr=8.93e-06
+optimizer steps:  55%|▌| 515/938 [48:25<45:54,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.2232, lr=8.90e-06
+optimizer steps:  55%|▌| 516/938 [48:30<45:48,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.3368, lr=8.86e-06
+optimizer steps:  55%|▌| 517/938 [48:35<45:41,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.3378, lr=8.83e-06
+optimizer steps:  55%|▌| 518/938 [48:40<45:35,  6.51s/it, best_val=1.4244, epoch=1/1, loss=1.3509, lr=8.79e-06
+optimizer steps:  55%|▌| 519/938 [48:45<42:29,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.3509, lr=8.79e-06
+optimizer steps:  55%|▌| 519/938 [48:45<42:29,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.1436, lr=8.76e-06
+optimizer steps:  55%|▌| 520/938 [48:50<42:23,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.5078, lr=8.73e-06
+optimizer steps:  56%|▌| 521/938 [48:56<42:17,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.4828, lr=8.69e-06
+optimizer steps:  56%|▌| 522/938 [49:01<42:11,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.5085, lr=8.66e-06
+optimizer steps:  56%|▌| 523/938 [49:06<42:05,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.3455, lr=8.62e-06
+optimizer steps:  56%|▌| 524/938 [49:11<41:59,  6.09s/it, best_val=1.4244, epoch=1/1, loss=1.3360, lr=8.59e-06
+optimizer steps:  56%|▌| 525/938 [49:16<39:57,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.3360, lr=8.59e-06
+optimizer steps:  56%|▌| 525/938 [49:16<39:57,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.5455, lr=8.56e-06
+optimizer steps:  56%|▌| 526/938 [49:21<39:51,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.3750, lr=8.52e-06
+optimizer steps:  56%|▌| 527/938 [49:25<39:45,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.2905, lr=8.49e-06
+optimizer steps:  56%|▌| 528/938 [49:31<39:39,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.3196, lr=8.45e-06
+optimizer steps:  56%|▌| 529/938 [49:36<39:33,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.3280, lr=8.42e-06
+optimizer steps:  57%|▌| 530/938 [49:41<39:28,  5.80s/it, best_val=1.4244, epoch=1/1, loss=1.2128, lr=8.38e-06
+optimizer steps:  57%|▌| 531/938 [49:46<37:46,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.2128, lr=8.38e-06
+optimizer steps:  57%|▌| 531/938 [49:46<37:46,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.2750, lr=8.35e-06
+optimizer steps:  57%|▌| 532/938 [49:51<37:41,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.3756, lr=8.32e-06
+optimizer steps:  57%|▌| 533/938 [49:56<37:35,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.2414, lr=8.28e-06
+optimizer steps:  57%|▌| 534/938 [50:00<37:29,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.4456, lr=8.25e-06
+optimizer steps:  57%|▌| 535/938 [50:06<37:24,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.1883, lr=8.21e-06
+optimizer steps:  57%|▌| 536/938 [50:11<37:18,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.4768, lr=8.18e-06
+optimizer steps:  57%|▌| 537/938 [50:16<37:13,  5.57s/it, best_val=1.4244, epoch=1/1, loss=1.3592, lr=8.15e-06
+optimizer steps:  57%|▌| 538/938 [50:21<35:47,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.3592, lr=8.15e-06
+optimizer steps:  57%|▌| 538/938 [50:21<35:47,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.0348, lr=8.11e-06
+optimizer steps:  57%|▌| 539/938 [50:26<35:42,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.3963, lr=8.08e-06
+optimizer steps:  58%|▌| 540/938 [50:31<35:36,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.2184, lr=8.04e-06
+optimizer steps:  58%|▌| 541/938 [50:36<35:31,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.1679, lr=8.01e-06
+optimizer steps:  58%|▌| 542/938 [50:42<35:26,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.4106, lr=7.98e-06
+optimizer steps:  58%|▌| 543/938 [50:47<35:20,  5.37s/it, best_val=1.4244, epoch=1/1, loss=1.3924, lr=7.94e-06
+optimizer steps:  58%|▌| 544/938 [50:52<34:54,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.3924, lr=7.94e-06
+optimizer steps:  58%|▌| 544/938 [50:52<34:54,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.3114, lr=7.91e-06
+optimizer steps:  58%|▌| 545/938 [50:57<34:49,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.2332, lr=7.88e-06
+optimizer steps:  58%|▌| 546/938 [51:03<34:43,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.3201, lr=7.84e-06
+optimizer steps:  58%|▌| 547/938 [51:08<34:38,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.3540, lr=7.81e-06
+optimizer steps:  58%|▌| 548/938 [51:13<34:33,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.4040, lr=7.77e-06
+optimizer steps:  59%|▌| 549/938 [51:18<34:27,  5.32s/it, best_val=1.4244, epoch=1/1, loss=1.2467, lr=7.74e-06
+optimizer steps:  59%|▌| 550/938 [51:23<34:09,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.2467, lr=7.74e-06
+optimizer steps:  59%|▌| 550/938 [51:23<34:09,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.3863, lr=7.71e-06
+optimizer steps:  59%|▌| 551/938 [51:28<34:04,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.3366, lr=7.67e-06
+optimizer steps:  59%|▌| 552/938 [51:34<33:59,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.2001, lr=7.64e-06
+optimizer steps:  59%|▌| 553/938 [51:39<33:53,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.2820, lr=7.61e-06
+optimizer steps:  59%|▌| 554/938 [51:44<33:48,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.3944, lr=7.57e-06
+optimizer steps:  59%|▌| 555/938 [51:49<33:43,  5.28s/it, best_val=1.4244, epoch=1/1, loss=1.2915, lr=7.54e-06
+optimizer steps:  59%|▌| 556/938 [51:54<33:25,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.2915, lr=7.54e-06
+optimizer steps:  59%|▌| 556/938 [51:54<33:25,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.5205, lr=7.51e-06
+optimizer steps:  59%|▌| 557/938 [52:00<33:20,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.3807, lr=7.47e-06
+optimizer steps:  59%|▌| 558/938 [52:05<33:15,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.3376, lr=7.44e-06
+optimizer steps:  60%|▌| 559/938 [52:10<33:10,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.4455, lr=7.41e-06
+optimizer steps:  60%|▌| 560/938 [52:15<33:04,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.3686, lr=7.37e-06
+optimizer steps:  60%|▌| 561/938 [52:20<32:59,  5.25s/it, best_val=1.4244, epoch=1/1, loss=1.1843, lr=7.34e-06
+optimizer steps:  60%|▌| 562/938 [52:25<32:41,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.1843, lr=7.34e-06
+optimizer steps:  60%|▌| 562/938 [52:25<32:41,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.3533, lr=7.31e-06
+optimizer steps:  60%|▌| 563/938 [52:30<32:35,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.4704, lr=7.27e-06
+optimizer steps:  60%|▌| 564/938 [52:35<32:30,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.3136, lr=7.24e-06
+optimizer steps:  60%|▌| 565/938 [52:41<32:25,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.3208, lr=7.21e-06
+optimizer steps:  60%|▌| 566/938 [52:46<32:20,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.3198, lr=7.17e-06
+optimizer steps:  60%|▌| 567/938 [52:51<32:15,  5.22s/it, best_val=1.4244, epoch=1/1, loss=1.3292, lr=7.14e-06
+optimizer steps:  61%|▌| 568/938 [52:56<32:05,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3292, lr=7.14e-06
+optimizer steps:  61%|▌| 568/938 [52:56<32:05,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3955, lr=7.11e-06
+optimizer steps:  61%|▌| 569/938 [53:02<32:00,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.2796, lr=7.07e-06
+optimizer steps:  61%|▌| 570/938 [53:07<31:55,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.2265, lr=7.04e-06
+optimizer steps:  61%|▌| 571/938 [53:12<31:50,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3540, lr=7.01e-06
+optimizer steps:  61%|▌| 572/938 [53:17<31:45,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3840, lr=6.98e-06
+optimizer steps:  61%|▌| 573/938 [53:22<31:39,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.4155, lr=6.94e-06
+optimizer steps:  61%|▌| 574/938 [53:27<31:21,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.4155, lr=6.94e-06
+optimizer steps:  61%|▌| 574/938 [53:27<31:21,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.3279, lr=6.91e-06
+optimizer steps:  61%|▌| 575/938 [53:32<31:16,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.4987, lr=6.88e-06
+optimizer steps:  61%|▌| 576/938 [53:38<31:11,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.2762, lr=6.84e-06
+optimizer steps:  62%|▌| 577/938 [53:43<31:06,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.2826, lr=6.81e-06
+optimizer steps:  62%|▌| 578/938 [53:48<31:00,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.3848, lr=6.78e-06
+optimizer steps:  62%|▌| 579/938 [53:53<30:55,  5.17s/it, best_val=1.4244, epoch=1/1, loss=1.4662, lr=6.75e-06
+optimizer steps:  62%|▌| 580/938 [53:58<30:54,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.4662, lr=6.75e-06
+optimizer steps:  62%|▌| 580/938 [53:58<30:54,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.3333, lr=6.71e-06
+optimizer steps:  62%|▌| 581/938 [54:03<30:49,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.3740, lr=6.68e-06
+optimizer steps:  62%|▌| 582/938 [54:09<30:44,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.3249, lr=6.65e-06
+optimizer steps:  62%|▌| 583/938 [54:14<30:39,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.2746, lr=6.62e-06
+optimizer steps:  62%|▌| 584/938 [54:19<30:34,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.2530, lr=6.58e-06
+optimizer steps:  62%|▌| 585/938 [54:24<30:28,  5.18s/it, best_val=1.4244, epoch=1/1, loss=1.3059, lr=6.55e-06
+optimizer steps:  62%|▌| 586/938 [54:30<30:33,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3059, lr=6.55e-06
+optimizer steps:  62%|▌| 586/938 [54:30<30:33,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.1583, lr=6.52e-06
+optimizer steps:  63%|▋| 587/938 [54:35<30:28,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.4325, lr=6.49e-06
+optimizer steps:  63%|▋| 588/938 [54:40<30:23,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3949, lr=6.45e-06
+optimizer steps:  63%|▋| 589/938 [54:46<30:17,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.3690, lr=6.42e-06
+optimizer steps:  63%|▋| 590/938 [54:51<30:12,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.2859, lr=6.39e-06
+optimizer steps:  63%|▋| 591/938 [54:56<30:07,  5.21s/it, best_val=1.4244, epoch=1/1, loss=1.2001, lr=6.36e-06
+optimizer steps:  63%|▋| 592/938 [55:02<30:18,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.2001, lr=6.36e-06
+optimizer steps:  63%|▋| 592/938 [55:02<30:18,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.3990, lr=6.33e-06
+optimizer steps:  63%|▋| 593/938 [55:07<30:13,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.4259, lr=6.29e-06
+optimizer steps:  63%|▋| 594/938 [55:12<30:07,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.3616, lr=6.26e-06
+optimizer steps:  63%|▋| 595/938 [55:17<30:02,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.5484, lr=6.23e-06
+optimizer steps:  64%|▋| 596/938 [55:22<29:57,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.2766, lr=6.20e-06
+optimizer steps:  64%|▋| 597/938 [55:28<29:52,  5.26s/it, best_val=1.4244, epoch=1/1, loss=1.2509, lr=6.17e-06
+optimizer steps:  64%|▋| 598/938 [55:32<29:28,  5.20s/it, best_val=1.4244, epoch=1/1, loss=1.2509, lr=6.17e-06
+optimizer steps:  64%|▋| 598/938 [55:32<29:28,  5.20s/it, best_val=1.4244, epoch=1/1, loss=1.4978, lr=6.13e-06
+optimizer steps:  64%|▋| 599/938 [55:37<29:23,  5.20s/it, best_val=1.4244, epoch=1/1, loss=1.2854, lr=6.10e-06
+optimizer steps:  64%|▋| 600/938 [55:43<29:17,  5.20s/it, best_val=1.4244, epoch=1/1, loss=1.6383, lr=6.07e-06
+                                                                                                              
+[step 600] val_loss=1.4137 (best=1.4137 @ 600)
+
+optimizer steps:  64%|▋| 600/938 [56:35<29:17,  5.20s/it, best_val=1.4244, epoch=1/1, loss=1.6383, lr=6.07e-06
+optimizer steps:  64%|▋| 601/938 [56:40<46:27,  8.27s/it, best_val=1.4244, epoch=1/1, loss=1.6383, lr=6.07e-06
+optimizer steps:  64%|▋| 601/938 [56:40<46:27,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.1903, lr=6.04e-06
+optimizer steps:  64%|▋| 602/938 [56:45<46:19,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.2767, lr=6.01e-06
+optimizer steps:  64%|▋| 603/938 [56:51<46:11,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.4551, lr=5.97e-06
+optimizer steps:  64%|▋| 604/938 [56:56<46:03,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.2870, lr=5.94e-06
+optimizer steps:  64%|▋| 605/938 [57:01<45:54,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.3278, lr=5.91e-06
+optimizer steps:  65%|▋| 606/938 [57:06<45:46,  8.27s/it, best_val=1.4137, epoch=1/1, loss=1.4283, lr=5.88e-06
+optimizer steps:  65%|▋| 607/938 [57:11<39:51,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.4283, lr=5.88e-06
+optimizer steps:  65%|▋| 607/938 [57:11<39:51,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.2467, lr=5.85e-06
+optimizer steps:  65%|▋| 608/938 [57:16<39:43,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.3421, lr=5.82e-06
+optimizer steps:  65%|▋| 609/938 [57:21<39:36,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.3644, lr=5.79e-06
+optimizer steps:  65%|▋| 610/938 [57:26<39:29,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.2962, lr=5.75e-06
+optimizer steps:  65%|▋| 611/938 [57:31<39:22,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.4415, lr=5.72e-06
+optimizer steps:  65%|▋| 612/938 [57:37<39:15,  7.22s/it, best_val=1.4137, epoch=1/1, loss=1.2832, lr=5.69e-06
+optimizer steps:  65%|▋| 613/938 [57:42<35:29,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.2832, lr=5.69e-06
+optimizer steps:  65%|▋| 613/938 [57:42<35:29,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.5003, lr=5.66e-06
+optimizer steps:  65%|▋| 614/938 [57:47<35:22,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.2511, lr=5.63e-06
+optimizer steps:  66%|▋| 615/938 [57:52<35:15,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.4355, lr=5.60e-06
+optimizer steps:  66%|▋| 616/938 [57:57<35:09,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.4238, lr=5.57e-06
+optimizer steps:  66%|▋| 617/938 [58:02<35:02,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.6015, lr=5.54e-06
+optimizer steps:  66%|▋| 618/938 [58:07<34:56,  6.55s/it, best_val=1.4137, epoch=1/1, loss=1.4687, lr=5.51e-06
+optimizer steps:  66%|▋| 619/938 [58:12<32:17,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.4687, lr=5.51e-06
+optimizer steps:  66%|▋| 619/938 [58:12<32:17,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.3559, lr=5.48e-06
+optimizer steps:  66%|▋| 620/938 [58:18<32:11,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.3209, lr=5.44e-06
+optimizer steps:  66%|▋| 621/938 [58:23<32:05,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.5334, lr=5.41e-06
+optimizer steps:  66%|▋| 622/938 [58:27<31:59,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.3446, lr=5.38e-06
+optimizer steps:  66%|▋| 623/938 [58:32<31:53,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.4292, lr=5.35e-06
+optimizer steps:  67%|▋| 624/938 [58:37<31:47,  6.07s/it, best_val=1.4137, epoch=1/1, loss=1.2926, lr=5.32e-06
+optimizer steps:  67%|▋| 625/938 [58:42<30:01,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.2926, lr=5.32e-06
+optimizer steps:  67%|▋| 625/938 [58:42<30:01,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.3910, lr=5.29e-06
+optimizer steps:  67%|▋| 626/938 [58:48<29:55,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.4463, lr=5.26e-06
+optimizer steps:  67%|▋| 627/938 [58:53<29:50,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.3976, lr=5.23e-06
+optimizer steps:  67%|▋| 628/938 [58:58<29:44,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.4366, lr=5.20e-06
+optimizer steps:  67%|▋| 629/938 [59:03<29:38,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.4130, lr=5.17e-06
+optimizer steps:  67%|▋| 630/938 [59:08<29:32,  5.76s/it, best_val=1.4137, epoch=1/1, loss=1.2093, lr=5.14e-06
+optimizer steps:  67%|▋| 631/938 [59:13<28:28,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.2093, lr=5.14e-06
+optimizer steps:  67%|▋| 631/938 [59:13<28:28,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.3276, lr=5.11e-06
+optimizer steps:  67%|▋| 632/938 [59:18<28:22,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.3237, lr=5.08e-06
+optimizer steps:  67%|▋| 633/938 [59:24<28:17,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.3406, lr=5.05e-06
+optimizer steps:  68%|▋| 634/938 [59:29<28:11,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.3375, lr=5.02e-06
+optimizer steps:  68%|▋| 635/938 [59:34<28:05,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.3477, lr=4.99e-06
+optimizer steps:  68%|▋| 636/938 [59:40<28:00,  5.56s/it, best_val=1.4137, epoch=1/1, loss=1.2855, lr=4.96e-06
+optimizer steps:  68%|▋| 637/938 [59:45<27:27,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.2855, lr=4.96e-06
+optimizer steps:  68%|▋| 637/938 [59:45<27:27,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.3588, lr=4.93e-06
+optimizer steps:  68%|▋| 638/938 [59:50<27:22,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.4396, lr=4.90e-06
+optimizer steps:  68%|▋| 639/938 [59:55<27:16,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.4357, lr=4.87e-06
+optimizer steps:  68%|▋| 640/938 [1:00:01<27:11,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.2408, lr=4.84e-
+optimizer steps:  68%|▋| 641/938 [1:00:06<27:05,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.3690, lr=4.81e-
+optimizer steps:  68%|▋| 642/938 [1:00:11<27:00,  5.47s/it, best_val=1.4137, epoch=1/1, loss=1.4057, lr=4.78e-
+optimizer steps:  69%|▋| 643/938 [1:00:16<26:29,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.4057, lr=4.78e-
+optimizer steps:  69%|▋| 643/938 [1:00:16<26:29,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.2566, lr=4.75e-
+optimizer steps:  69%|▋| 644/938 [1:00:21<26:24,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.3711, lr=4.72e-
+optimizer steps:  69%|▋| 645/938 [1:00:26<26:18,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.3079, lr=4.69e-
+optimizer steps:  69%|▋| 646/938 [1:00:31<26:13,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.3384, lr=4.67e-
+optimizer steps:  69%|▋| 647/938 [1:00:36<26:08,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.4553, lr=4.64e-
+optimizer steps:  69%|▋| 648/938 [1:00:41<26:02,  5.39s/it, best_val=1.4137, epoch=1/1, loss=1.3402, lr=4.61e-
+optimizer steps:  69%|▋| 649/938 [1:00:47<25:38,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.3402, lr=4.61e-
+optimizer steps:  69%|▋| 649/938 [1:00:47<25:38,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.3075, lr=4.58e-
+optimizer steps:  69%|▋| 650/938 [1:00:52<25:32,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.1914, lr=4.55e-
+optimizer steps:  69%|▋| 651/938 [1:00:58<25:27,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.3267, lr=4.52e-
+optimizer steps:  70%|▋| 652/938 [1:01:03<25:22,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.2499, lr=4.49e-
+optimizer steps:  70%|▋| 653/938 [1:01:08<25:16,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.4151, lr=4.46e-
+optimizer steps:  70%|▋| 654/938 [1:01:13<25:11,  5.32s/it, best_val=1.4137, epoch=1/1, loss=1.4067, lr=4.43e-
+optimizer steps:  70%|▋| 655/938 [1:01:18<24:50,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.4067, lr=4.43e-
+optimizer steps:  70%|▋| 655/938 [1:01:18<24:50,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.4019, lr=4.40e-
+optimizer steps:  70%|▋| 656/938 [1:01:23<24:44,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.2023, lr=4.38e-
+optimizer steps:  70%|▋| 657/938 [1:01:28<24:39,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.3623, lr=4.35e-
+optimizer steps:  70%|▋| 658/938 [1:01:33<24:34,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.2920, lr=4.32e-
+optimizer steps:  70%|▋| 659/938 [1:01:39<24:28,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.3737, lr=4.29e-
+optimizer steps:  70%|▋| 660/938 [1:01:44<24:23,  5.27s/it, best_val=1.4137, epoch=1/1, loss=1.3937, lr=4.26e-
+optimizer steps:  70%|▋| 661/938 [1:01:49<24:08,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.3937, lr=4.26e-
+optimizer steps:  70%|▋| 661/938 [1:01:49<24:08,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.2609, lr=4.23e-
+optimizer steps:  71%|▋| 662/938 [1:01:54<24:03,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.2303, lr=4.21e-
+optimizer steps:  71%|▋| 663/938 [1:01:59<23:57,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.3291, lr=4.18e-
+optimizer steps:  71%|▋| 664/938 [1:02:04<23:52,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.3317, lr=4.15e-
+optimizer steps:  71%|▋| 665/938 [1:02:09<23:47,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.2389, lr=4.12e-
+optimizer steps:  71%|▋| 666/938 [1:02:14<23:42,  5.23s/it, best_val=1.4137, epoch=1/1, loss=1.3633, lr=4.09e-
+optimizer steps:  71%|▋| 667/938 [1:02:19<23:23,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.3633, lr=4.09e-
+optimizer steps:  71%|▋| 667/938 [1:02:19<23:23,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.1966, lr=4.07e-
+optimizer steps:  71%|▋| 668/938 [1:02:24<23:18,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.4361, lr=4.04e-
+optimizer steps:  71%|▋| 669/938 [1:02:29<23:12,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.2978, lr=4.01e-
+optimizer steps:  71%|▋| 670/938 [1:02:34<23:07,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.3312, lr=3.98e-
+optimizer steps:  72%|▋| 671/938 [1:02:39<23:02,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.3520, lr=3.96e-
+optimizer steps:  72%|▋| 672/938 [1:02:44<22:57,  5.18s/it, best_val=1.4137, epoch=1/1, loss=1.5445, lr=3.93e-
+optimizer steps:  72%|▋| 673/938 [1:02:49<22:42,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.5445, lr=3.93e-
+optimizer steps:  72%|▋| 673/938 [1:02:49<22:42,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.2654, lr=3.90e-
+optimizer steps:  72%|▋| 674/938 [1:02:55<22:37,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.3120, lr=3.87e-
+optimizer steps:  72%|▋| 675/938 [1:03:00<22:31,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.3658, lr=3.85e-
+optimizer steps:  72%|▋| 676/938 [1:03:05<22:26,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.2774, lr=3.82e-
+optimizer steps:  72%|▋| 677/938 [1:03:10<22:21,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.2015, lr=3.79e-
+optimizer steps:  72%|▋| 678/938 [1:03:15<22:16,  5.14s/it, best_val=1.4137, epoch=1/1, loss=1.2415, lr=3.77e-
+optimizer steps:  72%|▋| 679/938 [1:03:20<22:13,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.2415, lr=3.77e-
+optimizer steps:  72%|▋| 679/938 [1:03:20<22:13,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.3988, lr=3.74e-
+optimizer steps:  72%|▋| 680/938 [1:03:26<22:08,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.4025, lr=3.71e-
+optimizer steps:  73%|▋| 681/938 [1:03:31<22:03,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.3941, lr=3.68e-
+optimizer steps:  73%|▋| 682/938 [1:03:36<21:58,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.1035, lr=3.66e-
+optimizer steps:  73%|▋| 683/938 [1:03:41<21:53,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.4204, lr=3.63e-
+optimizer steps:  73%|▋| 684/938 [1:03:46<21:47,  5.15s/it, best_val=1.4137, epoch=1/1, loss=1.3555, lr=3.60e-
+optimizer steps:  73%|▋| 685/938 [1:03:52<21:46,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.3555, lr=3.60e-
+optimizer steps:  73%|▋| 685/938 [1:03:52<21:46,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.3177, lr=3.58e-
+optimizer steps:  73%|▋| 686/938 [1:03:57<21:41,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4561, lr=3.55e-
+optimizer steps:  73%|▋| 687/938 [1:04:02<21:36,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4562, lr=3.53e-
+optimizer steps:  73%|▋| 688/938 [1:04:07<21:31,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4094, lr=3.50e-
+optimizer steps:  73%|▋| 689/938 [1:04:12<21:26,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.5297, lr=3.47e-
+optimizer steps:  74%|▋| 690/938 [1:04:17<21:20,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4079, lr=3.45e-
+optimizer steps:  74%|▋| 691/938 [1:04:23<21:15,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4079, lr=3.45e-
+optimizer steps:  74%|▋| 691/938 [1:04:23<21:15,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.4052, lr=3.42e-
+optimizer steps:  74%|▋| 692/938 [1:04:28<21:10,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.3544, lr=3.39e-
+optimizer steps:  74%|▋| 693/938 [1:04:33<21:04,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.2324, lr=3.37e-
+optimizer steps:  74%|▋| 694/938 [1:04:38<20:59,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.2427, lr=3.34e-
+optimizer steps:  74%|▋| 695/938 [1:04:43<20:54,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.3281, lr=3.32e-
+optimizer steps:  74%|▋| 696/938 [1:04:48<20:49,  5.16s/it, best_val=1.4137, epoch=1/1, loss=1.2173, lr=3.29e-
+optimizer steps:  74%|▋| 697/938 [1:04:54<20:45,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.2173, lr=3.29e-
+optimizer steps:  74%|▋| 697/938 [1:04:54<20:45,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.3276, lr=3.27e-
+optimizer steps:  74%|▋| 698/938 [1:04:59<20:39,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.3925, lr=3.24e-
+optimizer steps:  75%|▋| 699/938 [1:05:04<20:34,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.1665, lr=3.22e-
+optimizer steps:  75%|▋| 700/938 [1:05:09<20:29,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.3757, lr=3.19e-
+                                                                                                              
+[step 700] val_loss=1.4043 (best=1.4043 @ 700)
+
+optimizer steps:  75%|▋| 700/938 [1:06:02<20:29,  5.17s/it, best_val=1.4137, epoch=1/1, loss=1.3757, lr=3.19e-
+optimizer steps:  75%|▋| 701/938 [1:06:07<31:58,  8.10s/it, best_val=1.4137, epoch=1/1, loss=1.3757, lr=3.19e-
+optimizer steps:  75%|▋| 701/938 [1:06:07<31:58,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.3128, lr=3.16e-
+optimizer steps:  75%|▋| 702/938 [1:06:12<31:50,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.2156, lr=3.14e-
+optimizer steps:  75%|▋| 703/938 [1:06:17<31:42,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.3418, lr=3.11e-
+optimizer steps:  75%|▊| 704/938 [1:06:22<31:34,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.4240, lr=3.09e-
+optimizer steps:  75%|▊| 705/938 [1:06:27<31:26,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.3523, lr=3.06e-
+optimizer steps:  75%|▊| 706/938 [1:06:33<31:18,  8.10s/it, best_val=1.4043, epoch=1/1, loss=1.3043, lr=3.04e-
+optimizer steps:  75%|▊| 707/938 [1:06:38<27:34,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.3043, lr=3.04e-
+optimizer steps:  75%|▊| 707/938 [1:06:38<27:34,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.2665, lr=3.01e-
+optimizer steps:  75%|▊| 708/938 [1:06:43<27:27,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.3500, lr=2.99e-
+optimizer steps:  76%|▊| 709/938 [1:06:48<27:20,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.1878, lr=2.97e-
+optimizer steps:  76%|▊| 710/938 [1:06:54<27:13,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.3560, lr=2.94e-
+optimizer steps:  76%|▊| 711/938 [1:06:59<27:06,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.2938, lr=2.92e-
+optimizer steps:  76%|▊| 712/938 [1:07:04<26:58,  7.16s/it, best_val=1.4043, epoch=1/1, loss=1.3974, lr=2.89e-
+optimizer steps:  76%|▊| 713/938 [1:07:10<24:33,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.3974, lr=2.89e-
+optimizer steps:  76%|▊| 713/938 [1:07:10<24:33,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.5042, lr=2.87e-
+optimizer steps:  76%|▊| 714/938 [1:07:14<24:27,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.3704, lr=2.84e-
+optimizer steps:  76%|▊| 715/938 [1:07:19<24:20,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.4149, lr=2.82e-
+optimizer steps:  76%|▊| 716/938 [1:07:25<24:13,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.4315, lr=2.80e-
+optimizer steps:  76%|▊| 717/938 [1:07:30<24:07,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.3324, lr=2.77e-
+optimizer steps:  77%|▊| 718/938 [1:07:35<24:00,  6.55s/it, best_val=1.4043, epoch=1/1, loss=1.1883, lr=2.75e-
+optimizer steps:  77%|▊| 719/938 [1:07:40<22:16,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.1883, lr=2.75e-
+optimizer steps:  77%|▊| 719/938 [1:07:40<22:16,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.3000, lr=2.72e-
+optimizer steps:  77%|▊| 720/938 [1:07:45<22:10,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.2264, lr=2.70e-
+optimizer steps:  77%|▊| 721/938 [1:07:50<22:04,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.2914, lr=2.68e-
+optimizer steps:  77%|▊| 722/938 [1:07:55<21:58,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.1577, lr=2.65e-
+optimizer steps:  77%|▊| 723/938 [1:08:00<21:52,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.3209, lr=2.63e-
+optimizer steps:  77%|▊| 724/938 [1:08:05<21:46,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.4209, lr=2.61e-
+optimizer steps:  77%|▊| 725/938 [1:08:10<21:40,  6.10s/it, best_val=1.4043, epoch=1/1, loss=1.2317, lr=2.58e-
+optimizer steps:  77%|▊| 726/938 [1:08:15<20:14,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.2317, lr=2.58e-
+optimizer steps:  77%|▊| 726/938 [1:08:15<20:14,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.2796, lr=2.56e-
+optimizer steps:  78%|▊| 727/938 [1:08:21<20:08,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.3322, lr=2.54e-
+optimizer steps:  78%|▊| 728/938 [1:08:26<20:03,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.3245, lr=2.51e-
+optimizer steps:  78%|▊| 729/938 [1:08:31<19:57,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.3318, lr=2.49e-
+optimizer steps:  78%|▊| 730/938 [1:08:36<19:51,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.4255, lr=2.47e-
+optimizer steps:  78%|▊| 731/938 [1:08:42<19:45,  5.73s/it, best_val=1.4043, epoch=1/1, loss=1.3857, lr=2.45e-
+optimizer steps:  78%|▊| 732/938 [1:08:47<19:13,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.3857, lr=2.45e-
+optimizer steps:  78%|▊| 732/938 [1:08:47<19:13,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.2782, lr=2.42e-
+optimizer steps:  78%|▊| 733/938 [1:08:52<19:07,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.3362, lr=2.40e-
+optimizer steps:  78%|▊| 734/938 [1:08:57<19:01,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.3348, lr=2.38e-
+optimizer steps:  78%|▊| 735/938 [1:09:02<18:56,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.4897, lr=2.36e-
+optimizer steps:  78%|▊| 736/938 [1:09:07<18:50,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.2349, lr=2.33e-
+optimizer steps:  79%|▊| 737/938 [1:09:13<18:45,  5.60s/it, best_val=1.4043, epoch=1/1, loss=1.2049, lr=2.31e-
+optimizer steps:  79%|▊| 738/938 [1:09:18<18:10,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.2049, lr=2.31e-
+optimizer steps:  79%|▊| 738/938 [1:09:18<18:10,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.2543, lr=2.29e-
+optimizer steps:  79%|▊| 739/938 [1:09:23<18:04,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.4197, lr=2.27e-
+optimizer steps:  79%|▊| 740/938 [1:09:28<17:59,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.2146, lr=2.25e-
+optimizer steps:  79%|▊| 741/938 [1:09:33<17:53,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.3029, lr=2.22e-
+optimizer steps:  79%|▊| 742/938 [1:09:38<17:48,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.3166, lr=2.20e-
+optimizer steps:  79%|▊| 743/938 [1:09:43<17:42,  5.45s/it, best_val=1.4043, epoch=1/1, loss=1.2287, lr=2.18e-
+optimizer steps:  79%|▊| 744/938 [1:09:49<17:22,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.2287, lr=2.18e-
+optimizer steps:  79%|▊| 744/938 [1:09:49<17:22,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.4745, lr=2.16e-
+optimizer steps:  79%|▊| 745/938 [1:09:54<17:17,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.2648, lr=2.14e-
+optimizer steps:  80%|▊| 746/938 [1:09:59<17:12,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.1157, lr=2.12e-
+optimizer steps:  80%|▊| 747/938 [1:10:04<17:06,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.4889, lr=2.10e-
+optimizer steps:  80%|▊| 748/938 [1:10:10<17:01,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.0883, lr=2.08e-
+optimizer steps:  80%|▊| 749/938 [1:10:15<16:56,  5.38s/it, best_val=1.4043, epoch=1/1, loss=1.3352, lr=2.05e-
+optimizer steps:  80%|▊| 750/938 [1:10:20<16:41,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.3352, lr=2.05e-
+optimizer steps:  80%|▊| 750/938 [1:10:20<16:41,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.3044, lr=2.03e-
+optimizer steps:  80%|▊| 751/938 [1:10:25<16:36,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.2739, lr=2.01e-
+optimizer steps:  80%|▊| 752/938 [1:10:30<16:30,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.4464, lr=1.99e-
+optimizer steps:  80%|▊| 753/938 [1:10:35<16:25,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.2875, lr=1.97e-
+optimizer steps:  80%|▊| 754/938 [1:10:41<16:20,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.3210, lr=1.95e-
+optimizer steps:  80%|▊| 755/938 [1:10:46<16:14,  5.33s/it, best_val=1.4043, epoch=1/1, loss=1.2780, lr=1.93e-
+optimizer steps:  81%|▊| 756/938 [1:10:51<16:02,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.2780, lr=1.93e-
+optimizer steps:  81%|▊| 756/938 [1:10:51<16:02,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.3693, lr=1.91e-
+optimizer steps:  81%|▊| 757/938 [1:10:56<15:57,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.4907, lr=1.89e-
+optimizer steps:  81%|▊| 758/938 [1:11:01<15:52,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.2959, lr=1.87e-
+optimizer steps:  81%|▊| 759/938 [1:11:06<15:46,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.3528, lr=1.85e-
+optimizer steps:  81%|▊| 760/938 [1:11:11<15:41,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.4464, lr=1.83e-
+optimizer steps:  81%|▊| 761/938 [1:11:16<15:36,  5.29s/it, best_val=1.4043, epoch=1/1, loss=1.3414, lr=1.81e-
+optimizer steps:  81%|▊| 762/938 [1:11:21<15:17,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3414, lr=1.81e-
+optimizer steps:  81%|▊| 762/938 [1:11:21<15:17,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3700, lr=1.79e-
+optimizer steps:  81%|▊| 763/938 [1:11:26<15:11,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3198, lr=1.77e-
+optimizer steps:  81%|▊| 764/938 [1:11:32<15:06,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.4096, lr=1.75e-
+optimizer steps:  82%|▊| 765/938 [1:11:36<15:01,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.4742, lr=1.73e-
+optimizer steps:  82%|▊| 766/938 [1:11:41<14:56,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3911, lr=1.71e-
+optimizer steps:  82%|▊| 767/938 [1:11:46<14:50,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3182, lr=1.69e-
+optimizer steps:  82%|▊| 768/938 [1:11:51<14:45,  5.21s/it, best_val=1.4043, epoch=1/1, loss=1.3504, lr=1.67e-
+optimizer steps:  82%|▊| 769/938 [1:11:56<14:26,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3504, lr=1.67e-
+optimizer steps:  82%|▊| 769/938 [1:11:56<14:26,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3207, lr=1.65e-
+optimizer steps:  82%|▊| 770/938 [1:12:01<14:21,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.2165, lr=1.64e-
+optimizer steps:  82%|▊| 771/938 [1:12:06<14:16,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3745, lr=1.62e-
+optimizer steps:  82%|▊| 772/938 [1:12:11<14:11,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.6260, lr=1.60e-
+optimizer steps:  82%|▊| 773/938 [1:12:16<14:06,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.2567, lr=1.58e-
+optimizer steps:  83%|▊| 774/938 [1:12:21<14:01,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.2244, lr=1.56e-
+optimizer steps:  83%|▊| 775/938 [1:12:26<13:56,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3188, lr=1.54e-
+optimizer steps:  83%|▊| 776/938 [1:12:31<13:45,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.3188, lr=1.54e-
+optimizer steps:  83%|▊| 776/938 [1:12:31<13:45,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.2413, lr=1.52e-
+optimizer steps:  83%|▊| 777/938 [1:12:37<13:40,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.3711, lr=1.51e-
+optimizer steps:  83%|▊| 778/938 [1:12:42<13:35,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.3562, lr=1.49e-
+optimizer steps:  83%|▊| 779/938 [1:12:47<13:30,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.2473, lr=1.47e-
+optimizer steps:  83%|▊| 780/938 [1:12:52<13:25,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.2220, lr=1.45e-
+optimizer steps:  83%|▊| 781/938 [1:12:57<13:20,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.3146, lr=1.43e-
+optimizer steps:  83%|▊| 782/938 [1:13:03<13:19,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3146, lr=1.43e-
+optimizer steps:  83%|▊| 782/938 [1:13:03<13:19,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3601, lr=1.42e-
+optimizer steps:  83%|▊| 783/938 [1:13:07<13:14,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.2237, lr=1.40e-
+optimizer steps:  84%|▊| 784/938 [1:13:12<13:09,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3684, lr=1.38e-
+optimizer steps:  84%|▊| 785/938 [1:13:18<13:04,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.4676, lr=1.36e-
+optimizer steps:  84%|▊| 786/938 [1:13:23<12:59,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.1857, lr=1.35e-
+optimizer steps:  84%|▊| 787/938 [1:13:28<12:54,  5.13s/it, best_val=1.4043, epoch=1/1, loss=1.3264, lr=1.33e-
+optimizer steps:  84%|▊| 788/938 [1:13:33<12:47,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.3264, lr=1.33e-
+optimizer steps:  84%|▊| 788/938 [1:13:33<12:47,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.4010, lr=1.31e-
+optimizer steps:  84%|▊| 789/938 [1:13:38<12:42,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.4377, lr=1.29e-
+optimizer steps:  84%|▊| 790/938 [1:13:43<12:37,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.3370, lr=1.28e-
+optimizer steps:  84%|▊| 791/938 [1:13:47<12:32,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.5014, lr=1.26e-
+optimizer steps:  84%|▊| 792/938 [1:13:53<12:27,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.0892, lr=1.24e-
+optimizer steps:  85%|▊| 793/938 [1:13:58<12:22,  5.12s/it, best_val=1.4043, epoch=1/1, loss=1.2246, lr=1.23e-
+optimizer steps:  85%|▊| 794/938 [1:14:03<12:12,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.2246, lr=1.23e-
+optimizer steps:  85%|▊| 794/938 [1:14:03<12:12,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.0307, lr=1.21e-
+optimizer steps:  85%|▊| 795/938 [1:14:08<12:07,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.3149, lr=1.19e-
+optimizer steps:  85%|▊| 796/938 [1:14:13<12:02,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.3418, lr=1.18e-
+optimizer steps:  85%|▊| 797/938 [1:14:18<11:57,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.4464, lr=1.16e-
+optimizer steps:  85%|▊| 798/938 [1:14:24<11:52,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.4336, lr=1.15e-
+optimizer steps:  85%|▊| 799/938 [1:14:29<11:47,  5.09s/it, best_val=1.4043, epoch=1/1, loss=1.0906, lr=1.13e-
+optimizer steps:  85%|▊| 800/938 [1:14:34<11:44,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.0906, lr=1.13e-
+optimizer steps:  85%|▊| 800/938 [1:14:34<11:44,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.4684, lr=1.11e-
+                                                                                                              
+[step 800] val_loss=1.3989 (best=1.3989 @ 800)
+
+optimizer steps:  85%|▊| 800/938 [1:15:26<11:44,  5.10s/it, best_val=1.4043, epoch=1/1, loss=1.4684, lr=1.11e-
+optimizer steps:  85%|▊| 801/938 [1:15:31<19:25,  8.51s/it, best_val=1.4043, epoch=1/1, loss=1.4684, lr=1.11e-
+optimizer steps:  85%|▊| 801/938 [1:15:31<19:25,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.2052, lr=1.10e-
+optimizer steps:  86%|▊| 802/938 [1:15:36<19:17,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.2094, lr=1.08e-
+optimizer steps:  86%|▊| 803/938 [1:15:41<19:08,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.3459, lr=1.07e-
+optimizer steps:  86%|▊| 804/938 [1:15:47<19:00,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.3096, lr=1.05e-
+optimizer steps:  86%|▊| 805/938 [1:15:52<18:51,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.4567, lr=1.04e-
+optimizer steps:  86%|▊| 806/938 [1:15:57<18:43,  8.51s/it, best_val=1.3989, epoch=1/1, loss=1.3310, lr=1.02e-
+optimizer steps:  86%|▊| 807/938 [1:16:02<15:58,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.3310, lr=1.02e-
+optimizer steps:  86%|▊| 807/938 [1:16:02<15:58,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.3098, lr=1.01e-
+optimizer steps:  86%|▊| 808/938 [1:16:08<15:51,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.3095, lr=9.90e-
+optimizer steps:  86%|▊| 809/938 [1:16:13<15:43,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.5731, lr=9.75e-
+optimizer steps:  86%|▊| 810/938 [1:16:18<15:36,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.3570, lr=9.61e-
+optimizer steps:  86%|▊| 811/938 [1:16:23<15:29,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.2689, lr=9.46e-
+optimizer steps:  87%|▊| 812/938 [1:16:28<15:21,  7.32s/it, best_val=1.3989, epoch=1/1, loss=1.2293, lr=9.31e-
+optimizer steps:  87%|▊| 813/938 [1:16:33<13:43,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2293, lr=9.31e-
+optimizer steps:  87%|▊| 813/938 [1:16:33<13:43,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2608, lr=9.17e-
+optimizer steps:  87%|▊| 814/938 [1:16:39<13:36,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2946, lr=9.02e-
+optimizer steps:  87%|▊| 815/938 [1:16:44<13:29,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2597, lr=8.88e-
+optimizer steps:  87%|▊| 816/938 [1:16:49<13:23,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2723, lr=8.74e-
+optimizer steps:  87%|▊| 817/938 [1:16:54<13:16,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2805, lr=8.60e-
+optimizer steps:  87%|▊| 818/938 [1:16:59<13:10,  6.58s/it, best_val=1.3989, epoch=1/1, loss=1.2994, lr=8.46e-
+optimizer steps:  87%|▊| 819/938 [1:17:04<12:07,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.2994, lr=8.46e-
+optimizer steps:  87%|▊| 819/938 [1:17:04<12:07,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.3264, lr=8.32e-
+optimizer steps:  87%|▊| 820/938 [1:17:09<12:01,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.3917, lr=8.18e-
+optimizer steps:  88%|▉| 821/938 [1:17:14<11:54,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.4620, lr=8.05e-
+optimizer steps:  88%|▉| 822/938 [1:17:20<11:48,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.0999, lr=7.91e-
+optimizer steps:  88%|▉| 823/938 [1:17:25<11:42,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.3744, lr=7.78e-
+optimizer steps:  88%|▉| 824/938 [1:17:30<11:36,  6.11s/it, best_val=1.3989, epoch=1/1, loss=1.0936, lr=7.65e-
+optimizer steps:  88%|▉| 825/938 [1:17:35<10:57,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.0936, lr=7.65e-
+optimizer steps:  88%|▉| 825/938 [1:17:35<10:57,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.2131, lr=7.51e-
+optimizer steps:  88%|▉| 826/938 [1:17:40<10:51,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.1792, lr=7.38e-
+optimizer steps:  88%|▉| 827/938 [1:17:45<10:45,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.1615, lr=7.25e-
+optimizer steps:  88%|▉| 828/938 [1:17:50<10:39,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.3483, lr=7.12e-
+optimizer steps:  88%|▉| 829/938 [1:17:55<10:34,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.2660, lr=7.00e-
+optimizer steps:  88%|▉| 830/938 [1:18:00<10:28,  5.82s/it, best_val=1.3989, epoch=1/1, loss=1.3379, lr=6.87e-
+optimizer steps:  89%|▉| 831/938 [1:18:06<09:58,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.3379, lr=6.87e-
+optimizer steps:  89%|▉| 831/938 [1:18:06<09:58,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.4528, lr=6.75e-
+optimizer steps:  89%|▉| 832/938 [1:18:11<09:53,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.2939, lr=6.62e-
+optimizer steps:  89%|▉| 833/938 [1:18:16<09:47,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.6048, lr=6.50e-
+optimizer steps:  89%|▉| 834/938 [1:18:21<09:41,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.2369, lr=6.38e-
+optimizer steps:  89%|▉| 835/938 [1:18:26<09:36,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.3596, lr=6.26e-
+optimizer steps:  89%|▉| 836/938 [1:18:32<09:30,  5.59s/it, best_val=1.3989, epoch=1/1, loss=1.2782, lr=6.14e-
+optimizer steps:  89%|▉| 837/938 [1:18:37<09:12,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.2782, lr=6.14e-
+optimizer steps:  89%|▉| 837/938 [1:18:37<09:12,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.4575, lr=6.02e-
+optimizer steps:  89%|▉| 838/938 [1:18:42<09:06,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.2430, lr=5.90e-
+optimizer steps:  89%|▉| 839/938 [1:18:47<09:01,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.4190, lr=5.78e-
+optimizer steps:  90%|▉| 840/938 [1:18:53<08:55,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.4047, lr=5.67e-
+optimizer steps:  90%|▉| 841/938 [1:18:58<08:50,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.3234, lr=5.55e-
+optimizer steps:  90%|▉| 842/938 [1:19:03<08:44,  5.47s/it, best_val=1.3989, epoch=1/1, loss=1.2113, lr=5.44e-
+optimizer steps:  90%|▉| 843/938 [1:19:09<08:33,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.2113, lr=5.44e-
+optimizer steps:  90%|▉| 843/938 [1:19:09<08:33,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.2414, lr=5.33e-
+optimizer steps:  90%|▉| 844/938 [1:19:14<08:27,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.3890, lr=5.22e-
+optimizer steps:  90%|▉| 845/938 [1:19:19<08:22,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.3688, lr=5.11e-
+optimizer steps:  90%|▉| 846/938 [1:19:24<08:17,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.4157, lr=5.00e-
+optimizer steps:  90%|▉| 847/938 [1:19:29<08:11,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.3383, lr=4.89e-
+optimizer steps:  90%|▉| 848/938 [1:19:35<08:06,  5.40s/it, best_val=1.3989, epoch=1/1, loss=1.2270, lr=4.79e-
+optimizer steps:  91%|▉| 849/938 [1:19:40<07:56,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.2270, lr=4.79e-
+optimizer steps:  91%|▉| 849/938 [1:19:40<07:56,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.1833, lr=4.68e-
+optimizer steps:  91%|▉| 850/938 [1:19:45<07:51,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.2571, lr=4.58e-
+optimizer steps:  91%|▉| 851/938 [1:19:50<07:45,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.2124, lr=4.48e-
+optimizer steps:  91%|▉| 852/938 [1:19:56<07:40,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.2680, lr=4.38e-
+optimizer steps:  91%|▉| 853/938 [1:20:01<07:35,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.2885, lr=4.27e-
+optimizer steps:  91%|▉| 854/938 [1:20:06<07:29,  5.35s/it, best_val=1.3989, epoch=1/1, loss=1.4213, lr=4.18e-
+optimizer steps:  91%|▉| 855/938 [1:20:12<07:22,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.4213, lr=4.18e-
+optimizer steps:  91%|▉| 855/938 [1:20:12<07:22,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.4621, lr=4.08e-
+optimizer steps:  91%|▉| 856/938 [1:20:17<07:17,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.3280, lr=3.98e-
+optimizer steps:  91%|▉| 857/938 [1:20:21<07:12,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.1168, lr=3.88e-
+optimizer steps:  91%|▉| 858/938 [1:20:26<07:06,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.3891, lr=3.79e-
+optimizer steps:  92%|▉| 859/938 [1:20:32<07:01,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.4640, lr=3.70e-
+optimizer steps:  92%|▉| 860/938 [1:20:37<06:56,  5.33s/it, best_val=1.3989, epoch=1/1, loss=1.1871, lr=3.60e-
+optimizer steps:  92%|▉| 861/938 [1:20:42<06:45,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.1871, lr=3.60e-
+optimizer steps:  92%|▉| 861/938 [1:20:42<06:45,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.4309, lr=3.51e-
+optimizer steps:  92%|▉| 862/938 [1:20:47<06:40,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.4239, lr=3.42e-
+optimizer steps:  92%|▉| 863/938 [1:20:52<06:35,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.4778, lr=3.33e-
+optimizer steps:  92%|▉| 864/938 [1:20:57<06:30,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.3358, lr=3.25e-
+optimizer steps:  92%|▉| 865/938 [1:21:03<06:24,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.2444, lr=3.16e-
+optimizer steps:  92%|▉| 866/938 [1:21:08<06:19,  5.27s/it, best_val=1.3989, epoch=1/1, loss=1.3513, lr=3.07e-
+optimizer steps:  92%|▉| 867/938 [1:21:13<06:09,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.3513, lr=3.07e-
+optimizer steps:  92%|▉| 867/938 [1:21:13<06:09,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.3802, lr=2.99e-
+optimizer steps:  93%|▉| 868/938 [1:21:18<06:04,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.2265, lr=2.91e-
+optimizer steps:  93%|▉| 869/938 [1:21:23<05:59,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.2687, lr=2.82e-
+optimizer steps:  93%|▉| 870/938 [1:21:28<05:54,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.1126, lr=2.74e-
+optimizer steps:  93%|▉| 871/938 [1:21:33<05:48,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.1117, lr=2.66e-
+optimizer steps:  93%|▉| 872/938 [1:21:38<05:43,  5.21s/it, best_val=1.3989, epoch=1/1, loss=1.3900, lr=2.58e-
+optimizer steps:  93%|▉| 873/938 [1:21:43<05:35,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.3900, lr=2.58e-
+optimizer steps:  93%|▉| 873/938 [1:21:43<05:35,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.3013, lr=2.51e-
+optimizer steps:  93%|▉| 874/938 [1:21:48<05:30,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.2541, lr=2.43e-
+optimizer steps:  93%|▉| 875/938 [1:21:54<05:25,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.4015, lr=2.36e-
+optimizer steps:  93%|▉| 876/938 [1:21:59<05:20,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.2943, lr=2.28e-
+optimizer steps:  93%|▉| 877/938 [1:22:04<05:15,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.3717, lr=2.21e-
+optimizer steps:  94%|▉| 878/938 [1:22:10<05:10,  5.17s/it, best_val=1.3989, epoch=1/1, loss=1.4297, lr=2.14e-
+optimizer steps:  94%|▉| 879/938 [1:22:15<05:06,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.4297, lr=2.14e-
+optimizer steps:  94%|▉| 879/938 [1:22:15<05:06,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3415, lr=2.07e-
+optimizer steps:  94%|▉| 880/938 [1:22:20<05:01,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3454, lr=2.00e-
+optimizer steps:  94%|▉| 881/938 [1:22:25<04:56,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.1425, lr=1.93e-
+optimizer steps:  94%|▉| 882/938 [1:22:30<04:51,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3846, lr=1.86e-
+optimizer steps:  94%|▉| 883/938 [1:22:35<04:46,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3107, lr=1.80e-
+optimizer steps:  94%|▉| 884/938 [1:22:41<04:40,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.0836, lr=1.73e-
+optimizer steps:  94%|▉| 885/938 [1:22:46<04:35,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.0836, lr=1.73e-
+optimizer steps:  94%|▉| 885/938 [1:22:46<04:35,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.3365, lr=1.67e-
+optimizer steps:  94%|▉| 886/938 [1:22:51<04:30,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.2259, lr=1.61e-
+optimizer steps:  95%|▉| 887/938 [1:22:56<04:24,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.3065, lr=1.55e-
+optimizer steps:  95%|▉| 888/938 [1:23:01<04:19,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.2498, lr=1.49e-
+optimizer steps:  95%|▉| 889/938 [1:23:06<04:14,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.1921, lr=1.43e-
+optimizer steps:  95%|▉| 890/938 [1:23:11<04:09,  5.19s/it, best_val=1.3989, epoch=1/1, loss=1.2180, lr=1.37e-
+optimizer steps:  95%|▉| 891/938 [1:23:17<04:02,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.2180, lr=1.37e-
+optimizer steps:  95%|▉| 891/938 [1:23:17<04:02,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.2378, lr=1.31e-
+optimizer steps:  95%|▉| 892/938 [1:23:22<03:57,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.4423, lr=1.26e-
+optimizer steps:  95%|▉| 893/938 [1:23:27<03:52,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.4656, lr=1.20e-
+optimizer steps:  95%|▉| 894/938 [1:23:32<03:47,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.3536, lr=1.15e-
+optimizer steps:  95%|▉| 895/938 [1:23:37<03:41,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.3309, lr=1.10e-
+optimizer steps:  96%|▉| 896/938 [1:23:43<03:36,  5.16s/it, best_val=1.3989, epoch=1/1, loss=1.4682, lr=1.05e-
+optimizer steps:  96%|▉| 897/938 [1:23:48<03:33,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.4682, lr=1.05e-
+optimizer steps:  96%|▉| 897/938 [1:23:48<03:33,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3024, lr=1.00e-
+optimizer steps:  96%|▉| 898/938 [1:23:53<03:27,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3661, lr=9.52e-
+optimizer steps:  96%|▉| 899/938 [1:23:59<03:22,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.2788, lr=9.05e-
+optimizer steps:  96%|▉| 900/938 [1:24:04<03:17,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3580, lr=8.59e-
+                                                                                                              
+[step 900] val_loss=1.3972 (best=1.3972 @ 900)
+
+optimizer steps:  96%|▉| 900/938 [1:24:56<03:17,  5.20s/it, best_val=1.3989, epoch=1/1, loss=1.3580, lr=8.59e-
+optimizer steps:  96%|▉| 901/938 [1:25:01<04:59,  8.09s/it, best_val=1.3989, epoch=1/1, loss=1.3580, lr=8.59e-
+optimizer steps:  96%|▉| 901/938 [1:25:01<04:59,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.4212, lr=8.15e-
+optimizer steps:  96%|▉| 902/938 [1:25:07<04:51,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.2763, lr=7.71e-
+optimizer steps:  96%|▉| 903/938 [1:25:12<04:43,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.4837, lr=7.29e-
+optimizer steps:  96%|▉| 904/938 [1:25:17<04:35,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.2661, lr=6.88e-
+optimizer steps:  96%|▉| 905/938 [1:25:22<04:27,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.3372, lr=6.48e-
+optimizer steps:  97%|▉| 906/938 [1:25:28<04:18,  8.09s/it, best_val=1.3972, epoch=1/1, loss=1.3766, lr=6.10e-
+optimizer steps:  97%|▉| 907/938 [1:25:33<03:43,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.3766, lr=6.10e-
+optimizer steps:  97%|▉| 907/938 [1:25:33<03:43,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.2028, lr=5.72e-
+optimizer steps:  97%|▉| 908/938 [1:25:38<03:36,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.3818, lr=5.36e-
+optimizer steps:  97%|▉| 909/938 [1:25:44<03:28,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.2004, lr=5.01e-
+optimizer steps:  97%|▉| 910/938 [1:25:49<03:21,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.3437, lr=4.67e-
+optimizer steps:  97%|▉| 911/938 [1:25:54<03:14,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.1379, lr=4.34e-
+optimizer steps:  97%|▉| 912/938 [1:25:59<03:07,  7.21s/it, best_val=1.3972, epoch=1/1, loss=1.1741, lr=4.03e-
+optimizer steps:  97%|▉| 913/938 [1:26:04<02:43,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.1741, lr=4.03e-
+optimizer steps:  97%|▉| 913/938 [1:26:04<02:43,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.1901, lr=3.72e-
+optimizer steps:  97%|▉| 914/938 [1:26:09<02:37,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.3944, lr=3.43e-
+optimizer steps:  98%|▉| 915/938 [1:26:15<02:30,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.2433, lr=3.15e-
+optimizer steps:  98%|▉| 916/938 [1:26:19<02:24,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.3636, lr=2.88e-
+optimizer steps:  98%|▉| 917/938 [1:26:25<02:17,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.3212, lr=2.63e-
+optimizer steps:  98%|▉| 918/938 [1:26:30<02:11,  6.56s/it, best_val=1.3972, epoch=1/1, loss=1.1004, lr=2.38e-
+optimizer steps:  98%|▉| 919/938 [1:26:36<01:56,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.1004, lr=2.38e-
+optimizer steps:  98%|▉| 919/938 [1:26:36<01:56,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.3191, lr=2.15e-
+optimizer steps:  98%|▉| 920/938 [1:26:41<01:50,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.4761, lr=1.93e-
+optimizer steps:  98%|▉| 921/938 [1:26:46<01:44,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.4349, lr=1.72e-
+optimizer steps:  98%|▉| 922/938 [1:26:51<01:38,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.2471, lr=1.53e-
+optimizer steps:  98%|▉| 923/938 [1:26:56<01:32,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.3556, lr=1.34e-
+optimizer steps:  99%|▉| 924/938 [1:27:01<01:26,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.2977, lr=1.17e-
+optimizer steps:  99%|▉| 925/938 [1:27:06<01:20,  6.16s/it, best_val=1.3972, epoch=1/1, loss=1.2558, lr=1.01e-
+optimizer steps:  99%|▉| 926/938 [1:27:11<01:09,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.2558, lr=1.01e-
+optimizer steps:  99%|▉| 926/938 [1:27:11<01:09,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.1837, lr=8.58e-
+optimizer steps:  99%|▉| 927/938 [1:27:16<01:03,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.3548, lr=7.21e-
+optimizer steps:  99%|▉| 928/938 [1:27:21<00:57,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.4943, lr=5.96e-
+optimizer steps:  99%|▉| 929/938 [1:27:26<00:51,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.1068, lr=4.83e-
+optimizer steps:  99%|▉| 930/938 [1:27:31<00:46,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.3314, lr=3.81e-
+optimizer steps:  99%|▉| 931/938 [1:27:36<00:40,  5.76s/it, best_val=1.3972, epoch=1/1, loss=1.4002, lr=2.92e-
+optimizer steps:  99%|▉| 932/938 [1:27:42<00:33,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.4002, lr=2.92e-
+optimizer steps:  99%|▉| 932/938 [1:27:42<00:33,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3786, lr=2.15e-
+optimizer steps:  99%|▉| 933/938 [1:27:47<00:27,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3297, lr=1.49e-
+optimizer steps: 100%|▉| 934/938 [1:27:52<00:22,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3125, lr=9.53e-
+optimizer steps: 100%|▉| 935/938 [1:27:57<00:16,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3832, lr=5.36e-
+optimizer steps: 100%|▉| 936/938 [1:28:02<00:11,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3868, lr=2.38e-
+optimizer steps: 100%|▉| 937/938 [1:28:08<00:05,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.5195, lr=5.96e-
+optimizer steps: 100%|█| 938/938 [1:28:10<00:00,  5.59s/it, best_val=1.3972, epoch=1/1, loss=1.3864, lr=0.00e+
+optimizer steps: 100%|█| 938/938 [1:28:10<00:00,  5.64s/it, best_val=1.3972, epoch=1/1, loss=1.3864, lr=0.00e+
+[step 938] val_loss=1.3972 (best=1.3972 @ 938)
+Done. Checkpoints in /kaggle/working/model-alignment/outputs/sft

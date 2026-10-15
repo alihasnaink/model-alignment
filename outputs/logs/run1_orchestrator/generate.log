@@ -1,0 +1,47 @@
+sft-sanity on alpaca_eval: 3 prompts, 0 already done, 3 to generate
+The tokenizer you are loading from '/kaggle/working/model-alignment/outputs/sft/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+--- [alpaca-eval-42-0001] Hi, my sister and her girlfriends want me to play kickball with them. Can you explain how the game is played, so they don't take advantage of me?
+>>> Sure! Here's a basic description of how kickball can be played:
+
+1. The ball is thrown by one player from the front court to the backcourt.
+2. The receiver catches the ball and runs towards the goal line.
+3. The receiver then throws the ball back to the other team.
+4. The receiving team tries to catch the ball before it hits the ground or goes out of bounds.
+5. If the receiver catches the ball before it hits the ground or goes out of bounds, they score a point.
+
+This game is a great way for kids to practice their dribbling skills and pass the ball around. It also helps develop teamwork and communication skills as players work together to make sure that the ball doesn't go out of bounds.
+
+
+--- [alpaca-eval-42-0000] What are the names of some famous actors that started their careers on Broadway?
+>>> Some famous actors who started their careers on Broadway include:
+
+1. Marlon Brando
+2. John Travolta
+3. Tom Hanks
+4. Michael J. Fox
+5. Robert De Niro
+6. Mel Gibson
+7. Steve Carell
+8. Jennifer Lawrence
+9. Tom Hiddleston
+10. Emma Stone
+
+These actors have gone on to become successful Hollywood stars and have had a significant impact on the industry.
+
+
+--- [alpaca-eval-42-0002] What is some cool music from the 1920s?
+>>> Some cool music from the 1920s includes:
+
+1. "The Star-Spangled Banner" by Francis Scott Key
+2. "I Want to Know What You Did Last Summer" by Frank Sinatra
+3. "On Top of the World" by The Beatles
+4. "Gymnopédie No. 5" by Erik Satie
+5. "Misty" by John Philip Sousa
+6. "The Great Gatsby" by Zelda Fitzgerald and Frank Sinatra
+7. "The Sound of Music" by Hans Zimmer
+8. "The Nutcracker Suite" by Ludwig van Beethoven
+9. "The Rite of Spring" by Igor Stravinsky
+10. "The Waltz" by Johann Strauss II.
+
+  3/3 generated

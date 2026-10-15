@@ -1,0 +1,29 @@
+[
+  {
+    "id": "alpaca-eval-42-0000",
+    "instruction": "What are the names of some famous actors that started their careers on Broadway?",
+    "output": "Some famous actors who started their careers on Broadway include:\n\n1. Marlon Brando\n2. John Travolta\n3. Tom Hanks\n4. Michael J. Fox\n5. Robert De Niro\n6. Mel Gibson\n7. Steve Carell\n8. Jennifer Lawrence\n9. Tom Hiddleston\n10. Emma Stone\n\nThese actors have gone on to become successful Hollywood stars and have had a significant impact on the industry.",
+    "generator": "sft-sanity",
+    "dataset": "alpaca_eval",
+    "category": "helpful_base",
+    "num_new_tokens": 93
+  },
+  {
+    "id": "alpaca-eval-42-0001",
+    "instruction": "Hi, my sister and her girlfriends want me to play kickball with them. Can you explain how the game is played, so they don't take advantage of me?",
+    "output": "Sure! Here's a basic description of how kickball can be played:\n\n1. The ball is thrown by one player from the front court to the backcourt.\n2. The receiver catches the ball and runs towards the goal line.\n3. The receiver then throws the ball back to the other team.\n4. The receiving team tries to catch the ball before it hits the ground or goes out of bounds.\n5. If the receiver catches the ball before it hits the ground or goes out of bounds, they score a point.\n\nThis game is a great way for kids to practice their dribbling skills and pass the ball around. It also helps develop teamwork and communication skills as players work together to make sure that the ball doesn't go out of bounds.",
+    "generator": "sft-sanity",
+    "dataset": "alpaca_eval",
+    "category": "helpful_base",
+    "num_new_tokens": 151
+  },
+  {
+    "id": "alpaca-eval-42-0002",
+    "instruction": "What is some cool music from the 1920s?",
+    "output": "Some cool music from the 1920s includes:\n\n1. \"The Star-Spangled Banner\" by Francis Scott Key\n2. \"I Want to Know What You Did Last Summer\" by Frank Sinatra\n3. \"On Top of the World\" by The Beatles\n4. \"Gymnopédie No. 5\" by Erik Satie\n5. \"Misty\" by John Philip Sousa\n6. \"The Great Gatsby\" by Zelda Fitzgerald and Frank Sinatra\n7. \"The Sound of Music\" by Hans Zimmer\n8. \"The Nutcracker Suite\" by Ludwig van Beethoven\n9. \"The Rite of Spring\" by Igor Stravinsky\n10. \"The Waltz\" by Johann Strauss II.",
+    "generator": "sft-sanity",
+    "dataset": "alpaca_eval",
+    "category": "helpful_base",
+    "num_new_tokens": 158
+  }
+]
