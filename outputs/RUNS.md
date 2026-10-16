@@ -5,8 +5,8 @@ All results come from three Kaggle runs: two training runs (GPU T4 x2, seed 42, 
 | Run | Notebook | Produced |
 |---|---|---|
 | 1 | `kaggle_orchestrator.ipynb` (repo commit `e9e8915`) | data splits + metadata, base generations, persona LoRA-DPO + its generations, SFT, HH-RLHF DPO, SFT generations, SFT sanity check |
-| 2 | `kaggle_continue_uf_dpo.ipynb` (repo commit `e4dc352`) | UltraFeedback DPO, HH-DPO generations, UF-DPO generations |
-| 3 | `kaggle_judge.ipynb` (repo commit `2e1b58c`, Kaggle benchmark notebook) | all judgments in `eval/*_judged*`: judge `google/gemini-3.6-flash`, temperature 0, 5 pairs/request, 0 unknown, 0 failures |
+| 2 | `kaggle_continue_uf_dpo.ipynb`  | UltraFeedback DPO, HH-DPO generations, UF-DPO generations |
+| 3 | `kaggle_judge.ipynb` | all judgments in `eval/*_judged*`: judge `google/gemini-3.6-flash`, temperature 0, 5 pairs/request, 0 unknown, 0 failures |
 
 Run 1 stopped when UltraFeedback DPO started. The JSONL reader split lines with `str.splitlines()`, which also
 breaks on U+2028 characters inside UltraFeedback text. The fix (split on `"\n"` only) is in commit `e4dc352`, with a
