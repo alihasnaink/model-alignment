@@ -1,0 +1,20 @@
+{
+  "train": {
+    "pairs": 15000,
+    "chosen_mean_words": 60.8,
+    "rejected_mean_words": 54.2,
+    "chosen_median_words": 43,
+    "rejected_median_words": 34,
+    "share_chosen_longer": 0.537,
+    "share_chosen_shorter": 0.446
+  },
+  "valid": {
+    "pairs": 1000,
+    "chosen_mean_words": 62.3,
+    "rejected_mean_words": 54.0,
+    "chosen_median_words": 45,
+    "rejected_median_words": 36,
+    "share_chosen_longer": 0.552,
+    "share_chosen_shorter": 0.431
+  }
+}

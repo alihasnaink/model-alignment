@@ -70,7 +70,6 @@ def write_metric(path: Path, values: dict[str, Any]) -> None:
 
 def save_checkpoint(model: Any, tokenizer: Any, output_dir: Path, info: dict[str, Any] | None = None) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    # save_pretrained is portable across standard Transformers causal LMs.
     model.save_pretrained(output_dir, safe_serialization=True)
     tokenizer.save_pretrained(output_dir)
     if info is not None:

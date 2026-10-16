@@ -103,8 +103,7 @@ def main() -> None:
     if validation and args.eval_at_start:
         validate(0)
     optimizer.zero_grad(set_to_none=True)
-    # One bar over optimizer steps. Output from a notebook subprocess is not a TTY, so every refresh
-    # becomes a new line; mininterval keeps that to roughly one line per progress_interval seconds.
+    # In a notebook subprocess every refresh is a new line, so refresh at most every progress_interval seconds.
     overall = tqdm(total=total_steps, desc="optimizer steps", dynamic_ncols=False, ncols=110,
                    mininterval=args.progress_interval, miniters=1)
     for epoch in range(args.epochs):

@@ -1,6 +1,6 @@
 # How these outputs were produced
 
-All results come from two Kaggle runs (GPU T4 x2, seed 42) with identical hyperparameters and decoding settings.
+All results come from three Kaggle runs: two training runs (GPU T4 x2, seed 42, identical hyperparameters and decoding settings) and one judging run.
 
 | Run | Notebook | Produced |
 |---|---|---|
@@ -24,4 +24,5 @@ run 1's saved output, so UltraFeedback DPO starts from the same SFT checkpoint a
 - `persona_lora/final/` keeps the LoRA adapter config and the chat template; `adapter_model.safetensors` stays in run 1's
   Kaggle output.
 - Raw training splits (`data/*/*.jsonl`) are not committed; `data/*/*metadata.json` records the sources, filters, counts
-  and seed needed to rebuild them with `scripts/prepare_*.py`.
+  and seed needed to rebuild them with `scripts/prepare_*.py`. `data/*/*_length_stats.json` holds the chosen vs rejected
+  length statistics of the exact training splits (`scripts/preference_length_stats.py`).

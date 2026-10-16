@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """Resumable, batched pairwise judging with a Kaggle model-proxy judge.
 
-Run inside a Kaggle notebook configured as a *utility benchmark* (so
-``kaggle_benchmarks`` has model-proxy credentials):
+Run inside a Kaggle benchmark notebook (so ``kaggle_benchmarks`` has model-proxy
+credentials):
 
 python scripts/judge_pairwise_kaggle.py \
   --pairs_path outputs/eval/dpo_vs_sft_pairs.jsonl \
@@ -114,12 +114,12 @@ def kaggle_backend(model_name: str, temperature: float | None = 0.0) -> Callable
         kbench.config.ui_handler = None
     if not kbench.kaggle.is_configured():
         raise RuntimeError("kaggle_benchmarks has no model-proxy credentials. Run this in a Kaggle notebook "
-                           "configured as a utility benchmark (see README).")
+                           "created as a benchmark notebook (see README).")
     llm = kbench.llms.get(model_name) if isinstance(kbench.llms, dict) else None
     if llm is None:
         try:
             llm = kbench.kaggle.load_model(model_name)
-        except Exception as error:  # pragma: no cover - depends on Kaggle environment
+        except Exception as error:
             raise RuntimeError(f"judge model {model_name!r} unavailable; available: {sorted(kbench.llms)}") from error
     if temperature is not None:
         # Proxy models drop `temperature` unless support_temperature is set; enable it for deterministic judging.
@@ -158,7 +158,7 @@ BACKENDS = {"kaggle": kaggle_backend, "mock": mock_backend}
 def read_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
-    # "\n" only - splitlines() would also split on U+2028/U+0085 inside JSON strings.
+    # Split on "\n" only (see alignment.training.load_json_records).
     return [json.loads(line) for line in path.read_text(encoding="utf-8").split("\n") if line.strip()]
 
 

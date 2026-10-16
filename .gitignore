@@ -3,8 +3,7 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 
-# Run artifacts: commit metrics, configs, checkpoint_info, logs, generations, judgments, plots, and reports.
-# Never commit model weights, raw training-split copies, or zip bundles.
+
 *.safetensors
 outputs/data/**/*.jsonl
 outputs_smoke/

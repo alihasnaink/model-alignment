@@ -105,7 +105,7 @@ def main() -> None:
         nonlocal best_accuracy, best_step
         result = dpo_validation(policy, reference, tokenizer, validation, args, policy_device)
         write_metric(metrics, {"step": step, "epoch": epoch, **result, **clock.status(step)})
-        # At step 0 policy == reference so every pair ties and accuracy is exactly 0; never "best".
+        # Step 0 is the untrained policy (equal to the reference up to fp16 rounding), so it is never saved as "best".
         if step > 0 and result["val_reward_accuracy"] > best_accuracy:
             best_accuracy, best_step = result["val_reward_accuracy"], step
             save_checkpoint(policy, tokenizer, out / "best", {"step": step, **result})
